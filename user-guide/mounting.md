@@ -7,7 +7,7 @@ nav_order: 2
 # Version 3
 **Watch the video or read the instructions below**
 
-[![Watch the video](../install_still.png)](https://www.youtube.com/watch?v=yVXgECHQq3w)
+![](https://www.youtube.com/watch?v=yVXgECHQq3w)
 
 1. Use some Zip ties to mount the breakout cable to your bike.  You will want this to be in reach of the power cable and shifter cable.  
 ![Breakout cable](../images/r3_breakout_cable.png)
