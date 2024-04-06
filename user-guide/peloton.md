@@ -4,6 +4,17 @@ parent: User Guide
 layout: page
 nav_order: 5
 ---
+---
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
 # Using this guide
 This is for the Peloton bike with The newest SmartSpin2k. The Peloton Bike+ requires a dedicated power meter to be paired via BLE. 
 

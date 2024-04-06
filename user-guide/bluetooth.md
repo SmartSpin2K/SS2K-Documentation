@@ -4,6 +4,18 @@ parent: User Guide
 layout: page
 nav_order: 3
 ---
+---
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
+
 # How do I connect my sensors to the SS2K?
 OK, your SmartSpin2k is connected and the blue LED is slowly flashing, ready for you to provide some Bluetooth connections and you’re ready to ride! SmartSpin2k will act as a Bluetooth multiplexer and serve all of your connections.  This means it operates as a single point for your sensors to connect to.  You can then pair your device to the SmartSpin2K as a single sensor.  This is helpful for devices like the AppleTV which are limited to just two connections at a time.
 

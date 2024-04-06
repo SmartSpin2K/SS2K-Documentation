@@ -4,6 +4,17 @@ parent: User Guide
 layout: page
 nav_order: 2
 ---
+---
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
+---
 # Version 3
 **Watch the video or read the instructions below**
 
@@ -26,7 +37,7 @@ nav_order: 2
 
 # Version 1 & 2
 
-#### Click the image below to watch an install video for version 1. Version 2 is very similar but the "mounting strap" only goes on one side of the head tube and then you can use zip ties or Velcro to secure it to your head tube. 
+Watch an install video for version 1. Version 2 is very similar but the "mounting strap" only goes on one side of the head tube and then you can use zip ties or Velcro to secure it to your head tube. 
  
 ![](https://youtu.be/5ZDDF4kHvIE)
 
