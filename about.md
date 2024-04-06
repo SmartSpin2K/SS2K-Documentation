@@ -23,7 +23,7 @@ Your power meter or spin bike sends cycling power and cadence to Zwift (or any o
 
 Configuration is accomplished via a web interface hosted by the SmartSpin2k. If you connect the unit to WiFi with an internet connection, it will also perform automatic software updates whenever they become available! 
 
-<img src="/images/Communications_Overview.png" alt="communications">
+<img src="/images/Communications-Overview.png" alt="communications">
 
 
 ```mermaid!
