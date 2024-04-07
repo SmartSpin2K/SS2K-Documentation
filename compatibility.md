@@ -3,7 +3,39 @@ title: Compatibility
 layout: page
 nav_order: 3
 ---
-#### How do I know SS2K will fit on my bike?
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+---
+
+# Supported Bikes
+This list only represents bikes that we have designed build kits for.  The list of compatible bikes is nearly limitless.  If your bike can report watts and cadence to your training app over bluetooth, there is a very good chance it will work with SmartSpin2K.
+
+## Tested and confirmed
+* Bowflex C6
+* Schwinn IC4 / IC800
+* Yesoul S3
+* Echelon Connect Sport
+* Peloton Bike
+* Peloton Bike+ (with a bluetooth power meter)
+* Almost any spin bike with a Bluetooth power meter connected. See [fit instructions](#will-ss2k-fit-my-bike) below.
+
+# Supported Training Programs
+SmartSpin2k will work with the majority of popular training apps.  This is a list of apps that we have experience with:
+* [Zwift](https://www.zwift.com/)
+* [MyWhoosh](https://www.mywhoosh.com/)
+* [TrainerRoad](https://www.trainerroad.com/)
+* [Rouvy](https://www.kinomap.com/)
+* [Kinomap](https://www.kinomap.com/)
+* [GTBikeV (Mod for Grand Theft Auto V)](https://www.gtbikev.com/)
+* [Qdomyos-Zwift](https://www.qzfitness.com/)
+
+# Will SS2K fit my bike?
 
 In order to determine if the SmartSpin2k is compatible with your spin bike, please note the following measurements. Using calipers will generate the most accurate measurements. Photos with measurements overlaid in the examples below are preferred.
 
