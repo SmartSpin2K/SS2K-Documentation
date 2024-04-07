@@ -23,17 +23,25 @@ Your power meter or spin bike sends cycling power and cadence to Zwift (or any o
 
 Configuration is accomplished via a web interface hosted by the SmartSpin2k. If you connect the unit to WiFi with an internet connection, it will also perform automatic software updates whenever they become available! 
 
-<img src="images/Communications-Overview.png" alt="communications">
-
-
 ```mermaid!
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
 flowchart TD
-    A[HRM <br> HRM > PWR]
+    subgraph Bluetooth Sensors
+    A[HRM <br>HRM > PWR]
     B[CPS <br> Power Meters]
     C[FTMS <BR> Spin Bikes]
     D[Proprietary Bikes]
-    E[Serial Data <br> Peloton]
+    end
+    subgraph Serial Data
+    E[Peloton Bike]
+    end
     A & B & C & D & E --> F(SmartSpin2k)
-    F <--> G("Apps fa:fa-wifi
-    (Zwift, Fulgaz, Rouvy, TrainerRoad, etc)")
+    
+    subgraph two[Bluetooth Training Apps]
+    direction TB
+    Zwift ~~~ MyWhoosh
+    TrainerRoad ~~~ Rouvy
+    Qdomyos-Zwift ~~~ Kinomap
+    end 
+    F <--> two
 ```
