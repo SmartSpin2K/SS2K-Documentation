@@ -14,7 +14,7 @@ nav_order: 3
 ---
 
 # Supported Bikes
-This list only represents bikes that we have designed build kits for.  The list of compatible bikes is nearly limitless.  If your bike can report watts and cadence to your training app over bluetooth, there is a very good chance it will work with SmartSpin2K.
+This list only represents bikes that we have designed build kits for.  The list of compatible bikes is nearly limitless.  If your bike can report watts and cadence to your training app over bluetooth, there is a very good chance it will work with SmartSpin2K.  
 
 ## Tested and confirmed
 * Bowflex C6
@@ -24,6 +24,8 @@ This list only represents bikes that we have designed build kits for.  The list 
 * Peloton Bike
 * Peloton Bike+ (with a bluetooth power meter)
 * Almost any spin bike with a Bluetooth power meter connected. See [fit instructions](#will-ss2k-fit-my-bike) below.
+
+In addition to this list, We have a growing selection of inserts and CAD for a variety of bikes on [Github](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Inserts).
 
 # Supported Training Programs
 SmartSpin2k will work with the majority of popular training apps.  This is a list of apps that we have experience with:
