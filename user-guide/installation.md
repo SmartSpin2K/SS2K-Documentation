@@ -16,7 +16,10 @@ Table of contents
 ![](https://www.youtube.com/watch?v=yVXgECHQq3w)
 
 # Install SmartSpin2K on your Bike
-1. Use some Zip ties to mount the breakout cable to your bike.  You will want this to be in reach of the power cable and shifter cable.  
+<details markdown="block">
+
+<summary>Expand to view</summary>
+1. Use some Zip ties to mount the breakout cable to your bike.  You will want this to be in reach of the power cable and shifter cable. 
 ![Breakout cable](../images/r3_breakout_cable.png)
 1. Connect the power cable to the DC Power connector on the breakout cable
 1. If using a wired shifter, mount it onto your bike and connect the headphone connector for the shifter to the breakout cable.
@@ -33,6 +36,8 @@ Peloton Bike owners have a few extra steps.  Proceed with [wiring and setup inst
 
 {: .highlight }
 If you are using a bluetooth enabled bike, power meter, or have a Peloton Bike+, you are [ready to ride](initial-setup). 
+</details>
+
 
 # Installation instructions for Version 1 & 2
 <details markdown="block">
