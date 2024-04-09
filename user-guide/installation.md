@@ -1,32 +1,25 @@
 ---
-title: Mounting to Your Bike
+title: Installation
 parent: User Guide
 layout: page
 nav_order: 2
 ---
----
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
+Table of contents
+{: .no_toc }
+{: .text-delta }
 - TOC
 {:toc}
-</details>
-
 ---
-# Version 3
-**Watch the video or read the instructions below**
 
+
+# Installation Video
 ![](https://www.youtube.com/watch?v=yVXgECHQq3w)
 
+# Install SmartSpin2K on your Bike
 1. Use some Zip ties to mount the breakout cable to your bike.  You will want this to be in reach of the power cable and shifter cable.  
 ![Breakout cable](../images/r3_breakout_cable.png)
-1. If using a wired shifter, mount it onto your bike and connect the headphone connector for the shifter to the breakout cable.
-1. Peloton users only: connect one of the female ends of as 2x Female to 1x Male 3.5mm Headphone Y splitter to the breakout cable.  Connect the other female end of the Y cable to the bike's sensor cable.  Finally, if using [Tablet Mode](https://github.com/doudar/SmartSpin2k/wiki/Peloton-Setup#tablet-mode), connect the Male connector the the rear of your Peloton Bike's tablet
-![Wiring diagram for Peloton Y Splitter](../images/peloton_wiring_diagram.png)
-![Photo of Peloton Bike wiring](../images/peloton_wiring_photo.png)
 1. Connect the power cable to the DC Power connector on the breakout cable
+1. If using a wired shifter, mount it onto your bike and connect the headphone connector for the shifter to the breakout cable.
 1. Use a 30mm Bolt and hex nut to install the arm to the SmartSpin2K body
 1. Install another 30mm bolt and hex nut onto the bike mount.  Attach the bike mount to the front tube of your bike using a cable tie
 ![bike mount](../images/bike_mount.jpg)
@@ -34,6 +27,12 @@ nav_order: 2
 ![Mount SS2K on Bike](../images/SS2K_mounting.jpg)
 1. Connect cable from SmartSpin2K to Breakout cable on bike.  There are arrows on the cable indicating the correct orientation for the connection. You can connect and disconnect SmartSpin2K from this connector between rides.
 ![DIN Connector](../images/DIN_connector.jpg)
+
+{: .peloton-red }
+Peloton Bike owners have a few extra steps.  Proceed with [wiring and setup instructions](peloton).
+
+{: .highlight }
+If you are using a bluetooth enabled bike, power meter, or have a Peloton Bike+, you are [ready to ride](initial-setup). 
 
 # Version 1 & 2
 

@@ -3,14 +3,11 @@ title: Compatibility
 layout: page
 nav_order: 3
 ---
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
+Table of contents
+{: .no_toc }
+{: .text-delta }
 - TOC
 {:toc}
-</details>
 ---
 
 # Supported Bikes
@@ -21,8 +18,8 @@ This list only represents bikes that we have designed build kits for.  The list 
 * Schwinn IC4 / IC800
 * Yesoul S3
 * Echelon Connect Sport
-* Peloton Bike
-* Peloton Bike+ (with a bluetooth power meter)
+* Peloton Bike (with serial data cable)
+* Peloton Bike+ (Bluetooth power meter required)
 * Almost any spin bike with a Bluetooth power meter connected. See [fit instructions](#will-ss2k-fit-my-bike) below.
 
 In addition to this list, We have a growing selection of inserts and CAD for a variety of bikes on [Github](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Inserts).

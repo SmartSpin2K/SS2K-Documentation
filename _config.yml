@@ -96,3 +96,10 @@ jekyll-spaceship:
     css:
       class: emoji
     src: https://github.githubassets.com/images/icons/emoji/
+
+callouts:
+  peloton-red:
+    title: Peloton Bike Owners
+    color: red
+  highlight:
+    color: green

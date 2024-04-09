@@ -18,6 +18,12 @@ nav_order: 5
 # Using this guide
 This is for the Peloton bike with The newest SmartSpin2k. The Peloton Bike+ requires a dedicated power meter to be paired via BLE. 
 
+# Wiring instructions for Peloton Bike owners
+1. Connect one of the female ends of as 2x Female to 1x Male 3.5mm Headphone Y splitter to the breakout cable.  Connect the other female end of the Y cable to the bike's sensor cable.  See wiring diagram below
+![Wiring diagram for Peloton Y Splitter](../images/peloton_wiring_diagram.png)
+![Photo of Peloton Bike wiring](../images/peloton_wiring_photo.png)
+
+
 # Peloton operating modes
 There are **two modes** of operation with Peloton, controlled by a switch on the side of the SmartSpin2K. The mode of operation you choose depends entirely on your use case. Setup and start procedures differ slightly for each mode.
 

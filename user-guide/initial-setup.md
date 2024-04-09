@@ -4,15 +4,11 @@ parent: User Guide
 layout: page
 nav_order: 1
 ---
----
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
+Table of contents
+{: .no_toc }
+{: .text-delta }
 - TOC
 {:toc}
-</details>
 ---
 # Quickstart!
 If you use a BLE bike (or power meter) and BLE HR monitor, and there are no other BLE Power/HR devices near you (i.e. you don't live in an apartment), you will be able to just get on and ride.  Before you begin, make sure you have disconnected any 3rd party apps that may be connected to your sensors. Then:
