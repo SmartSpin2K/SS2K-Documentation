@@ -35,8 +35,10 @@ Peloton Bike owners have a few extra steps.  Proceed with [wiring and setup inst
 If you are using a bluetooth enabled bike, power meter, or have a Peloton Bike+, you are [ready to ride](initial-setup). 
 
 # Installation instructions for Version 1 & 2
-<details>
+<details markdown="block">
+
 <summary>Expand to view</summary>
+
 Watch an install video for version 1. Version 2 is very similar but the "mounting strap" only goes on one side of the head tube and then you can use zip ties or Velcro to secure it to your head tube. 
  
 ![](https://youtu.be/5ZDDF4kHvIE)
@@ -58,4 +60,5 @@ Test the shift buttons to make sure the SmartSpin2k can rotate the resistance kn
 Now move on to Pairing Bluetooth Sensors! If you prefer to ride without connecting to any smart trainer service, you can now use the SmartSpin2k and control resistance with the shift buttons.
 
 Click on this image to be redirected to a YouTube installation video
+
 </details>
