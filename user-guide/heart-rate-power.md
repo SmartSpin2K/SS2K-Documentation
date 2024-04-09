@@ -4,9 +4,12 @@ parent: User Guide
 layout: page
 nav_order: 6
 ---
-## I don't have a power meter but I still want to use SS2K.
+# I don't have a power meter but I still want to use SS2K.
 
-Good News! SmartSpin2k has a method to convert your heart rate into estimated power based on the Brian Mac's spreadsheet. https://www.brianmac.co.uk/pwc170.htm
+{: .caution }
+This functionality is experimental and best used if you don't have alternative solutions to a power meter.  We suggest seeing if your bike is supported by [Qdomyos-Zwift](https://www.qzfitness.com/) before using heart rate derived power.
+
+SmartSpin2k has a method to convert your heart rate into estimated power based on the Brian Mac's spreadsheet. https://www.brianmac.co.uk/pwc170.htm
 
 Access the setup page by clicking on the top link
 

@@ -4,6 +4,9 @@ parent: User Guide
 layout: page
 nav_order: 2
 ---
+# Installation Guide
+{: .no_toc }
+
 Table of contents
 {: .no_toc }
 {: .text-delta }
@@ -12,10 +15,10 @@ Table of contents
 ---
 
 
-# Installation Video
+## Installation Video
 ![](https://www.youtube.com/watch?v=yVXgECHQq3w)
 
-# Install SmartSpin2K on your Bike
+## Install SmartSpin2K on your Bike
 <details markdown="block">
 
 <summary>Expand to view</summary>
@@ -39,7 +42,7 @@ If you are using a bluetooth enabled bike, power meter, or have a Peloton Bike+,
 </details>
 
 
-# Installation instructions for Version 1 & 2
+## Installation instructions for version 1 & 2
 <details markdown="block">
 
 <summary>Expand to view</summary>

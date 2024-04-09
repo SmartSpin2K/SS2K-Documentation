@@ -4,13 +4,16 @@ parent: User Guide
 layout: page
 nav_order: 1
 ---
+# Initial Setup
+{: .no_toc }
+
 Table of contents
 {: .no_toc }
 {: .text-delta }
 - TOC
 {:toc}
 ---
-# Quickstart!
+## Quickstart!
 If you use a BLE bike (or power meter) and BLE HR monitor, and there are no other BLE Power/HR devices near you (i.e. you don't live in an apartment), you will be able to just get on and ride.  Before you begin, make sure you have disconnected any 3rd party apps that may be connected to your sensors. Then:
 
 1. Turn on the SmartSpin2k. 
@@ -22,10 +25,10 @@ And then ride...Seriously, that's it.
 
 If you'd like to make changes to shift steps or other advanced settings, then you can continue with the steps below. 
 
-# Accessing Advanced Settings
-## Using the Mobile App
+## Accessing Advanced Settings
+### Using the Mobile App
 
-## Configure Wifi
+### Configure Wifi
 * On initial boot the SmartSpin2k will create its own Wifi network Access Point with the SSID of “SmartSpin2k”.  If asked for a password, use "password" without the quotes
 
 ![](../images/wiki-ssid.jpg)
@@ -43,7 +46,7 @@ If you'd like to make changes to shift steps or other advanced settings, then yo
 
 ![](../images/configuration-page.png)
 
-## Configure Motor Direction
+### Configure Motor Direction
 You may need to flip your motor's orientation depending on how it is wired.  This can be done directly in the SmartSpin2K user interface.  
 
 * Mount your SmartSpin2K on your bike alternatively, place it on a table with the knob cup facing up towards the ceiling.
@@ -63,7 +66,7 @@ You may need to flip your motor's orientation depending on how it is wired.  Thi
 * Click Save Settings
 * Repeat these steps to test shifting on the web shifter again.  The motor should now be turning in the correct direction.
 
-## Configure Shifter Direction
+### Configure Shifter Direction
 You might need to adjust the shifter direction.  These steps will help you test and change the direction if necessary:
 
 * Connect the shifter to your SmartSpin2K if is not already connected.
