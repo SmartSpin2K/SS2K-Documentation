@@ -14,9 +14,9 @@ Table of contents
 ---
 
 ## Supported Bikes
-This list only represents bikes that we have designed build kits for.  The list of compatible bikes is nearly limitless.  If your bike can report watts and cadence to your training app over bluetooth, there is a very good chance it will work with SmartSpin2K.  
+This list only represents bikes that we have designed build kits for.  The list of compatible bikes is nearly limitless.  If your bike can report watts and cadence to your training app over bluetooth, there is a very good chance it will work with SmartSpin2k.  
 
-The following list of bikes has been tested and confirmed by members of the SmartSpin2K community:
+The following list of bikes has been tested and confirmed by members of the SmartSpin2k community:
 
 * Bowflex C6
 * Schwinn IC4 / IC800

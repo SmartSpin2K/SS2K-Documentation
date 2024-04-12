@@ -18,7 +18,7 @@ Table of contents
 ## Installation Video
 ![](https://www.youtube.com/watch?v=yVXgECHQq3w)
 
-## Install SmartSpin2K on your Bike
+## Install SmartSpin2k on your Bike
 <details markdown="block">
 
 <summary>Expand to view</summary>
@@ -26,12 +26,12 @@ Table of contents
 ![Breakout cable](../images/r3_breakout_cable.png)
 1. Connect the power cable to the DC Power connector on the breakout cable
 1. If using a wired shifter, mount it onto your bike and connect the headphone connector for the shifter to the breakout cable.
-1. Use a 30mm Bolt and hex nut to install the arm to the SmartSpin2K body
+1. Use a 30mm Bolt and hex nut to install the arm to the SmartSpin2k body
 1. Install another 30mm bolt and hex nut onto the bike mount.  Attach the bike mount to the front tube of your bike using a cable tie
 ![bike mount](../images/bike_mount.jpg)
-1. Place SmartSpin2K onto your bike and snap arm onto bike mount
+1. Place SmartSpin2k onto your bike and snap arm onto bike mount
 ![Mount SS2K on Bike](../images/SS2K_mounting.jpg)
-1. Connect cable from SmartSpin2K to Breakout cable on bike.  There are arrows on the cable indicating the correct orientation for the connection. You can connect and disconnect SmartSpin2K from this connector between rides.
+1. Connect cable from SmartSpin2k to Breakout cable on bike.  There are arrows on the cable indicating the correct orientation for the connection. You can connect and disconnect SmartSpin2k from this connector between rides.
 ![DIN Connector](../images/DIN_connector.jpg)
 
 {: .peloton-red }
