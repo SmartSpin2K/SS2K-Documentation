@@ -1,6 +1,6 @@
 # Create a Jekyl container from s zRuby Alpine Image
 
-FROM ruby:2.7-alpine3.15
+FROM ruby:3.0-alpine3.16
 
 #add jekyll dependencies to Alpine
 
