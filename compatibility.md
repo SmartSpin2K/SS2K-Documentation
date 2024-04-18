@@ -6,7 +6,7 @@ nav_order: 3
 # Installation Guide
 {: .no_toc }
 
-Table of contents
+Table of Contents
 {: .no_toc }
 {: .text-delta }
 - TOC
@@ -14,19 +14,29 @@ Table of contents
 ---
 
 ## Supported Bikes
-This list only represents bikes that we have designed build kits for.  The list of compatible bikes is nearly limitless.  If your bike can report watts and cadence to your training app over bluetooth, there is a very good chance it will work with SmartSpin2k.  
 
-The following list of bikes has been tested and confirmed by members of the SmartSpin2k community:
+The list of compatible bikes is nearly limitless. If your bike can report watts and cadence to your training app over Bluetooth, there is a very good chance it will work with SmartSpin2k. The following list only represents bikes that we currently have custom-designed build kits for. They've been tested and confirmed by members of the SmartSpin2k community.  
+
 
 * Bowflex C6
-* Schwinn IC4 / IC800
-* Yesoul S3
+* Bowflex Velocore
 * Echelon Connect Sport
-* Peloton Bike (with serial data cable)
-* Peloton Bike+ (Bluetooth power meter required)
-* Almost any spin bike with a Bluetooth power meter connected. See [fit instructions](#will-ss2k-fit-my-bike) below.
+* Joroto X2
+* Le Mond Revmaster \*
+* Peloton Bike (with serial data Y splitter cable)
+* Peloton Bike+ \*
+* PooBoo \* (some models don't have Bluetooth)
+* Schwinn IC4 / IC800
+* Spinning L7 \*
+* Yesoul S3
+* York SB300 \*
+* Yosuda Pro
 
-In addition to this list, We have a growing selection of inserts and CAD for a variety of bikes on [Github](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Inserts).
+\* Bluetooth power meter required
+
+See [fit instructions](#will-ss2k-fit-my-bike) below. 
+
+In addition to the above list, we have a growing selection of inserts and CAD for a variety of bikes on [Github](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Inserts).
 
 ## Supported Training Programs
 SmartSpin2k will work with the majority of popular training apps.  This is a list of apps that we have experience with:
@@ -38,11 +48,11 @@ SmartSpin2k will work with the majority of popular training apps.  This is a lis
 * [GTBikeV (Mod for Grand Theft Auto V)](https://www.gtbikev.com/)
 * [Qdomyos-Zwift](https://www.qzfitness.com/)
 
-## Will SS2K fit my bike?
+## Will SmartSpin2k Fit My Bike?
 
-In order to determine if the SmartSpin2k is compatible with your spin bike, please note the following measurements. Using calipers will generate the most accurate measurements. Photos with measurements overlaid in the examples below are preferred.
+In order to determine if the SmartSpin2k is compatible with your spin bike, please obtain the measurements below, preferably using calipers to generate the most accuracy. Photos with measurements overlaid in the examples below are preferred.
 
-* Distance from back of head tube to center of resistance knob. Make sure measurement is perpendicular to the resistance knob axis of rotation!
+* Distance from back of head tube to center of resistance knob (make sure measurement is perpendicular to the resistance knob axis of rotation)
 ![](https://github.com/doudar/SmartSpin2k/blob/master/Hardware/Inserts/Design_Reference_Photos/HMC_side_view_knob_distance.jpg?raw=true)
 
 * Smallest diameter of resistance knob
@@ -51,4 +61,4 @@ In order to determine if the SmartSpin2k is compatible with your spin bike, plea
 * Largest diameter of resistance knob
 ![](https://github.com/doudar/SmartSpin2k/blob/master/Hardware/Inserts/Design_Reference_Photos/HMC_top_view.jpg?raw=true)
 
-The most critical measurement is from the center of your resistance knob to the back of the head tube on your bike. Version 2 requires no less than 49mm. Anything in excess of 49mm and SS2K will fit your bike. 
+The most critical measurement is from the back of the head tube to the center of the resistance knob on your bike. Version 2 requires no less than 49mm. Anything in excess of 49mm and SmartSpin2k will fit your bike. 
