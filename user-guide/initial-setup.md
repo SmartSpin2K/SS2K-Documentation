@@ -1,4 +1,3 @@
-
 ---
 title: Initial Setup
 parent: User Guide
