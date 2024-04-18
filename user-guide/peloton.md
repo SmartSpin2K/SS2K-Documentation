@@ -9,7 +9,7 @@ nav_order: 4
 
 Use this guide to choose and configure the operating mode for your Peloton bike with the SmartSpin2k device. Select a mode based on how you wish to interact with your Peloton and SmartSpin2k.
 
-Table of contents
+Table of Contents
 {: .no_toc }
 {: .text-delta }
 - TOC
@@ -29,7 +29,7 @@ Select the mode that aligns with your usage preferences, and follow the setup in
 
 1. **Set SmartSpin2k to Tablet Mode**: Flip the switch on the side of your SmartSpin2k device up, towards the tablet.
    ![Switch position for Tablet Mode](../images/Tablet_Control.png)
-2. **Connect Y-Splitter**: Attach the 3.5mm Y splitter to your bike as shown below.
+2. **Connect Y Splitter**: Attach the 3.5mm Y splitter to your bike as shown below.
    ![Wiring instructions for Tablet Mode](../images/tablet_mode.svg)
 3. **Power On**: Ensure the Peloton Bike Tablet is turned on and logged into your account.
 4. **Select Workout**: Start a workout or free ride in the Peloton app to activate the bike.
@@ -43,7 +43,7 @@ Select the mode that aligns with your usage preferences, and follow the setup in
 
 1. **Switch to Headless Mode**: Flip the switch on the side of your SmartSpin2k device down, towards the bike or ground.
    ![Switch position for Headless Mode](../images/SS2K_Control.png)
-2. **Connect Y-Splitter**: Attach the 3.5mm Y splitter to your bike and SmartSpin2k as shown below.
+2. **Connect Y Splitter**: Attach the 3.5mm Y splitter to your bike and SmartSpin2k as shown below.
    ![Wiring instructions for Headless Mode](../images/tx_mode.svg)
 
 {: .caution }
@@ -52,4 +52,4 @@ Select the mode that aligns with your usage preferences, and follow the setup in
 </details>
 
 ## Peloton Automatic Resistance
-Through the use of Qdomyos-Zwift, it's possible to have automatic resistance for your instructor-guided rides in Peloton.  For this to work, you will need to use Tablet Mode and a secondary Android/IOS device running Qdomyos-Zwift.  If you'd like to use Qdomyos-Zwift, please reach out to members of their community for help and configuration. [Learn more here](https://www.qzfitness.com/)
+Through the use of Qdomyos-Zwift, it's possible to have automatic resistance for your instructor-guided rides in Peloton.  For this to work, you will need to use Tablet Mode and a secondary Android/iOS device running Qdomyos-Zwift.  If you'd like to use Qdomyos-Zwift, please reach out to members of their community for help and configuration. [Learn more here.](https://www.qzfitness.com/)

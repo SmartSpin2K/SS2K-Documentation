@@ -14,11 +14,11 @@ Table of contents
 {:toc}
 ---
 
-## How Do I Connect My Sensors to the SS2k?
+## How Do I Connect My Sensors to the SmartSpin2k?
 OK, your SmartSpin2k is connected, and the blue LED is slowly flashing, ready for you to provide some Bluetooth connections, and you’re ready to ride! SmartSpin2k will act as a Bluetooth multiplexer and serve all of your connections.  This means it operates as a single point for your sensors to connect to.  You can then pair your device to the SmartSpin2k as a single sensor.  This is helpful for devices like the Apple TV, which are limited to just two connections at a time.
 
 ## Pairing Bluetooth Sensors Automatically
-* Ensure all 3rd-party apps that may be connected to your bike or power meter are turned off.
+* Ensure all third-party apps that may be connected to your bike or power meter are turned off.
 * Turn on your bike or power meter.
 * Turn on the SmartSpin2k.  It will automatically connect to your bike or power meter.
 * Launch your training app and pair it to SmartSpin2k ([Zwift example here](https://github.com/doudar/SmartSpin2k/wiki/Riding-Zwift-with-SmartSpin2k)).
