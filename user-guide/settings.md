@@ -7,9 +7,10 @@ nav_order: 5
 # What Do All These Settings Mean?
 There are a number of settings available to customize the behavior of your SmartSpin2k to optimize the feel and realism with your Zwift ride. These settings will vary from bike to bike. 
 
-All settings, aside from Automatic Updates, are saved when the Submit button is clicked and will occur immediately.  You can adjust these settings mid ride from your browser while you're getting it dialed in.
+You can adjust these settings mid ride from your browser while you're getting it dialed in.
 
-![screenshot of settings](../images/settings_page.png)
+We have a much more in-depth walk through of the SmartSpin2k Companion App and all of the settings described below on [YouTube](https://www.youtube.com/watch?v=qgieNuQlTp8)
+
 
 | Setting Name (App)     | Setting Name (Web)          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ---------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
