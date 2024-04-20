@@ -30,7 +30,7 @@ breakout cable now.
 1. Place SmartSpin2k onto your bike and snap arm onto bike mount.
 ![Mount SS2K on Bike](../images/attach_smartspin2k.webp)
 1. Connect cable from SmartSpin2k to breakout cable on bike.  There are arrows on the cable indicating the correct orientation for the connection. You can connect and disconnect SmartSpin2k from this connector between rides.
-![DIN Connector](../images/breakout_cable.webp)
+    ![DIN Connector](../images/breakout_cable.webp)
 
 {: .red }
 Peloton bike owners have a few extra steps.  Proceed with [wiring and setup instructions](peloton).
