@@ -9,7 +9,7 @@ nav_order: 1
 
 You can access the advanced configuration settings of your SmartSpin2k either using the SmartSpin2k Companion App or using wifi.  _We recommend the app for most users_.
 
-Through advanced configuration, you can do things like specify your power meter increasing your shift steps, flip the shifter button orientation, and much more.  Learn more about the different settings [here](settings.md)
+Through advanced configuration, you can do things like specify your power meter increasing your shift steps, flip the shifter button orientation, and much more.  Learn more about the different settings [here](#what-do-all-these-settings-mean)
 
 Table of contents
 {: .no_toc }
@@ -27,7 +27,7 @@ Table of contents
 1. Launch the App
 1. Click "Scan"
 1. Click Connect on your SmartSpin2K
-1. You can now configure your device.  [Click here to learn more](settings.md) about the different settings.
+1. You can now configure your device.  [Click here to learn more](#what-do-all-these-settings-mean) about the different settings.
 
 ## Configure Wi-Fi
 <details markdown="block">
@@ -44,7 +44,7 @@ Table of contents
 1. Once the blue LED is flashing slowly, make sure your phone or computer are connected to your home Wi-Fi network.
 1. Navigate to <http://SmartSpin2k.local/> to confirm that you can access the configuration pages of SmartSpin2k.  You should see a page like this:
     ![](../images/configuration-page.png)
-1. You can now configure your device.  [Click here to learn more](settings.md) about the different settings.
+1. You can now configure your device.  [Click here to learn more](#what-do-all-these-settings-mean) about the different settings.
 </details>
 
 

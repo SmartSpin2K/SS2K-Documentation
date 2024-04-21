@@ -21,7 +21,7 @@ OK, your SmartSpin2k is connected, and the blue LED is slowly flashing, ready fo
 * Ensure all third-party apps that may be connected to your bike or power meter are turned off.
 * Turn on your bike or power meter.
 * Turn on the SmartSpin2k.  It will automatically connect to your bike or power meter.
-* Launch your training app and pair it to SmartSpin2k ([Zwift example here](https://github.com/doudar/SmartSpin2k/wiki/Riding-Zwift-with-SmartSpin2k)).
+* Launch your training app and pair it to SmartSpin2k ([Zwift example here](../getting-started/first-ride#pair-smartspin2k-to-your-training-app)).
 * Start riding!
 
 ## Pairing Bluetooth Sensors Manually

@@ -36,4 +36,4 @@ breakout cable now.
 Peloton bike owners have a few extra steps.  Proceed with [wiring and setup instructions](peloton).
 
 {: .highlight }
-If you are using a Bluetooth-enabled bike, power meter, or have a Peloton Bike+, you are [ready to ride](initial-setup). 
+If you are using a Bluetooth-enabled bike, power meter, or have a Peloton Bike+, you are [ready to ride](first-ride). 

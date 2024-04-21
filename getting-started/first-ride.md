@@ -22,16 +22,16 @@ Table of contents
 1. Turn on the SmartSpin2k. 
 2. Turn on your HR monitor and power meter.
 3. Open your preferred cycling app (Zwift, Fulgaz, TrainerRoad, etc.)
-4. [Pair the SmartSpin2k in those apps.](pairing-apps.md)
+4. Pair the SmartSpin2k in those apps.
 
 And then ride! Seriously, that's it. 
 
-If you'd like to make changes to your shifter direction, shift steps or other advanced settings, then you can continue with the [configuration](../documentation/settings.md). 
+If you'd like to make changes to your shifter direction, shift steps or other advanced settings, then you can continue with the [configuration](../documentation/configuration). 
 
 ## Pair SmartSpin2k to Your Training App
 
 {: .highlight }
-While the following instructions are for Zwift, most training apps behave the same way.  For a full list of compatible apps, check out the [Compatibility](compatibility) page. 
+While the following instructions are for Zwift, most training apps behave the same way.  For a full list of compatible apps, check out the [Compatibility](../compatibility) page. 
 
 1. Log into Zwift and make sure your device has Bluetooth switched on.
 1. Click Power Source and select SmartSpin2k.
