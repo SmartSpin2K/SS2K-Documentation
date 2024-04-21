@@ -48,6 +48,9 @@ SmartSpin2k will work with the majority of popular training apps.  This is a lis
 * [GTBikeV (Mod for Grand Theft Auto V)](https://www.gtbikev.com/)
 * [Qdomyos-Zwift](https://www.qzfitness.com/)
 
+## Automatic Resistance in Peloton Workouts
+Through the use of Qdomyos-Zwift, it's possible to have automatic resistance for your instructor-guided rides in Peloton.  For this to work, you will need to use Tablet Mode and a secondary Android/iOS device running Qdomyos-Zwift.  If you'd like to use Qdomyos-Zwift, please reach out to members of their community for help and configuration. [Learn more here.](https://www.qzfitness.com/)
+
 ## Will SmartSpin2k Fit My Bike?
 
 In order to determine if the SmartSpin2k is compatible with your spin bike, please obtain the measurements below, preferably using calipers to generate the most accuracy. Photos with measurements overlaid in the examples below are preferred.
