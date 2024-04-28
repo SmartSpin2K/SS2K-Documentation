@@ -2,7 +2,7 @@
 title: Heart Rate Derived Power
 parent: Documentation
 layout: page
-nav_order: 4
+nav_order: 5
 ---
 # I Don't Have a Power Meter, But I Still Want to Use SmartSpin2k.
 

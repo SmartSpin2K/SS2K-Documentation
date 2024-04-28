@@ -4,7 +4,7 @@ parent: Documentation
 layout: page
 nav_order: 3
 ---
-# Advanced Configuration
+# SmartSpin2k Firmware
 {: .no_toc }
 
 Table of contents
@@ -14,6 +14,9 @@ Table of contents
 {:toc}
 ---
 ## Update existing firmware using Companion App
+1. In the SmartSpin2k Config App, select Update Firmware.
+2. Select the firmware option you would like to install.  
+3. Installation may take a few minutes.  
 
 ## Update existing firmware using Wi-Fi
 1. Download the latest [SmartSpin2K firmware](https://github.com/doudar/SmartSpin2k/releases/) and extract the zip file.
@@ -26,13 +29,12 @@ Table of contents
 9. You can then check the installed firmware version at the bottom of http://smartspin2k.local/index.html
 
 ## Flash over USB
-You will need:
+Before you start, be sure you have:
 * Micro USB cable
 * [CP210x VCP drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
 * [SmartSpin2K Flasher](https://github.com/SmartSpin2K/SmartSpin2kFlasher/releases/)
 * [The latest SmartSpin2K firmware](https://github.com/doudar/SmartSpin2k/releases/).
 
-## Flashing the SmartSpin2K firmware
 1. Connect a Micro USB cable to your computer and your SmartSpin2K (You do not need the power cable for this)
 2. Start SmartSpin2KFlasher.exe <br>
     ![](../images/flasher.png)
