@@ -33,16 +33,16 @@ Table of contents
 <details markdown="block">
 <summary>Expand to view mobile app pairing instructions</summary>
 
-1. On initial boot, the SmartSpin2k will create its own Wi-Fi network access point with the SSID of “SmartSpin2k”.  If asked for a password, use "password" without the quotes.
+1. On initial boot, the SmartSpin2k will create its own Wi-Fi network access point with the SSID of “SmartSpin2k”.  If asked for a password, use "password" without the quotes.<br>
     ![](../images/wiki-ssid.jpg)
-1. The configuration page will automatically load on mobile. If you are not taken to the page, or if you're using a computer, the configuration page can be found at <http://SmartSpin2k.local/>.
+1. The configuration page will automatically load on mobile. If you are not taken to the page, or if you're using a computer, the configuration page can be found at <http://SmartSpin2k.local/>.<br>
     ![](../images/wifi-setup.png)
 1. Enter your local Wi-Fi network information with SSID and password. Please note:  The SmartSpin2k requires a 2.4ghz Wi-Fi connection.  Please ensure you use the correct Wi-Fi network if you have separate SSIDs for 5ghz and 2.4ghz.
 1. Click Submit and wait for the page to refresh.
 1. Click Reboot.
 1. SmartSpin2k will automatically update if the Wi-Fi network you paired the device to is connected to the internet.  The blue LED will flash quickly while this process occurs.  **This may take up to 3 minutes.**  
 1. Once the blue LED is flashing slowly, make sure your phone or computer are connected to your home Wi-Fi network.
-1. Navigate to <http://SmartSpin2k.local/> to confirm that you can access the configuration pages of SmartSpin2k.  You should see a page like this:
+1. Navigate to <http://SmartSpin2k.local/> to confirm that you can access the configuration pages of SmartSpin2k.  You should see a page like this: <br>
     ![](../images/configuration-page.png)
 1. You can now configure your device.  [Click here to learn more](#what-do-all-these-settings-mean) about the different settings.
 </details>
