@@ -9,7 +9,7 @@ nav_order: 1
 
 You can access the advanced configuration settings of your SmartSpin2k either using the SmartSpin2k Companion App or using Wi-Fi.  _We recommend the app for most users_.
 
-Through advanced configuration, you can do things like specify your power meter, increase your shift steps, flip the shifter button orientation, and much more.  Learn more about the different settings [here].(#what-do-all-these-settings-mean)
+Through advanced configuration, you can do things like specify your power meter, increase your shift steps, flip the shifter button orientation, and much more.  Learn more about the different settings [here](#what-do-all-these-settings-mean).
 
 Table of contents
 {: .no_toc }
