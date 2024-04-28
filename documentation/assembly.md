@@ -67,11 +67,27 @@ Please check the readme.md for the Direct Mount mod for additional required comp
 |4 | #8 x 1.75" countersunk wood screws | |Not used in direct mount mod |
 </details>
 
+## Printing Instructions
+We recommend printing in a strong material like ABS, CF-Nylon, or PETG.  Use 4 perimeters and 40% infill. 
+
+You will need the following common parts for Version 3:
+* Both case halves [from V3 cases/case](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/V3%20-%20Integrated%20PCB/Case/Case)
+* The window in a translucent/transparent material [from V3 case/case](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/V3%20-%20Integrated%20PCB/Case/Case)
+* The knob cup [from KnobCups](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/KnobCups) in an accent color.
+* Both gears [from Common Assets/Gears](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Gears) in an accent color.
+* The shifter strap(s) (single or set) using TPU from [Common Assets/Shifters](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Shifters)
+
+You will also need the specific parts to adapt to your bike:
+* An arm that's the proper length for your bike [from Common Assets/Arm](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Arm)
+* A bike mount for your bike [from Common Assets/Bike Mount](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Bike%20Mount)
+* The proper knob adapter for your bike [from Common Assets/Inserts](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Inserts)
+
+
 ## How to build the SS2K
 
 | Hardware Version | Link to Guide |
 | ------------------|---------------|
-| Version 3 | [Download](https://github.com/doudar/SmartSpin2k/blob/develop/SS2kR3BuildingInstructions.pdf) |
+| Version 3 | [Download Assembly Manual](https://github.com/doudar/SmartSpin2k/blob/develop/SS2kR3BuildingInstructions.pdf) |
 | Version 2| [Watch Video](https://www.youtube.com/watch?v=0vqzwOFnhxg) |
 
 ## Shifter Assembly 
