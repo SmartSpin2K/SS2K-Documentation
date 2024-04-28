@@ -7,9 +7,9 @@ nav_order: 1
 # Advanced Configuration
 {: .no_toc }
 
-You can access the advanced configuration settings of your SmartSpin2k either using the SmartSpin2k Companion App or using wifi.  _We recommend the app for most users_.
+You can access the advanced configuration settings of your SmartSpin2k either using the SmartSpin2k Companion App or using Wi-Fi.  _We recommend the app for most users_.
 
-Through advanced configuration, you can do things like specify your power meter increasing your shift steps, flip the shifter button orientation, and much more.  Learn more about the different settings [here](#what-do-all-these-settings-mean)
+Through advanced configuration, you can do things like specify your power meter, increase your shift steps, flip the shifter button orientation, and much more.  Learn more about the different settings [here].(#what-do-all-these-settings-mean)
 
 Table of contents
 {: .no_toc }
@@ -21,12 +21,12 @@ Table of contents
 ## Using the SmartSpin2k Companion App
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qgieNuQlTp8?si=dkuHuU5kF_VBW8Wf&amp;clip=UgkxNvc7uFBptHiztHKbLOWX6chsJzNLmIeM&amp;clipt=ENy0AxjI1gU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-1. Install the SmartSpin2k Companion App
+1. Install the SmartSpin2k Companion App.
     * [IOS](https://apps.apple.com/us/app/smartspin2k-companion-app/id6477836948)
-    * Android: Coming to the play store soon!  Download the app on [Github](https://github.com/doudar/SS2kConfigApp/releases/tag/1.0.0)
-1. Launch the App
-1. Click "Scan"
-1. Click Connect on your SmartSpin2K
+    * Android: Coming to the play store soon!  Download the app on [Github](https://github.com/doudar/SS2kConfigApp/releases/tag/1.0.0).
+1. Launch the App.
+1. Click Scan.
+1. Click Connect on your SmartSpin2k.
 1. You can now configure your device.  [Click here to learn more](#what-do-all-these-settings-mean) about the different settings.
 
 ## Configure Wi-Fi
@@ -35,7 +35,7 @@ Table of contents
 
 1. On initial boot, the SmartSpin2k will create its own Wi-Fi network access point with the SSID of “SmartSpin2k”.  If asked for a password, use "password" without the quotes.
     ![](../images/wiki-ssid.jpg)
-1. The configuration page will automatically load on mobile. If you are not taken to the page or if you are using a computer, the configuration page can be found at <http://SmartSpin2k.local/>.
+1. The configuration page will automatically load on mobile. If you are not taken to the page, or if you're using a computer, the configuration page can be found at <http://SmartSpin2k.local/>.
     ![](../images/wifi-setup.png)
 1. Enter your local Wi-Fi network information with SSID and password. Please note:  The SmartSpin2k requires a 2.4ghz Wi-Fi connection.  Please ensure you use the correct Wi-Fi network if you have separate SSIDs for 5ghz and 2.4ghz.
 1. Click Submit and wait for the page to refresh.
@@ -53,7 +53,7 @@ There are a number of settings available to customize the behavior of your Smart
 
 You can adjust these settings mid ride from your browser while you're getting it dialed in.
 
-We have a much more in-depth walk through of the SmartSpin2k Companion App and all of the settings described below on [YouTube](https://www.youtube.com/watch?v=qgieNuQlTp8)
+We have a much more in-depth walk through of the SmartSpin2k Companion App and all of the settings described below on [YouTube](https://www.youtube.com/watch?v=qgieNuQlTp8).
 
 
 | Setting Name (App)     | Setting Name (Web)          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -63,8 +63,8 @@ We have a much more in-depth walk through of the SmartSpin2k Companion App and a
 | ERG Sensitivity        | ERG Mode Sensitivity        | This setting adjusts the aggressiveness of the ERG. This can be adjusted from 1 to 20. Too low will cause the ERG to be slow at reaching the target wattage. Too high will cause it to overshoot too far and miss the target in each direction before it settles. A good starting value is 5. A little bit of overshoot is okay if it settles on the target output quickly. |
 | Min Brake Watts        | Min Bike Brake Watts        | This setting is the lower limit of watts your bike can absorb. This is set to ensure that the SmartSpin2k does not try to turn the knob below its minimum limit. Too low will crash the knob at the lowest setting your bike can achieve and will cause problems later during your ride. You can determine this value by pedaling at 90 rpm with the resistance somewhere above absolute zero on the knob. A good starting point is usually 1-2 turns from the lowest resistance. On the Schwinn IC4, it's suggested to have the resistance at 10 (out of 100) for this test. Take note of the watts at this resistance and cadence. This is your minimum brake watts value. |
 | Max Brake Watts        | Max Bike Brake Watts        | This setting is the upper limit of watts your bike can absorb. This is set to ensure that the SmartSpin2k does not try to turn the knob past its maximum limit. This value will vary per bike, and some riders will not be able to achieve the maximum value their bike can support. A good setting to start with is 700-800 watts. You can determine this value by pedaling at 90 rpm with the resistance as high as you can comfortably hold it and take note of the watts. Depending on how close you are to the bike's maximum resistance, you can set this value higher, or close to, this number. |
-| Stepper Power           | Stepper Power               | Adjust this setting if you are experiencing overheat issues or if you need additional torque for a felt-resistance bike. Do not exceed your power supply's rated limits. |
+| Stepper Power           | Stepper Power               | Adjust this setting if you are experiencing overheat issues, or if you need additional torque for a felt-resistance bike. Do not exceed your power supply's rated limits. |
 | StealthChop            | Stepper StealthChop         | This silences the stepper motor. Leave it on unless it's causing issues. Turning it off may provide some additional torque if you have a felt-resistance bike. |
 | N/A                    | Stepper Motor Direction     | This setting controls the orientation of the motor and the direction it turns. Depending on how your motor is wired, this may need to be toggled. |
 | Swap Shifter Direction | Shifter Direction           | This setting controls which shifter button is up and which is down. Toggle this if you need to invert the direction of the shifters. |
-| N/A                    | Enable UDP Logging          | Leave this off unless you need access to logs from SS2k on your computer. Instructions for accessing the UDP logs can be found [here.]([https://github.com/doudar/SmartSpin2k/wiki/Viewing-logs-via-UDP](https://github.com/doudar/SmartSpin2k/wiki/Viewing-logs-via-UDP))  |
+| N/A                    | Enable UDP Logging          | Leave this off unless you need access to logs from SmartSpin2k on your computer. Instructions for accessing the UDP logs can be found [here.]([https://github.com/doudar/SmartSpin2k/wiki/Viewing-logs-via-UDP](https://github.com/doudar/SmartSpin2k/wiki/Viewing-logs-via-UDP))  |

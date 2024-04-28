@@ -25,14 +25,14 @@ OK, your SmartSpin2k is connected, and the blue LED is slowly flashing, ready fo
 * Start riding!
 
 ## Pairing Bluetooth Sensors Manually
-You will want to manually select your power meter if you own a power meter and use it on a Bluetooth-enabled bike like the Schwinn IC4. This is also useful if you have multiple power meters or bikes nearby.
+If you own a power meter, and use it on a Bluetooth-enabled bike like the Schwinn IC4, you'll want to manually select it. This is also useful if you have multiple power meters or bikes nearby.
 
-* From http://smartspin2k.local, click on Bluetooth Scanner.
+* From http://smartspin2k.local, click Bluetooth Scanner.
 <br/>
 ![Bluetooth Settings](../images/bluetooth_settings.png)
 <br/>
 * Make sure you're wearing your HR sensor and that it's not paired via Bluetooth to any other devices like a Garmin watch or iPad/iPhone.
-* Have your Bluetooth power pedals charged or with batteries and ready to pair. Also, make sure they are not connected to any other devices like the previous step.
+* Have your Bluetooth power pedals charged or with batteries and ready to pair. Also, make sure they are not connected to any other devices as mentioned in the previous step.
 * Click Scan/Connect.
 * Select the HR monitor in the Select New Heart Monitor drop-down box.
 * Select the power meter in the Select New Power Meter drop-down box.  Users with a dedicated power meter and a bike that reports power data must select the appropriate power meter here.  Leaving this setting at "any" may cause SmartSpin2k to receive power data from both sources and cause unintended fluctuations in reported data.

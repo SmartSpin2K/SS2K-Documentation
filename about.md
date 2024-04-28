@@ -19,7 +19,7 @@ SmartSpin2k is an open-source project that uses an ESP32 and stepper motor to le
 
 ## Summary of Function
 
-Your power meter or spin bike sends cycling power and cadence to Zwift (or any other cycling app). SmartSpin2k then connects to the app as a controllable trainer via Bluetooth. The app is able to request SmartSpin2k to increase or decrease the amount of resistance on your bike and SmartSpin2k will then change the resistance accordingly. If you choose to pair your power source directly to SmartSpin2k, ERG mode is also available, which lets an app directly control your watt output regardless of your cadence. In addition to adjusting the knob, SmartSpin2k also has shifter buttons to simulate virtual shifting. 
+Your power meter or spin bike sends cycling power and cadence to Zwift (or any other cycling app). SmartSpin2k then connects to the app as a controllable trainer via Bluetooth. The app is able to request SmartSpin2k to increase or decrease the amount of resistance on your bike, and SmartSpin2k will then change the resistance accordingly. If you choose to pair your power source directly to SmartSpin2k, ERG mode is also available, which lets an app directly control your watt output regardless of your cadence. In addition to adjusting the knob, SmartSpin2k also has shifter buttons to simulate virtual shifting. 
 
 Configuration is accomplished via a web interface hosted by the SmartSpin2k. If you connect the unit to Wi-Fi with an internet connection, it will also perform automatic software updates whenever they become available! 
 

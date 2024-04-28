@@ -17,10 +17,10 @@ Table of Contents
 ---
 
 ## Choosing Your Operating Mode
-Peloton Bike users have three options for using SmartSpin2k, each offers unique features and setup requirements:
+Peloton Bike users have three options for using SmartSpin2k, each offering unique features and setup requirements:
 - **Tablet Mode**: Ideal for those who use Peloton's digital services directly on the bike's tablet.
 - **Headless Mode**: Suitable for users who prefer using third-party apps and do not use Peloton's digital services.
-- **Bluetooth Mode**:  Users with power meter pedals will want to use this option. 
+- **Bluetooth Mode**:  For users with power meter pedals.
 
 Select the mode that aligns with your usage preferences, and follow the setup instructions below for your chosen mode.
 
@@ -56,4 +56,4 @@ Peloton Bike+ owners need a power meter for compatibility with SmartSpin2k.
 </details>
 
 ### Bluetooth Setup
-Follow the [First Ride instructions](first-ride) if you are using a bluetooth power meter with your Peloton Bike or Bike+
+Follow the [First Ride Instructions](first-ride) if you are using a bluetooth power meter with your Peloton Bike or Bike+.
