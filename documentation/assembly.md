@@ -16,13 +16,14 @@ Table of contents
 ## Bill of Materials
 For new builds, we strongly recommend Version 3 with a PCB kit for the easiest assembly experience.  Version 2 offers an exciting option for builders that want to solder their own PCB with an esp32 devkit.   
 
+{: .caution }
 This sourcing guide assumes you have a [compatible spin bike](../compatibility).
 
+{: .highlight }
 You should be able to source all components for < $100 USD including shipping
 
-### Common Hardware - All Versions
-<details markdown="block">
-<summary>Expand to view</summary>
+
+### Required Hardware
 The components in this list are required for the assembly of all versions of the SmartSpin2K
 
 | qty |           Part          | Amazon                  | Aliexpress                                            
@@ -38,11 +39,11 @@ The components in this list are required for the assembly of all versions of the
 | 2 | 5/16" nuts | | | | |
 
 *Power supply can be in the 12v-24v range.  Aim for 1amp or greater.  If using the SmartSpin2K PCB Kit, you will need a 5.5x2.1 connector.
-</details>
 
-### Version 2 (legacy) Hardware
+#### Version 2 requires additional hardware
+{: no_toc }
 <details markdown="block">
-<summary>Expand to view</summary>
+<summary>Expand to View</summary>
 Inn addition to the common hardware listed above, you will need the following hardware to build SmartSpin2k Version 2
 
 | qty |           Part          | Amazon                  | Aliexpress                                            
