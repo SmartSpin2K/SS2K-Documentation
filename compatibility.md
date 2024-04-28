@@ -15,7 +15,7 @@ Table of Contents
 
 ## Supported Bikes
 
-The list of compatible bikes is nearly limitless. If your bike can report watts and cadence to your training app over Bluetooth, there is a very good chance it will work with SmartSpin2k. The following list only represents bikes that we currently have custom-designed build kits for. They've been tested and confirmed by members of the SmartSpin2k community.  
+The list of compatible bikes is nearly limitless. If your bike can report watts and cadence to your training app over Bluetooth, there is a very good chance it will work with SmartSpin2k. The following list represents bikes that we currently have custom-designed build kits for. They've been tested and confirmed by members of the SmartSpin2k community.  
 
 
 * Bowflex C6
@@ -49,7 +49,7 @@ SmartSpin2k will work with the majority of popular training apps.  This is a lis
 * [Qdomyos-Zwift](https://www.qzfitness.com/)
 
 ## Automatic Resistance in Peloton Workouts
-Through the use of Qdomyos-Zwift, it's possible to have automatic resistance for your instructor-guided rides in Peloton.  For this to work, you will need to use Tablet Mode and a secondary Android/iOS device running Qdomyos-Zwift.  If you'd like to use Qdomyos-Zwift, please reach out to members of their community for help and configuration. [Learn more here.](https://www.qzfitness.com/)
+Through the use of Qdomyos-Zwift, it's possible to have automatic resistance for your instructor-guided rides in Peloton.  For this to work, you'll need to use Tablet Mode and a secondary Android/iOS device running Qdomyos-Zwift.  If you'd like to use Qdomyos-Zwift, please reach out to members of their community for help and configuration. [Learn more here.](https://www.qzfitness.com/)
 
 ## Will SmartSpin2k Fit My Bike?
 
@@ -64,4 +64,4 @@ In order to determine if the SmartSpin2k is compatible with your spin bike, plea
 * Largest diameter of resistance knob
 ![](https://github.com/doudar/SmartSpin2k/blob/master/Hardware/Inserts/Design_Reference_Photos/HMC_top_view.jpg?raw=true)
 
-The most critical measurement is from the back of the head tube to the center of the resistance knob on your bike. Version 2 requires no less than 49mm. Anything in excess of 49mm and SmartSpin2k will fit your bike. 
+The most critical measurement is from the back of the head tube to the center of the resistance knob on your bike. Version 2 requires a minimum of 49mm in order for SmartSpin2k to fit your bike. 
