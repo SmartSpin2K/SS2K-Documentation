@@ -62,17 +62,15 @@ In addition to the common hardware listed above, you will need the following har
 | 1   | JST-XH connectors kit                       | [Amazon](https://a.co/d/14NJyfu)                                                                                |
 | 1   | 3.5mm stereo headphone connector (shifter connector) | [Aliexpress](https://www.aliexpress.com/item/4000640677390.html)                      |
 | 1   | 5.5X2.1mm Dc Power connector                | [Aliexpress](https://www.aliexpress.com/item/4000694128319.html)                                                |
+| 1   | PCB                                   | [PCBWay](https://www.pcbway.com/project/shareproject/SmartSpin2k_PCB.html) |
+| 1   | Recom R-78E5.0-0.5                    | [Octopart](https://octopart.com/r-78e5.0-0.5-recom+power-21698196)    |
+| 1   | 10uF 50V capacitor  (6mm diameter or smaller)   | [Octopart](https://octopart.com/50ml10mefc5x7-rubycon-19941930)       |
+| 1   | 100uF 25V capacitor (6mm diameter or smaller)   | [Octopart](https://octopart.com/25yxj100m5x11-rubycon-24361474)       |
+| 1   | 0.1uF 50V capacitor                   | [Octopart](https://octopart.com/c315c104m5u5ta7301-kemet-20253274)    |
+| 1   | 1K Ohm resistor                       | [Octopart](https://octopart.com/rnf14ftd1k00-stackpole+electronics-19224710) |
 
-Please check the readme.md for the Direct Mount mod for additional required components
-
-| Quantity | Part                                  | Link                                                                  | Notes                                |
-|:---:|---------------------------------------|-----------------------------------------------------------------------|--------------------------------------|
-| 1   | PCB                                   | [PCBWay](https://www.pcbway.com/project/shareproject/SmartSpin2k_PCB.html) |                                      |
-| 1   | Recom R-78E5.0-0.5                    | [Octopart](https://octopart.com/r-78e5.0-0.5-recom+power-21698196)    |                                      |
-| 1   | 10uF 50V capacitor                    | [Octopart](https://octopart.com/50ml10mefc5x7-rubycon-19941930)       | Source 6mm diameter or smaller       |
-| 1   | 100uF 25V capacitor                   | [Octopart](https://octopart.com/25yxj100m5x11-rubycon-24361474)       | Source 6mm diameter or smaller       |
-| 1   | 0.1uF 50V capacitor                   | [Octopart](https://octopart.com/c315c104m5u5ta7301-kemet-20253274)    |                                      |
-| 1   | 1K Ohm resistor                       | [Octopart](https://octopart.com/rnf14ftd1k00-stackpole+electronics-19224710) |                                      |
+{: .caution }
+Review readme documentation if using published mods like the direct mount. 
 
 </details>
 
