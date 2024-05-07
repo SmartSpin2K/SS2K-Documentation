@@ -23,7 +23,7 @@ Table of contents
 
 1. Install the SmartSpin2k Companion App.
     * [IOS](https://apps.apple.com/us/app/smartspin2k-companion-app/id6477836948)
-    * Android: Coming to the play store soon!  Download the app on [Github](https://github.com/doudar/SS2kConfigApp/releases/tag/1.0.0).
+    * [Android](https://play.google.com/store/apps/details?id=com.smartspin2k.app)
 1. Launch the App.
 1. Click Scan.
 1. Click Connect on your SmartSpin2k.

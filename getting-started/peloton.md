@@ -38,7 +38,7 @@ Peloton Bike+ owners need a power meter for compatibility with SmartSpin2k.
 3. **Power On**: Ensure the Peloton Bike Tablet is turned on and logged into your account.
 4. **Select Workout**: Start a workout or free ride in the Peloton app to activate the bike.
 5. **Connect to Apps**: Use the following guide to connect SmartSpin2k with apps like Zwift.
-   [Riding Zwift with SmartSpin2k](https://github.com/doudar/SmartSpin2k/wiki/Riding-Zwift-with-SmartSpin2k)
+   [Riding Zwift with SmartSpin2k](first-ride#pair-smartspin2k-to-your-training-app)
 </details>
 
 ### Headless Mode Setup
@@ -48,6 +48,9 @@ Peloton Bike+ owners need a power meter for compatibility with SmartSpin2k.
 1. **Switch to Headless Mode**: Flip the switch on the side of your SmartSpin2k device down, towards the bike or ground.
    ![Switch position for Headless Mode](../images/SS2K_Control.png)
 2. **Connect Y Splitter**: Attach the 3.5mm Y splitter to your bike and SmartSpin2k as shown below.
+3. **Connect to Apps**: Use the following guide to connect SmartSpin2k with apps like Zwift.
+   [Riding Zwift with SmartSpin2k](first-ride#pair-smartspin2k-to-your-training-app)
+</details>
    ![Wiring instructions for Headless Mode](../images/tx_mode.svg)
 
 {: .caution }
