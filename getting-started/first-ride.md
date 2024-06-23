@@ -35,7 +35,6 @@ While the following instructions are for Zwift, most training apps behave the sa
 
 1. Log into Zwift and make sure your device has Bluetooth switched on.
 1. Click Power Source and select SmartSpin2k.
-1. Wait 5 seconds.
 1. Click Resistance and select SmartSpin2k.
 1. Click Cadence and select SmartSpin2k.
 1. If you have a heart rate monitor paired to SmartSpin2k, click Heart Rate and select SmartSpin2k.
