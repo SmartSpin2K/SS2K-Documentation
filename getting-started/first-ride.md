@@ -9,7 +9,7 @@ nav_order: 2
 If you use a BLE bike (or power meter) and BLE HR monitor, and there are no other BLE Power/HR devices near you (i.e. you don't live in an apartment), you'll be able to just get on and ride.  Before you begin, make sure you've disconnected any third-party apps that may be connected to your sensors.
 
 {: .caution }
-Peloton Bike owners should go through the [wiring instructions](peloton.md) before proceeding.
+Peloton Bike owners should go through the [wiring instructions](/peloton) before proceeding.
 
 Table of contents
 {: .no_toc }
