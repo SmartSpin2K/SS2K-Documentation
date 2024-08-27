@@ -14,6 +14,7 @@ Table of contents
 {:toc}
 ---
 ## Update existing firmware using Companion App
+
 {: .caution }
 Users with older firmwares prior to February 2024 will need to update to the latest using the Wi-Fi or USB flashing instructions before the app can be used.
 
