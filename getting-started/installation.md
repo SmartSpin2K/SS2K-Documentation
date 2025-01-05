@@ -28,10 +28,6 @@ Table of contents
 1. Place the SmartSpin2k onto your bike, and snap the arm onto the bike mount.
 ![Mount SS2K on Bike](../images/attach_smartspin2k.webp)
 
-{: .red }
-Peloton Bike owners should continue with the Peloton [wiring and setup instructions](peloton).
-Peloton Bike+ requires a power meter.  Proceed with the wiring instructions below.
-
 --- 
 
 ## Wiring Installation
@@ -42,8 +38,12 @@ As of December, 2024, we have migrated to a new cable design for the SmartSpin2k
     ![SmartSpin2k wiring diagram](../images/wiring_diagram_v1.svg)
     * The V2 breakout cable will have four connectors for power, shifter, Peloton Tablet, and Peloton Sensor, as pictured below:
     ![SmartSpin2k wiring diagram](../images/wiring_diagram_v2.svg)
+    
+    {: .red }
+    Peloton Bike owners should continue with the Peloton [wiring and setup instructions](peloton).
+    Bike+ requires a power meter.  Proceed with the wiring instructions below.
 
-1. Connect the power adapter and shifter to your breakout cable as pictured above.
+2. Connect the power adapter and shifter to your breakout cable as pictured above.
 
 1. Connect the SmartSpin2k cable to the breakout cable.  Notice the arrows on the cables indicating the correct orientation for connection. If preferred, you can disconnect the cables between rides.
     ![DIN Connector](../images/breakout_cable.webp)
