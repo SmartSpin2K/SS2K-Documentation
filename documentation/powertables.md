@@ -51,7 +51,7 @@ J --> K[Ready for Adjustments]
 
 ## 2. Power Table Generation Process
   
-The power table is dynamically generated during SmartSpin2k operation to minimize latency when adjusting resistance by precomputing stepper motor positions for a range of cadence and power values. This reduces the time spent seeking target resistance levels during sudden changes, ensuring smoother operation. This section details the process of generating and managing the power table.  
+The power table is dynamically generated during SmartSpin2k operation to minimize latency when adjusting resistance by precomputing stepper motor positions for a range of cadence and power values. This reduces the time spent seeking target resistance levels during sudden changes, ensuring smoother operation. This chart details the process of generating and managing the power table.  
   
 ```mermaid
 graph TD
@@ -156,26 +156,4 @@ K -->|Yes| L[Load Power Table into Memory]
 K -->|No| M[Abort Load Operation]
 L --> G[Load Completed]
 M --> N[Error Handling]
-```
-  
----
-## 7. Code Walkthrough
-  
-This section provides a detailed walkthrough of the key components and functions in the SmartSpin2k system related to power table generation, population, saving/loading, resetting, and logging. By understanding the code structure, prospective developers can contribute effectively.  
-  
-```mermaid
-graph TD
-A[Start Code Walkthrough] --> B[Identify Core Components]
-B --> C[Power Table Class]
-C --> D[Initialization and Attributes]
-C --> E[Core Methods]
-B --> F[Buffer Management]
-F --> G[Power Buffer Class]
-G --> H[Attributes and Buffering Logic]
-G --> I[Methods for Averaging and Validation]
-B --> J[Control Logic]
-J --> K[ERG Mode Class]
-K --> L[Power Table Integration]
-K --> M[Logging and Debugging]
-L --> N[Final Outputs]
 ```
