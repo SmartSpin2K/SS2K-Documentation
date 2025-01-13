@@ -33,10 +33,7 @@ Peloton Bike+ owners need a power meter for compatibility with SmartSpin2k.
 
 1. **Set SmartSpin2k to Tablet Mode**: Flip the switch on the side of your SmartSpin2k device up, towards the tablet.
    ![Switch position for Tablet Mode](../images/Tablet_Control.png)
-2. **Version 1 breakout cable**: connect the 3.5mm Y splitter to your sensor as well as to the back of the tablet as shown below.
-   ![Version 1 breakout cable](../images/wiring_diagram_v1.svg)
-   ![Wiring instructions for Tablet Mode](../images/tablet_mode.svg)
-3. **Version 2 breakout cable**: Connect the breakout cable directly to your sensor as well as to the back of the tablet.  
+2. Connect the breakout cable directly to your sensor as well as to the back of the tablet.  
    ![Wiring instructions for Version 2 Breakout Cable](../images/wiring_diagram_v2.svg)
 3. **Power On**: Ensure the Peloton Bike Tablet is turned on and logged into your account.
 4. **Select Workout**: Start a workout or free ride in the Peloton app to activate the bike.
@@ -50,10 +47,7 @@ Peloton Bike+ owners need a power meter for compatibility with SmartSpin2k.
 
 1. **Switch to Headless Mode**: Flip the switch on the side of your SmartSpin2k device down, towards the bike or ground.
    ![Switch position for Headless Mode](../images/SS2K_Control.png)
-2. **Version 1 breakout cable**: connect the 3.5mm Y splitter to your bike's sensor as well as to the SmartSpin2k.  Ensure the male end of the Y cable is disconnected from the tablet.
-   ![Version 1 breakout cable](../images/wiring_diagram_v1.svg)
-   ![Wiring instructions for TX Mode](../images/tx_mode.svg)
-3. **Version 2 breakout cable**: Connect the breakout cable to your bike's sensor.  Ensure the Peloton Tablet connector is disconnected from the tablet.
+2. Connect the breakout cable to your bike's sensor.  Ensure the Peloton Tablet connector is disconnected from the tablet.
    ![Wiring instructions for TX Mode](../images/tx_mode_v2.svg)
 3. **Connect to Apps**: Use the following guide to connect SmartSpin2k with apps like Zwift.
    [Riding Zwift with SmartSpin2k](first-ride#pair-smartspin2k-to-your-training-app)
@@ -61,6 +55,21 @@ Peloton Bike+ owners need a power meter for compatibility with SmartSpin2k.
    {: .caution }
    **Important Reminder**  
    Remember to switch back to [Tablet Mode](#tablet-mode) if you want to use any Peloton services after using this mode.
+</details>
+
+### Have a different cable?
+<details markdown="block">
+<summary>Expand for information if your cable differs from what is pictured above</summary>
+
+   Previous cables required an additional Y splitter to set up Peloton.  See images below for more information on how to set your bike up
+
+   ![Version 1 breakout cable](../images/wiring_diagram_v1.svg)
+
+   **Tablet Mode**
+   ![Wiring instructions for Tablet Mode](../images/tablet_mode.svg)
+
+   **Headless Mode**
+   ![Wiring instructions for TX Mode](../images/tx_mode.svg)
 </details>
 
 ### Bluetooth Setup
