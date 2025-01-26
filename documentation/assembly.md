@@ -78,8 +78,8 @@ Review readme documentation if using published mods like the direct mount.
 We recommend printing in a strong material like ABS, CF-Nylon, or PETG.  Use 4 perimeters and 40% infill. 
 
 You will need the following common parts for Version 3:
-* Both case halves [from V3 cases/case](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/V3%20-%20Integrated%20PCB/Case/Case)
-* The window in a translucent/transparent material [from V3 case/case](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/V3%20-%20Integrated%20PCB/Case/Case)
+* Both case halves [from V3/case/](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/V3%20-%20Integrated%20PCB/Case/)
+* The window in a translucent/transparent material [from V3/case](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/V3%20-%20Integrated%20PCB/Case/)
 * The knob cup [from KnobCups](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/KnobCups) in an accent color.
 * Both gears [from Common Assets/Gears](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Gears) in an accent color.
 * The shifter strap(s) (single or set) using TPU from [Common Assets/Shifters](https://github.com/doudar/SmartSpin2k/tree/develop/Hardware/Common%20Assets/Shifters)

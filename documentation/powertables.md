@@ -2,7 +2,7 @@
 title: How the Power Table Works
 parent: Documentation
 layout: page
-nav_order: 6
+nav_order: 7
 ---
 # Documentation: Power Table Generation in SmartSpin2k
 {: .no_toc }
