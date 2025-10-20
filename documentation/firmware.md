@@ -20,7 +20,8 @@ Users with older firmwares prior to February 2024 will need to update to the lat
 
 1. In the SmartSpin2k Config App, select Update Firmware.
 2. Select the firmware option you would like to install.  
-3. Installation may take a few minutes.  
+3. Installation may take a few minutes.
+4. Installations can occasionally fail partway through. If this happens, reboot your SmartSpin2k before trying to upload again.
 
 ## Update existing firmware using Wi-Fi
 1. Download the latest [SmartSpin2K firmware](https://github.com/doudar/SmartSpin2k/releases/) and extract the zip file.
