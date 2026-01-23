@@ -59,20 +59,5 @@ Peloton Bike+ owners need a power meter for compatibility with SmartSpin2k.
    Remember to switch back to [Tablet Mode](#tablet-mode) if you want to use any Peloton services after using this mode.
 </details>
 
-### Have a different cable?
-<details markdown="block">
-<summary>Expand for information if your cable differs from what is pictured above</summary>
-
-   Previous cables required an additional Y splitter to set up Peloton.  See images below for more information on how to set your bike up
-
-   ![Version 1 breakout cable](../images/wiring_diagram_v1.svg)
-
-   **Tablet Mode**
-   ![Wiring instructions for Tablet Mode](../images/tablet_mode.jpg)
-
-   **Headless Mode**
-   ![Wiring instructions for TX Mode](../images/tx_mode.jpg)
-</details>
-
 ### Bluetooth Setup
 Follow the [First Ride Instructions](first-ride) if you are using a bluetooth power meter with your Peloton Bike or Bike+.
