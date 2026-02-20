@@ -18,3 +18,4 @@ vendor/
 .obsidian
 .smart-env
 smart-chats
+.github/copilot-instructions.md

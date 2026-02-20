@@ -17,6 +17,8 @@ Table of contents
 - TOC
 {:toc}
 ---
+## Video Instructions
+![](https://www.youtube.com/watch?v=7StwDXqBytw)
 
 ## Quickstart!
 1. Turn on the SmartSpin2k. 
