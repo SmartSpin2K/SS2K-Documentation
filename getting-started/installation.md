@@ -50,3 +50,12 @@ As of December, 2024, we have migrated to a new cable design for the SmartSpin2k
 
 {: .highlight }
 If you're using a Bluetooth-enabled bike, power meter, or have a Peloton Bike+, you're [ready to ride](first-ride)!
+
+## The SmartSpin2k Control Switch
+![Side of SmartSpin2k with Control Switch highlighted](../images/switch_modes.jpg)
+The SmartSpin2k hardware features a physical toggle switch. For most users, this switch is inactive and does not need to be adjusted.
+
+### Does this apply to me?
+* **Peloton Bike (Standard/Original): YES.** The switch is critical for your setup when using the wired configuration.  Learn more on our page for the [Peloton Bike](peloton)
+* **Peloton Bike+: NO.** This bike uses wireless data (via [Grupetto](https://www.youtube.com/watch?v=a5DLBiieFqk) or power meter pedals). The switch has no effect on your ride. Proceed to your [first ride](first-ride)
+* **Any Other Bike: NO.** If you connect via Bluetooth or an external power meter, the switch is not used.  Proceed to your [first ride](first-ride)
