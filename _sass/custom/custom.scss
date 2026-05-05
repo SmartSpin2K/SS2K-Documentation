@@ -1,0 +1,52 @@
+// Tab navigation bar
+ul.tab {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid $border-color;
+  gap: 0;
+}
+
+ul.tab > li {
+  flex: none;
+  margin: 0;
+}
+
+ul.tab > li > a {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  color: $body-text-color;
+  border-bottom: 2px solid transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+  &:hover {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+
+ul.tab > li.active > a {
+  color: $link-color;
+  border-bottom-color: $link-color;
+}
+
+// Tab content panels
+ul.tab-content {
+  padding: 1rem 0 0 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.tab-content > li {
+  display: none;
+}
+
+ul.tab-content > li.active {
+  display: block;
+}

@@ -37,10 +37,6 @@ These mounting steps are the same for every bike. Do these first, then move on t
 
 ## Step 2: Connect Your SmartSpin2k
 
-First, get familiar with your breakout cable. Then find your bike below and follow the matching wiring section.
-
-### Your breakout cable
-
 The breakout cable has four connectors, each labeled on the wire:
 
 ![SmartSpin2k V2 breakout cable wiring diagram](../images/wiring_diagram_v2.svg)
@@ -54,24 +50,35 @@ Connect the breakout cable to the SmartSpin2k cable. The arrows on the connector
 
 ![DIN Connector](../images/breakout_cable.webp)
 
-### Most Spin Bikes
-{: #wiring-spin-bikes }
+Select your bike:
 
-If you ride a Schwinn IC4, Bowflex C6, NordicTrack, or another magnetic-resistance spin bike, your wiring is short:
+{% tabs wiring %}
+{% tab wiring Most Spin Bikes %}
+
+Covers Schwinn IC4, Bowflex C6, NordicTrack, and other magnetic-resistance spin bikes.
 
 1. Plug the **Power** connector into the included power adapter, and plug the adapter into the wall.
 2. Plug the **Shifter** connector into the wired shifter on your handlebar.
 
 That's the whole wiring step. The Peloton Tablet and Peloton Sensor connectors stay unused — leave them tucked out of the way.
 
-If you've added a Bluetooth power meter to your bike, no extra wiring is needed on the SmartSpin2k side. The Companion App will pair with your power meter wirelessly.
+If you've added a Bluetooth power meter, no extra wiring is needed — the Companion App pairs with it wirelessly.
 
 When you're ready, head to the [spin bikes setup guide](spin-bikes) to pair your bike to the SmartSpin2k Companion App.
 
-### Peloton Bike (original)
-{: #wiring-peloton }
+{% endtab %}
+{% tab wiring Peloton Bike+ %}
 
-The original Peloton Bike connects to SmartSpin2k through a wired link to the bike's sensor cable. This is the wiring step:
+1. Plug the **Power** connector into the included power adapter, and plug the adapter into the wall.
+2. Plug the **Shifter** connector into the wired shifter on your handlebar.
+3. **Do not plug in the Peloton Tablet or Peloton Sensor connectors.** The headphone jack on the Bike+ looks like it should fit — it doesn't work. Leave both connectors tucked away unused.
+
+Bike+ gets power and cadence data wirelessly. You'll need either [Grupetto](https://www.youtube.com/watch?v=a5DLBiieFqk) (a free app you sideload onto the bike's tablet) or a Bluetooth power meter.
+
+When you're ready, head to the [Bike+ setup guide](bike-plus) to pair Grupetto or your power meter.
+
+{% endtab %}
+{% tab wiring Peloton Bike (original) %}
 
 1. Plug the **Power** connector into the included power adapter, and plug the adapter into the wall.
 2. Plug the **Shifter** connector into the wired shifter on your handlebar.
@@ -91,20 +98,8 @@ The original Peloton Bike connects to SmartSpin2k through a wired link to the bi
 
 When you're done wiring, head to the [Peloton setup guide](peloton) to pick your operating mode and finish setup.
 
-### Peloton Bike+
-{: #wiring-bike-plus }
-
-{: .red }
-**Do not plug SmartSpin2k into your Bike+.** The Bike+ has no compatible wired connection. The headphone jack on the bike looks like it should work — it isn't. SmartSpin2k will not work correctly if the Peloton Sensor cable is plugged into a headphone connector. Leave the **Peloton Tablet** and **Peloton Sensor** connectors on your breakout cable unused.
-
-Your wiring is just power:
-
-1. Plug the **Power** connector into the included power adapter, and plug the adapter into the wall.
-2. Plug the **Shifter** connector into the wired shifter on your handlebar.
-
-Bike+ owners get their power and cadence data wirelessly. You'll need either [Grupetto](https://www.youtube.com/watch?v=a5DLBiieFqk) (a free app you sideload onto the bike's tablet) or a Bluetooth power meter. Either one works — pick whichever fits your setup.
-
-When you're ready, head to the [Bike+ setup guide](bike-plus) to pair Grupetto or your power meter.
+{% endtab %}
+{% endtabs %}
 
 ---
 
