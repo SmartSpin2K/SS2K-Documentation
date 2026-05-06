@@ -76,7 +76,7 @@ With the Companion App connected to your SmartSpin2k:
 1. Navigate to the Bluetooth (sensors) screen in the Companion App.
 2. Tap **Scan** to look for nearby Bluetooth power sources.
 3. Select your data source from the scan list:
-   - **Grupetto users:** select the power source that appeared when Grupetto started broadcasting. It will show up alongside any other Bluetooth devices in range.
+   - **Grupetto users:** select **Grupetto FTMS** from the scan list.
    - **Power meter users:** select your power meter (Assioma, Garmin Rally, or whatever you've installed).
 
 Heart rate monitor pairing is optional and lives on the same screen — useful if you ride from an Apple TV and want SmartSpin2k to relay your heart rate over its limited Bluetooth channels.
