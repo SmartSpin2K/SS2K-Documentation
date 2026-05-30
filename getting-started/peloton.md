@@ -62,11 +62,17 @@ In Tablet Mode, the Peloton tablet stays connected and usable, so you can still 
 2. Scan for nearby devices.
 3. Tap your SmartSpin2k when it appears in the list. The app shows a connected state once pairing succeeds.
 
+![SmartSpin2k Companion App scan screen showing a SmartSpin2k device ready to connect.](../images/companion-app-scan.png)
+
+![SmartSpin2k Companion App main screen showing the device is connected, with power and cadence at zero.](../images/companion-app-connected.png)
+
 ## Step 3: Confirm the data is flowing
 
 Get on the bike and pedal for a few seconds. Power and cadence should appear in the Companion App.
 
 On the Peloton Bike (original), this data comes from the bike's own sensor through the wired breakout cable connection — there's no separate power meter to pair. If you're in Tablet Mode and aren't seeing data, make sure a workout or free ride is running on the Peloton tablet (the bike's sensor only broadcasts during an active ride).
+
+![SmartSpin2k Companion App shifter screen showing live power and cadence data alongside the on-screen shift buttons.](../images/companion-app-shifter-live.png)
 
 ## Step 4: Test the shifter
 

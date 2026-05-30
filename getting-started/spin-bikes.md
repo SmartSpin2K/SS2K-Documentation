@@ -31,7 +31,11 @@ Table of contents
 2. Tap **Scan**. The app looks for nearby SmartSpin2k devices over Bluetooth.
 3. Your SmartSpin2k should appear in the list within a few seconds. Tap **Connect** next to it.
 
+![SmartSpin2k Companion App scan screen showing a SmartSpin2k device ready to connect.](../images/companion-app-scan.png)
+
 Once you're connected, the app shows your device's status screen. From here you can see live data and reach the Bluetooth settings. If your SmartSpin2k doesn't appear, make sure it's powered on, your phone's Bluetooth is on, and you're within a few feet of the device. Then tap **Scan** again.
+
+![SmartSpin2k Companion App main screen showing the device is connected, with power and cadence at zero.](../images/companion-app-connected.png)
 
 ## Step 2: Pair your bike's power source
 
@@ -39,6 +43,8 @@ This is where you tell the SmartSpin2k where its power and cadence numbers come 
 
 1. In the Companion App, open the **Bluetooth** screen.
 2. Tap **Scan** to look for nearby Bluetooth power sources.
+
+   ![SmartSpin2k Companion App Bluetooth scanner showing a list of discovered power sources.](../images/companion-app-bluetooth-scan.png)
 3. Find your bike or power meter in the list:
    - **If your spin bike broadcasts power over Bluetooth** (most modern Schwinn IC4, Bowflex C6, NordicTrack, and similar bikes do), select your bike.
    - **If you've added a Bluetooth power meter** to a bike that doesn't broadcast power on its own, select your power meter instead.
@@ -60,6 +66,8 @@ Now check that the numbers actually move when you pedal.
    - **Cadence** (in RPM) tracking your pedal speed.
 
 If both numbers respond to what your legs are doing, the SmartSpin2k is reading your bike correctly. If the numbers stay at zero or look stuck, double-check that you selected the right device in Step 2 and that your bike (or power meter) is awake and broadcasting.
+
+![SmartSpin2k Companion App shifter screen showing live power and cadence data alongside the on-screen shift buttons.](../images/companion-app-shifter-live.png)
 
 ## Step 4: Test the shifter
 

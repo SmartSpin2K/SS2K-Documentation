@@ -67,7 +67,11 @@ If you have Bluetooth power meter pedals — Favero Assioma, Garmin Rally, or si
 2. Tap **Scan**.
 3. Tap **Connect** on your SmartSpin2k when it appears in the list.
 
+   ![SmartSpin2k Companion App scan screen showing a SmartSpin2k device ready to connect.](../images/companion-app-scan.png)
+
 You'll know you're connected when the app moves into the device's main screen and stops showing the scan list.
+
+![SmartSpin2k Companion App main screen showing the device is connected, with power and cadence at zero.](../images/companion-app-connected.png)
 
 ## Step 3: Pair your data source to SmartSpin2k
 
@@ -77,7 +81,11 @@ With the Companion App connected to your SmartSpin2k:
 2. Tap **Scan** to look for nearby Bluetooth power sources.
 3. Select your data source from the scan list:
    - **Grupetto users:** select **Grupetto FTMS** from the scan list.
+
+     ![SmartSpin2k Companion App Bluetooth scanner showing Grupetto FTMS in the device list.](../images/companion-app-bluetooth-grupetto.png)
    - **Power meter users:** select your power meter (Assioma, Garmin Rally, or whatever you've installed).
+
+     ![SmartSpin2k Companion App Bluetooth scanner showing a list of discovered power sources.](../images/companion-app-bluetooth-scan.png)
 
 Heart rate monitor pairing is optional and lives on the same screen — useful if you ride from an Apple TV and want SmartSpin2k to relay your heart rate over its limited Bluetooth channels.
 
@@ -86,6 +94,8 @@ Heart rate monitor pairing is optional and lives on the same screen — useful i
 Get on the bike and pedal for a few seconds. Watts and cadence should appear in the Companion App. Steady, sensible numbers that respond when you push harder mean the data path is working.
 
 If nothing shows up, head back to Step 3 and confirm the right source is selected — and for Grupetto, make sure the app is still open on the Bike+ tablet.
+
+![SmartSpin2k Companion App shifter screen showing live power and cadence data alongside the on-screen shift buttons.](../images/companion-app-shifter-live.png)
 
 ## Step 5: Test the shifter
 
