@@ -2,14 +2,12 @@
 title: Your First Ride
 parent: Getting Started
 layout: page
-nav_order: 2
+nav_order: 4
 ---
 # Your First Ride
+{: .no_toc }
 
-If you use a BLE bike (or power meter) and BLE HR monitor, and there are no other BLE Power/HR devices near you (i.e. you don't live in an apartment), you'll be able to just get on and ride.  Before you begin, make sure you've disconnected any third-party apps that may be connected to your sensors.
-
-{: .caution }
-Peloton Bike owners should go through the [wiring instructions](peloton) before proceeding.
+This is the routine for every ride once setup is done. New here? Start at [Getting Started]({% link getting-started.md %}) and pick your bike. Each bike page ends with this routine.
 
 Table of contents
 {: .no_toc }
@@ -17,28 +15,26 @@ Table of contents
 - TOC
 {:toc}
 ---
-## Video Instructions
+
+## Video
 ![](https://www.youtube.com/watch?v=7StwDXqBytw)
 
-## Quickstart!
-1. Turn on the SmartSpin2k. 
-2. Turn on your HR monitor and power meter.
-3. Open your preferred cycling app (Zwift, Fulgaz, TrainerRoad, etc.).
-4. Pair the SmartSpin2k in those apps.
-
-And then ride! Seriously, that's it. 
-
-If you'd like to make changes to your shifter direction, shift steps, or other advanced settings, then you can continue with the [configuration](../documentation/configuration). 
+## Every ride
+1. Close other apps that control the SmartSpin2k. Only one app can control it at a time.
+2. Plug in your SmartSpin2k. The status light comes on.
+3. Wake your bike. Pedal a few seconds. On a Peloton Bike in Tablet Mode, start a Just Ride on the tablet first.
+4. Open your training app and pair SmartSpin2k, as below.
 
 ## Pair SmartSpin2k to Your Training App
 
-{: .highlight }
-While the following instructions are for Zwift, most training apps behave the same way.  For a full list of compatible apps, check out the [Compatibility](../compatibility) page. 
+These steps are for Zwift, and most training apps behave the same way. For the full list of compatible apps, see [Compatibility]({% link compatibility.md %}).
 
-1. Log into Zwift and make sure your device has Bluetooth switched on.
-1. Click Power Source and select SmartSpin2k.
-1. Click Resistance and select SmartSpin2k.
-1. Click Cadence and select SmartSpin2k.
-1. If you have a heart rate monitor paired to SmartSpin2k, click Heart Rate and select SmartSpin2k.
+1. Log in to Zwift with Bluetooth on.
+1. Tap **Power Source** and pick SmartSpin2k.
+1. Tap **Resistance (Controllable)** and pick SmartSpin2k.
+1. Tap **Cadence** and pick SmartSpin2k.
+1. If you paired a heart rate monitor through SmartSpin2k, tap **Heart Rate** and pick SmartSpin2k.
 
-![paired devices](../images/paired_devices.png)
+![Zwift pairing screen with SmartSpin2k selected for every sensor]({{ '/images/paired_devices.png' | relative_url }})
+
+To change shifter direction, shift step, or other settings, see [Configuration]({% link documentation/configuration.md %}).
