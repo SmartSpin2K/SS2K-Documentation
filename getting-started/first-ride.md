@@ -7,7 +7,7 @@ nav_order: 4
 # Your First Ride
 {: .no_toc }
 
-This is the routine for every ride once setup is done. New here? Start at [Getting Started]({% link getting-started.md %}) and pick your bike. Each bike page ends with this routine.
+This is the routine for every ride once setup is done. New here? Start with [Set Up Your Bike]({% link getting-started/setup.md %}). Setup ends with this routine.
 
 Table of contents
 {: .no_toc }

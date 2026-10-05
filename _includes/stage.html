@@ -1,0 +1,8 @@
+{%- comment -%}One stage of a process: a phone screenshot beside what is happening. Params: n (badge number, optional), title (required), img (file name under /images/app/, optional), alt (required with img), body (markdown; build longer bodies with capture). Wrap a run of stages in <div class="gs-stages"> at column 0.{%- endcomment -%}
+<div class="gs-stage">
+{% if include.img %}{% include shot.html img=include.img alt=include.alt %}{% endif %}
+<div class="gs-stage__body">
+<div class="gs-stage__title">{% if include.n %}<span class="gs-step__badge">{{ include.n }}</span>{% endif %}<span>{{ include.title }}</span></div>
+{{ include.body | markdownify }}
+</div>
+</div>

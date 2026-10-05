@@ -28,32 +28,32 @@ This guide takes you from unboxing your SmartSpin2k to your first ride.
 **Keep the default settings for your first ride.** The defaults are tuned for the Schwinn IC4, Bowflex C6, and Peloton, and work for most magnetic-resistance spin bikes.
 
 {: .caution }
-**Do not run Calibrate or Spin Down in your training app yet.** SmartSpin2k works without it. See [Homing]({% link documentation/homing.md %}) when you want it.
+**Skip calibration during setup.** SmartSpin2k works without it. Once you've ridden, see [Calibration]({% link getting-started/calibration.md %}) if you want it.
 
 ## Choose your bike
 
-Prefer to read along on a bigger screen, or left Guided Setup partway through? Pick your bike. Each page covers the same steps as Guided Setup, in the same order.
+Prefer to read along on a bigger screen, or left Guided Setup partway through? Pick your bike. The setup page covers the same steps as Guided Setup, in the same order.
 
 <div class="gs-bikes">
-  <a class="gs-bike" href="{% link getting-started/bluetooth-bikes.md %}">
+  <a class="gs-bike" href="{% link getting-started/setup.md %}?bike=spin">
     <span class="gs-bike__name">Spin bike with Bluetooth</span>
     <span class="gs-bike__models">Bowflex C6, Schwinn IC4, Yesoul S3, etc.</span>
     <span class="gs-bike__desc">SmartSpin2k reads power and cadence from your bike over Bluetooth.</span>
     <span class="gs-bike__cta">Set up a Bluetooth bike &rarr;</span>
   </a>
-  <a class="gs-bike" href="{% link getting-started/bluetooth-bikes.md %}">
+  <a class="gs-bike" href="{% link getting-started/setup.md %}?bike=pm">
     <span class="gs-bike__name">Power meter</span>
     <span class="gs-bike__models">Power meter pedals or a crank power meter</span>
     <span class="gs-bike__desc">SmartSpin2k reads power and cadence from your power meter over Bluetooth, with the same steps as a Bluetooth bike.</span>
     <span class="gs-bike__cta">Set up with a power meter &rarr;</span>
   </a>
-  <a class="gs-bike" href="{% link getting-started/peloton.md %}">
+  <a class="gs-bike" href="{% link getting-started/setup.md %}?bike=peloton">
     <span class="gs-bike__name">Peloton Bike (original)</span>
     <span class="gs-bike__models">The original Peloton Bike</span>
     <span class="gs-bike__desc">SmartSpin2k plugs into the bike's sensor cable and reads power and cadence through it.</span>
     <span class="gs-bike__cta">Set up a Peloton Bike &rarr;</span>
   </a>
-  <a class="gs-bike" href="{% link getting-started/bike-plus.md %}">
+  <a class="gs-bike" href="{% link getting-started/setup.md %}?bike=bikeplus">
     <span class="gs-bike__name">Peloton Bike+</span>
     <span class="gs-bike__models">Not the original Peloton Bike</span>
     <span class="gs-bike__desc">The Bike+ has no wired connection for SmartSpin2k, so power and cadence come over Bluetooth from Grupetto on the bike's tablet or from a power meter.</span>
@@ -63,7 +63,7 @@ Prefer to read along on a bigger screen, or left Guided Setup partway through? P
 
 ## What to expect
 
-Every bike page follows the same eight parts.
+Setup follows the same eight parts for every bike.
 
 1. **Install the hardware.** Mount the SmartSpin2k, arm, and shifter on your bike.
 2. **Connect the cables.** Plug in the cables your bike uses.
@@ -73,3 +73,5 @@ Every bike page follows the same eight parts.
 6. **Test the shifter.** Shift up and down and watch the resistance knob turn.
 7. **Optional: heart rate and WiFi.** Relay a heart rate monitor and connect to WiFi for firmware updates.
 8. **Your first ride.** Pair SmartSpin2k in your training app, such as Zwift, Rouvy, or TrainerRoad.
+
+After your first ride, you can [calibrate]({% link getting-started/calibration.md %}) so SmartSpin2k learns your knob's range. It's optional.

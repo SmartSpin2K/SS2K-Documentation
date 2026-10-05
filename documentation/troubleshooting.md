@@ -71,7 +71,7 @@ The **Virtual Shifter** screen shows a message when SmartSpin2k does not confirm
 
 In Tablet Mode (side switch UP), the Peloton tablet requests the bike's data, so the bike sends numbers only while a ride is running. Start a Just Ride in the Peloton app, or open the Grupetto overlay, before you check numbers. Headless Mode (side switch DOWN, Peloton Tablet cable unplugged) lets SmartSpin2k request the data itself.
 
-See [Peloton Bike (Original)]({% link getting-started/peloton.md %}#part-2) to set up either mode.
+See [Peloton Bike (Original)]({% link getting-started/setup.md %}?bike=peloton#part-2) to set up either mode.
 
 ## Grupetto FTMS is not listed {#grupetto-ftms-not-listed}
 
@@ -82,13 +82,13 @@ Work through these checks in order when **Grupetto FTMS** does not appear after 
 3. Disconnect Grupetto from any other app or device.
 4. Tap **SCAN** again and wait up to 20 seconds.
 
-See [Peloton Bike+]({% link getting-started/bike-plus.md %}#part-4) for the full Grupetto setup.
+See [Peloton Bike+]({% link getting-started/setup.md %}?bike=bikeplus#part-4) for the full Grupetto setup.
 
 ## Calibration {#calibration}
 
-Calibration is not required for your first ride. SmartSpin2k's software end stops work without it. Skip Calibrate and Spin Down on a Bike+, since the Bike+ knob has no end stops.
+Calibration is optional. SmartSpin2k rides fine without it. On a Bike+, calibrate only with Grupetto sending resistance. With power meter pedals alone, skip it.
 
-When you want to calibrate, see [Homing]({% link documentation/homing.md %}).
+For how it works and when to run it, see [Calibration]({% link getting-started/calibration.md %}).
 
 If **Calibrate Trainer** fails on a bike with end stops, adjust **Homing Force** and try again.
 

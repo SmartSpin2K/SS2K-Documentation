@@ -1,5 +1,7 @@
 ![](https://www.youtube.com/watch?v=yVXgECHQq3w)
 
+<div class="gs-steps">
+
 {% include step.html n=1 title="Install the Bike Mount" img="wizard/install_1.svg" alt="Bike mount with its nut and bolt fitted to the front tube of a spin bike, with close-ups of the O-Ring and velcro strap options" body="Assemble the bike mount with the nut and bolt. Attach it to the front tube of your bike with the O-Ring or the velcro straps." %}
 
 {% include step.html n=2 title="Install the Arm" img="wizard/install_2.svg" alt="Arm fastened to the side of the SmartSpin2k with a nut and bolt" body="Attach the arm to your SmartSpin2k with the included nut and bolt." %}
@@ -14,3 +16,4 @@
 
 {% include step.html n=7 title="Turn on Your SmartSpin2k" img="wizard/install_7.svg" alt="Large breakout cable connector pushed onto the SmartSpin2k cable connector, then shown fully joined" body="Plug the **Power** connector into the power adapter, then plug the adapter into the wall. Connect the large breakout cable to your SmartSpin2k. The LED lights turn on." %}
 
+</div>

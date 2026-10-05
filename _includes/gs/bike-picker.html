@@ -1,0 +1,8 @@
+{%- comment -%}Bike picker for the setup guide. Values match the data-bikes keys used on the page: spin, pm, peloton, bikeplus. setup-guide.js reads ?bike= and remembers the choice.{%- endcomment -%}
+<fieldset class="gs-picker" id="choose-your-bike">
+<legend class="gs-picker__legend">Your bike</legend>
+<label class="gs-pick"><input type="radio" name="bike" value="spin"><span class="gs-pick__name">Spin bike with Bluetooth</span><span class="gs-pick__models">Bowflex C6, Schwinn IC4, Yesoul S3</span></label>
+<label class="gs-pick"><input type="radio" name="bike" value="pm"><span class="gs-pick__name">Power meter</span><span class="gs-pick__models">Pedals or a crank power meter</span></label>
+<label class="gs-pick"><input type="radio" name="bike" value="peloton"><span class="gs-pick__name">Peloton Bike (original)</span><span class="gs-pick__models">Connects with a cable</span></label>
+<label class="gs-pick"><input type="radio" name="bike" value="bikeplus"><span class="gs-pick__name">Peloton Bike+</span><span class="gs-pick__models">Connects over Bluetooth</span></label>
+</fieldset>
