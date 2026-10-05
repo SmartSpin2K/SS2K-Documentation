@@ -32,14 +32,14 @@ The components in this list are required for the assembly of all versions of the
 |:-----:|-----------------------|-------------------------|
 | 1   | PCB + wiring harness kit | [Official Resellers](https://www.smartspin2k.com/purchase-kits) | 
 | 1   | 38mm NEMA 17 Stepper | [Amazon](https://a.co/d/iN8ikZy), [Aliexpress](https://www.aliexpress.com/item/4000474225551.html) |
-| 1   | 12 or 24V Power Supply*        | [Amazon](https://a.co/d/ifaZIT9), [Aliexpress](https://www.aliexpress.com/item/32975192317.html) |
+| 1   | 12 or 15V Power Supply*        | [Amazon](https://a.co/d/ifaZIT9), [Aliexpress](https://www.aliexpress.com/item/32975192317.html) |
 | 2   | 608 Skate Bearings      | [Amazon](https://amzn.to/3isBzrW), [Aliexpress](https://www.aliexpress.com/item/32700232097.html) | 
 | 1   | 5/16" x 1-1/2" hex head bolt | |
 | 1   | 5/16" washers | |
 | 2   | 5/16" nuts | |
 |4 | #8 x 1.75" countersunk wood screws | |
 
-*Power supply can be in the 12v-24v range.  Aim for 1amp or greater.  If using the SmartSpin2K PCB Kit, you will need a 5.5x2.1 connector.
+*Power supply can be in the 12v-15v range.  Aim for 1amp or greater.  If using the SmartSpin2K PCB Kit, you will need a 5.5x2.1 connector.
 
 #### Shifter Hardware
 
