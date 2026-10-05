@@ -1,3 +1,3 @@
-{%- comment -%}Phone screenshot. Params: img (file name under /images/app/), alt (required), caption (optional). Wrap several in <div class="gs-shots"> at column 0. Tapping the image opens it full size.{%- endcomment -%}
+{%- comment -%}Phone screenshot. Params: img (file name under /images/app/), alt (required), caption (optional). Wrap several in <div class="gs-shots"> at column 0. Tapping the image opens it full size in the viewer (assets/js/lightbox.js); the link is the no-JS fallback.{%- endcomment -%}
 {%- assign src = include.img | prepend: '/images/app/' | relative_url -%}
 <figure class="gs-shot"><a href="{{ src }}" target="_blank" rel="noopener"><img src="{{ src }}" alt="{{ include.alt }}" width="300" loading="lazy"></a>{% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}</figure>

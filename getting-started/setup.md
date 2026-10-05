@@ -53,9 +53,7 @@ Pick your bike. The steps below change to match it. **Guided Setup** in the Smar
 {% include step.html title="Connect the cables" img="wizard/wiring_harness_BLE.webp" photo=true alt="Breakout cable diagram with Power plugged into the wall adapter and Shifter plugged into the shifter. The Peloton Tablet and Peloton Sensor connectors are crossed out." body="Plug the **Power** connector into the power adapter and the **Shifter** connector into the shifter." %}
 
 {: .red }
-**Do not connect the cables labeled Peloton Sensor or Peloton Tablet to your bike.** The Bike+ has no port for them. The headphone jack fits the plug and does nothing. Leave both connectors coiled and unplugged. Part 4 sets up the wireless connection.
-
-<!-- TODO photo (assets-01): Bike+ headphone jack with the Peloton Sensor connector held beside it, not inserted -->
+**Do not connect the cables labeled Peloton Sensor or Peloton Tablet to your bike.** These wires are intended for the original Peloton Bike and should not be connected to the Bike+.
 
 </div>
 

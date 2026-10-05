@@ -5,7 +5,7 @@ nav_order: 1
 description: SmartSpin2k turns your spin bike into a smart trainer. Set it up, pair it with Zwift and other training apps, and fix problems.
 image: /images/ss2k-banner.png
 ---
-<img src="{{ '/images/ss2k-banner.png' | relative_url }}" alt="SmartSpin2k: transform your spin bike into a smart trainer">
+<img class="no-zoom" src="{{ '/images/ss2k-banner.png' | relative_url }}" alt="SmartSpin2k: transform your spin bike into a smart trainer">
 
 SmartSpin2k mounts on your spin bike and turns the resistance knob for you. Zwift, Rouvy, TrainerRoad, and other training apps see it as a smart trainer. Climbs get harder, descents get easier, and ERG workouts hold your target power.
 
