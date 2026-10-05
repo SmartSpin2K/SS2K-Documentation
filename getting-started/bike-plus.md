@@ -1,13 +1,15 @@
 ---
-title: Peloton Bike+ Setup
+title: Peloton Bike+
 parent: Getting Started
 layout: page
-nav_order: 4
+nav_order: 3
 ---
-# Peloton Bike+ Setup
+# Peloton Bike+
 {: .no_toc }
 
-The Bike+ has no wired connection to SmartSpin2k, so you'll get power and cadence data wirelessly. You have two options: install Grupetto (a free app) on the bike's tablet, or use a Bluetooth power meter. Pick whichever fits — the rest of setup is the same either way.
+This page is for the Peloton Bike+, which connects to SmartSpin2k wirelessly. Original Peloton Bike owners use the [Peloton Bike (Original)]({% link getting-started/peloton.md %}) page.
+
+**Guided Setup** in the SmartSpin2k Companion App covers these same steps on your phone.
 
 Table of contents
 {: .no_toc }
@@ -18,98 +20,90 @@ Table of contents
 
 ## Before you start
 
-- Hardware installed and SmartSpin2k powered on — if not, [start with installation](installation).
-- Your phone with the SmartSpin2k Companion App.
-- Either: the Bike+ tablet (for Grupetto), OR a Bluetooth power meter installed on the bike.
+- The parts from the box: SmartSpin2k, arm, bike mount, knob insert, shifter, breakout cable, power adapter, O-Rings and velcro straps.
+- A phone with the Companion App installed.
+- One power source: the Bike+ tablet with Grupetto installed (Part 4 covers installing it), or power meter pedals fitted to the bike.
 
----
+## Part 1 · Install the hardware {#part-1}
 
-## Step 1: Pick your data source
+{% include gs/install.md %}
 
-The Bike+ doesn't broadcast power and cadence on its own. You'll need one of these to get that data flowing over Bluetooth:
+## Part 2 · Connect the cables {#part-2}
+
+{% include step.html title="Connect the cables" img="wizard/wiring_harness_BLE.webp" photo=true alt="Breakout cable diagram with Power plugged into the wall adapter and Shifter plugged into the shifter. The Peloton Tablet and Peloton Sensor connectors are crossed out." body="Plug the **Power** connector into the power adapter and the **Shifter** connector into the shifter." %}
+
+{: .red }
+**Do not connect the cables labeled Peloton Sensor or Peloton Tablet to your bike.** The Bike+ has no port for them. The headphone jack fits the plug and does nothing. Leave both connectors coiled and unplugged. Part 4 sets up the wireless connection.
+
+<!-- TODO photo (assets-01): Bike+ headphone jack with the Peloton Sensor connector held beside it, not inserted -->
+
+The switch on the side of the SmartSpin2k does nothing for your bike. Leave it where it is.
+
+## Part 3 · Connect the app {#part-3}
+
+{% include gs/connect-app.md %}
+
+## Part 4 · Choose your power source {#part-4}
+
+The Bike+ does not send power and cadence on its own, so pick one source.
 
 {% tabs bike-plus-source %}
-{% tab bike-plus-source Grupetto (free, on the bike's tablet) %}
+{% tab bike-plus-source Grupetto %}
 
-Grupetto is a free app that runs on your Bike+ tablet and broadcasts power and cadence over Bluetooth. To use it, you'll sideload Grupetto onto the tablet by following a community-maintained video guide.
+Grupetto is a free app for the Bike+ tablet that sends power and cadence over Bluetooth.
 
 {: .caution }
-Sideloading involves modifying the Bike+ tablet. The procedure is well-documented and reversible, but watch the full video before starting so you know what you're getting into.
+**Installing Grupetto changes the software on the Bike+ tablet.** Watch the full video before you start.
 
-Follow this video end to end, then come back here:
+1. Install Grupetto on the Bike+ tablet with [OpenPelo](https://github.com/doudar/Openpelo). The video starts at the Grupetto step.
 
-![](https://www.youtube.com/watch?v=Q5XIlXqa0Cg)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y2TonDgQtys?start=318" title="Install Grupetto with OpenPelo" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
 
-Once Grupetto is installed and set up:
+{:start="2"}
+2. Open Grupetto and turn on **BLE TX** in its settings.
+3. Pedal a few turns. Grupetto shows live cadence and power.
+4. In the Companion App, on the **Device** screen, tap **Settings**, **Bluetooth**, then **Saved Power Meter**.
+5. Tap **SCAN**, tap **Grupetto FTMS** in the list, then tap **SAVE**.
 
-1. Open Grupetto on the Bike+ tablet.
-2. Get on the bike and pedal for a few seconds.
-3. Confirm Grupetto shows live power and cadence from your bike.
-4. Leave Grupetto running — it needs to stay open so it can keep broadcasting.
+<div class="gs-shots">
+
+{% include shot.html img="saved-power-meter-grupetto.png" alt="Saved Power Meter screen with Grupetto FTMS selected in the scan list and the SAVE button" caption="Grupetto FTMS selected" %}
+
+</div>
+
+Leave Grupetto open while you ride.
 
 {% endtab %}
-{% tab bike-plus-source Bluetooth power meter %}
+{% tab bike-plus-source Power meter pedals %}
 
-If you have Bluetooth power meter pedals — Favero Assioma, Garmin Rally, or similar — they take Grupetto's place. No sideloading involved.
+Power meter pedals, such as Favero Assioma or Garmin Rally, appear in the Companion App under their brand name.
 
-1. Install the power meter on the bike per the manufacturer's instructions.
-2. Wake the meter — usually by spinning the pedals briefly.
-3. Confirm the meter is broadcasting over Bluetooth (most pedals show a status LED, or you can see them in your phone's Bluetooth scanner).
+1. Fit the pedals following the maker's instructions.
+2. Pedal a few turns to wake them.
+3. In the Companion App, on the **Device** screen, tap **Settings**, **Bluetooth**, then **Saved Power Meter**.
+4. Tap **SCAN**, tap your pedals in the list, then tap **SAVE**.
+
+<div class="gs-shots">
+
+{% include shot.html img="saved-power-meter-pedals.png" alt="Saved Power Meter screen with power meter pedals selected in the scan list and the SAVE button" caption="Power meter pedals selected" %}
+
+</div>
 
 {% endtab %}
 {% endtabs %}
 
----
+## Part 5 · Check the numbers {#part-5}
 
-## Step 2: Connect the Companion App to your SmartSpin2k
+{% include gs/check-numbers.md wake='Grupetto: pedal with Grupetto open and BLE TX on. Pedals: pedal a few seconds to wake them.' %}
 
-1. Open the SmartSpin2k Companion App on your phone.
-2. Tap **Scan**.
-3. Tap **Connect** on your SmartSpin2k when it appears in the list.
+## Part 6 · Test the shifter {#part-6}
 
-   ![SmartSpin2k Companion App scan screen showing a SmartSpin2k device ready to connect.](../images/companion-app-scan.png)
+{% include gs/test-shifter.md %}
 
-You'll know you're connected when the app moves into the device's main screen and stops showing the scan list.
+## Part 7 · Optional: heart rate and WiFi {#part-7}
 
-![SmartSpin2k Companion App main screen showing the device is connected, with power and cadence at zero.](../images/companion-app-connected.png)
+{% include gs/hr-wifi.md %}
 
-## Step 3: Pair your data source to SmartSpin2k
+## Part 8 · Your first ride {#part-8}
 
-With the Companion App connected to your SmartSpin2k:
-
-1. Navigate to the Bluetooth (sensors) screen in the Companion App.
-2. Tap **Scan** to look for nearby Bluetooth power sources.
-3. Select your data source from the scan list:
-   - **Grupetto users:** select **Grupetto FTMS** from the scan list.
-
-     ![SmartSpin2k Companion App Bluetooth scanner showing Grupetto FTMS in the device list.](../images/companion-app-bluetooth-grupetto.png)
-   - **Power meter users:** select your power meter (Assioma, Garmin Rally, or whatever you've installed).
-
-     ![SmartSpin2k Companion App Bluetooth scanner showing a list of discovered power sources.](../images/companion-app-bluetooth-scan.png)
-
-Heart rate monitor pairing is optional and lives on the same screen — useful if you ride from an Apple TV and want SmartSpin2k to relay your heart rate over its limited Bluetooth channels.
-
-## Step 4: Confirm the data is flowing
-
-Get on the bike and pedal for a few seconds. Watts and cadence should appear in the Companion App. Steady, sensible numbers that respond when you push harder mean the data path is working.
-
-If nothing shows up, head back to Step 3 and confirm the right source is selected — and for Grupetto, make sure the app is still open on the Bike+ tablet.
-
-![SmartSpin2k Companion App shifter screen showing live power and cadence data alongside the on-screen shift buttons.](../images/companion-app-shifter-live.png)
-
-## Step 5: Test the shifter
-
-1. Go to the shifter screen in the Companion App.
-2. Tap the on-screen shift buttons. You should see the resistance change in the app and feel it in the pedals.
-3. Press the physical shifter on your handlebar. Same thing — visible in the app, felt in the pedals.
-
-If the shifter works in both places, you're set.
-
----
-
-{: .highlight }
-**That's the setup.** Most users go on to a cycling app like Zwift — that's the next page.
-
-## Next: pair to your cycling app
-
-When you're ready to ride, head to [Your First Ride](first-ride) to pair SmartSpin2k to your cycling app.
+{% include gs/first-ride.md bikeplus=true wake_title='Wake your power source.' wake='Open Grupetto and check BLE TX is on, or pedal to wake your pedals. Pedal a few seconds. Grupetto or your pedals show live cadence and power.' %}
