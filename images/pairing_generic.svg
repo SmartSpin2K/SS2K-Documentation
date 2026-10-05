@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" role="img" aria-labelledby="title desc">
+  <title id="title">Generic training app pairing screen</title>
+  <desc id="desc">A training app's pairing screen with SmartSpin2k selected for Power, Controllable Trainer, Cadence, and Heart Rate.</desc>
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .h1 { font-size: 34px; font-weight: 700; fill: #1f2933; }
+      .sub { font-size: 18px; fill: #616e7c; }
+      .label { font-size: 22px; font-weight: 700; fill: #1f2933; }
+      .device { font-size: 19px; fill: #3e4c59; }
+      .pill { font-size: 15px; font-weight: 700; fill: #1e7b45; }
+      .ready { font-size: 20px; fill: #3e4c59; }
+      .btn { font-size: 22px; font-weight: 700; fill: #fff; }
+      .tile { fill: #fff; stroke: #2e9e5b; stroke-width: 2.5; }
+      .iconbg { fill: #e3f4ea; }
+      .icon { fill: none; stroke: #2e9e5b; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .iconfill { fill: #2e9e5b; }
+    </style>
+    <g id="paired">
+      <rect x="0" y="0" width="96" height="30" rx="15" fill="#e3f4ea"/>
+      <path d="M14 15 l6 6 l11 -12" fill="none" stroke="#1e7b45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="pill" x="38" y="20.5">Paired</text>
+    </g>
+  </defs>
+
+  <!-- Screen -->
+  <rect x="0" y="0" width="960" height="580" rx="24" fill="#f5f7fa"/>
+  <text class="h1" x="50" y="68">Pair Devices</text>
+  <text class="sub" x="50" y="98">Tap each sensor and pick SmartSpin2k</text>
+
+  <!-- Power -->
+  <g transform="translate(50 130)">
+    <rect class="tile" width="420" height="160" rx="16"/>
+    <circle class="iconbg" cx="62" cy="80" r="38"/>
+    <path class="iconfill" d="M68 52 L46 86 H60 L54 110 L78 74 H64 Z"/>
+    <text class="label" x="120" y="64">Power</text>
+    <text class="device" x="120" y="96">SmartSpin2k</text>
+    <use href="#paired" x="120" y="112"/>
+  </g>
+
+  <!-- Controllable trainer -->
+  <g transform="translate(490 130)">
+    <rect class="tile" width="420" height="160" rx="16"/>
+    <circle class="iconbg" cx="62" cy="80" r="38"/>
+    <g class="icon">
+      <circle cx="46" cy="90" r="11"/>
+      <circle cx="80" cy="90" r="11"/>
+      <path d="M46 90 L56 68 H74 L80 90 M56 68 L64 90 H46 M52 62 H60 M74 68 L72 60 H80"/>
+    </g>
+    <text class="label" x="120" y="64">Controllable Trainer</text>
+    <text class="device" x="120" y="96">SmartSpin2k</text>
+    <use href="#paired" x="120" y="112"/>
+  </g>
+
+  <!-- Cadence -->
+  <g transform="translate(50 310)">
+    <rect class="tile" width="420" height="160" rx="16"/>
+    <circle class="iconbg" cx="62" cy="80" r="38"/>
+    <g class="icon">
+      <circle cx="62" cy="80" r="20"/>
+      <path d="M62 80 L76 66"/>
+      <path d="M76 66 H84"/>
+    </g>
+    <circle class="iconfill" cx="62" cy="80" r="5"/>
+    <text class="label" x="120" y="64">Cadence</text>
+    <text class="device" x="120" y="96">SmartSpin2k</text>
+    <use href="#paired" x="120" y="112"/>
+  </g>
+
+  <!-- Heart rate -->
+  <g transform="translate(490 310)">
+    <rect class="tile" width="420" height="160" rx="16"/>
+    <circle class="iconbg" cx="62" cy="80" r="38"/>
+    <path class="iconfill" d="M62 106 C40 90 38 78 38 72 C38 62 46 56 53 56 C58 56 61 59 62 62 C63 59 66 56 71 56 C78 56 86 62 86 72 C86 78 84 90 62 106 Z"/>
+    <path d="M44 80 H54 L58 72 L64 88 L68 80 H80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="label" x="120" y="64">Heart Rate <tspan class="sub" font-weight="400">(optional)</tspan></text>
+    <text class="device" x="120" y="96">SmartSpin2k</text>
+    <use href="#paired" x="120" y="112"/>
+  </g>
+
+  <!-- Footer -->
+  <text class="ready" x="50" y="532">All sensors paired</text>
+  <rect x="690" y="494" width="220" height="56" rx="28" fill="#2e9e5b"/>
+  <text class="btn" x="800" y="530" text-anchor="middle">Start Ride</text>
+</svg>

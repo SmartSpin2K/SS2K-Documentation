@@ -4,8 +4,10 @@ parent: Documentation
 layout: page
 nav_order: 3
 ---
-# SmartSpin2k Firmware
+# Firmware
 {: .no_toc }
+
+There are two ways to put new firmware on SmartSpin2k. Use the **Companion App** for normal updates. Use the **SmartSpin2k Flasher** and a USB cable when the app can't update it.
 
 Table of contents
 {: .no_toc }
@@ -13,57 +15,75 @@ Table of contents
 - TOC
 {:toc}
 ---
-## Update existing firmware using Companion App
 
-{: .caution }
-Users with older firmwares prior to February 2024 will need to update to the latest using the Wi-Fi or USB flashing instructions before the app can be used.
+## Update with the Companion App
 
-1. In the SmartSpin2k Config App, select Update Firmware.
-2. Select the firmware option you would like to install.  
-3. Installation may take a few minutes.
-4. Installations can occasionally fail partway through. If this happens, reboot your SmartSpin2k before trying to upload again.
+Your settings and Power Table stay as they are. The app sends the firmware over WiFi when SmartSpin2k is on your network, and over Bluetooth when it isn't.
 
-## Update existing firmware using Wi-Fi
-1. Download the latest [SmartSpin2K firmware](https://github.com/doudar/SmartSpin2k/releases/) and extract the zip file.
-3. Access http://smartspin2k.local on your browser
-4. Select Update Firmware
-5. For both Username and Password, enter "admin"
-6. Choose firmware.bin (ensure the filename exactly matches this)
-7. Click Update
-8. Once updating is complete (the progress bar shows 100%), the SS2k will automatically reboot.
-9. You can then check the installed firmware version at the bottom of http://smartspin2k.local/index.html
+<div class="gs-stages">
 
-## Flash over USB
-Before you start, be sure you have:
-* Micro USB cable
-* [CP210x VCP drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
-* [SmartSpin2K Flasher](https://github.com/SmartSpin2K/SmartSpin2kFlasher/releases/)
-* [The latest SmartSpin2K firmware](https://github.com/doudar/SmartSpin2k/releases/).
+{% capture body %}When a newer release is out, the **Device** screen shows **Firmware *version* is available**. Tap it to open **Firmware Update**.
 
-1. Connect a Micro USB cable to your computer and your SmartSpin2K (You do not need the power cable for this)
-2. Start SmartSpin2KFlasher.exe <br>
-    ![](../images/flasher.png)
+No banner? Tap **Maintenance**, then **Update Firmware**. Tap **X** to hide the banner until the next release.{% endcapture %}
+{% include stage.html n="1" title="Open Firmware Update" img="device-firmware-available.png" alt="Device screen with a banner that reads Firmware 26.9.28 is available, Installed: 24.1.3" body=body %}
 
-3. Click the serial port  dropdown and select your SmartSpin2K - it will appear as COM# (the number may vary) <br>
-    ![](../images/flasher-serial.png)
+{% capture body %}The newest release is selected and marked **Latest**. A green dot means the release is newer than what SmartSpin2k has now. Red means it's older.
 
-5. Click Browse and find your firmware.bin file from above
+Tap **Update to Most Recent Release**, then **Confirm**.{% endcapture %}
+{% include stage.html n="2" title="Pick a release" img="firmware-update.png" alt="Firmware Update screen listing releases with colored dots, the newest marked Latest, above the Update to Most Recent Release button" body=body %}
 
-6. Click Flash ESP
+{% capture body %}Stay on this screen until it finishes. Over Bluetooth it can take up to five minutes.
 
-7. The ESP32 Microcontroller will be flashed with the firmware and the logger will immediately start showing data if flashing was successful: <br>
-    ![](../images/flasher_success.png)
+SmartSpin2k restarts on its own when the update is done, and the app checks the new version.{% endcapture %}
+{% include stage.html n="3" title="Wait for the update" img="firmware-update-progress.png" alt="Firmware Update screen during an update, showing 45 percent, a progress bar, time remaining, and Updating via WiFi" body=body %}
 
-{: .caution }
-**V2 Owners** may need to press the boot button when plugging in the usb  cable in order to enter into bootloader mode.  
+</div>
 
-## Flash using IDE
-1. Install Microsoft Visual Code. https://code.visualstudio.com/
-2. Install PlatformIO into Visual Code. https://platformio.org/platformio-ide
-3. Open this project in PlatformIO.  
-4. Compile the project and upload to an ESP32
+**If the update stops partway:** unplug SmartSpin2k's power, plug it back in, and try again.
 
-## Still having difficulty?
-For users that are having difficulty upgrading to the latest firmware via the normal methods, this is an in-depth instructional video to help guide you through the process.
+**If the app says the firmware isn't compatible:** that SmartSpin2k is too old for the app to update. Use the [Flasher](#update-over-usb) once, and the app can handle updates after that.
 
-![](https://www.youtube.com/watch?v=gOKF6MyhTtg)
+## Update over USB
+
+The SmartSpin2k Flasher puts a fresh copy of the newest firmware on SmartSpin2k. It picks the right firmware for your board and downloads it for you. Use it when:
+
+- the Companion App can't update SmartSpin2k
+- SmartSpin2k won't start or connect after a failed update
+
+{: .red }
+**Flashing over USB erases SmartSpin2k.** Your settings, saved sensors, calibration and the Power Table all go back to factory defaults. If the Companion App can still connect, save a copy first: **Settings**, then **Save & restore settings**, then **Save a copy**.
+
+### What you need
+
+- **A USB cable that fits your SmartSpin2k.** Newer units have a USB-C port. Older units have micro-USB. It has to be a data cable. Some cables only charge, and the Flasher won't see SmartSpin2k through them.
+- **A Windows, Mac or Linux computer.**
+- **[SmartSpin2k Flasher](https://github.com/SmartSpin2K/SmartSpin2kFlasher/releases/latest).** Download the file for your computer: `windows-setup.exe` for Windows, `.dmg` for Mac, `linux.tar.gz` for Linux.
+
+You don't need SmartSpin2k's power cable for this. USB powers it.
+
+### Flash SmartSpin2k
+
+<div class="gs-stages">
+
+{% capture body %}Plug the USB cable into SmartSpin2k and your computer, then open the SmartSpin2k Flasher.
+
+Under **Serial Port**, pick your SmartSpin2k. If the list is empty, click the refresh button next to it.
+
+Under **Firmware**, leave **GitHub Release** selected. The newest release is already chosen.{% endcapture %}
+{% include stage.html n="1" title="Connect and choose the port" img="flasher/flasher-ready.png" alt="SmartSpin2k Flasher with a serial port selected, GitHub Release chosen, and the newest release in the firmware list" body=body wide=true %}
+
+{% capture body %}Click **Flash SmartSpin2k**. The Flasher checks which board you have, downloads the firmware, and writes it. This takes under a minute. Leave the cable plugged in until it's done.{% endcapture %}
+{% include stage.html n="2" title="Flash" img="flasher/flasher-flashing.png" alt="SmartSpin2k Flasher while flashing, with write progress in the console" body=body wide=true %}
+
+{% capture body %}The console shows **Done! Flashing is complete!** SmartSpin2k restarts, and the Flasher shows its log as it starts.
+
+Close the Flasher and unplug the cable. Connect with the Companion App, then restore your saved copy from **Save & restore settings**, or run **Guided Setup** to set it up again.{% endcapture %}
+{% include stage.html n="3" title="Done" img="flasher/flasher-done.png" alt="SmartSpin2k Flasher console reading Done! Flashing is complete! followed by Automatically showing logs after successful flash" body=body wide=true %}
+
+</div>
+
+### If the Flasher can't connect
+
+- **SmartSpin2k isn't in the Serial Port list:** try a different cable, since charge-only cables are common. Then try a different USB port and click refresh.
+- **Flashing stops with a connection error:** unplug the USB cable. Hold the **boot** button on SmartSpin2k's board while you plug it back in, then click **Flash SmartSpin2k** again.
+- **Something else:** click **Save Serial Logs** to save SmartSpin2k's log to a file, and share it when you ask for help.

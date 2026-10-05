@@ -1,0 +1,290 @@
+// Site chrome styled after smartspin2k.com: tokens in custom/setup.scss, colors in color_schemes/ss2k.scss
+::selection { background: $ss2k-red; color: $white; }
+.ss-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.text-brand { color: $ss2k-red-text; }
+
+// Wordmark (_includes/title.html): SMART heavy, SPIN light, 2k red
+.site-title { align-items: center; gap: .6rem; }
+.ss-wordmark { font-size: 1.4rem; font-weight: 900; line-height: 1; letter-spacing: 0; color: $white; white-space: nowrap; }
+.ss-wordmark__spin { font-weight: 300; }
+.ss-wordmark__2k { color: $ss2k-red; }
+.ss-wordmark__docs { padding-left: .6rem; border-left: 1px solid $border-color; font-size: .65rem; font-weight: 700; line-height: 1.4rem; text-transform: uppercase; letter-spacing: .25em; color: rgba($white, .5); }
+
+// Headings: Oswald, uppercase, tight
+.main-content {
+  h1, h2, h3 { font-family: $ss2k-heading-font; text-transform: uppercase; color: $white; }
+  h1 { font-size: 2.25rem; font-weight: 700; line-height: 1.05; letter-spacing: -.01em;
+    @include mq(md) { font-size: 2.75rem; } }
+  h2 { font-size: 1.6rem; font-weight: 600; line-height: 1.15; letter-spacing: 0; }
+  h3 { font-size: 1.2rem; font-weight: 600; letter-spacing: .01em; }
+  h4 { font-size: .8rem; font-weight: 700; letter-spacing: .15em; color: $white; }
+  h1, h2, h3, h4 { code { text-transform: none; } }
+}
+// Content links: white with a red underline, red on hover (all-red link text reads much redder than the site)
+.main-content a:not(.btn):not(.anchor-heading):not(.gs-bike):not(.gs-store__badge) { color: $white; text-decoration: underline; text-decoration-color: rgba($ss2k-red, .75); text-decoration-thickness: 1px; text-underline-offset: .2em;
+  &:hover, &:focus { color: $ss2k-red-text; text-decoration-color: currentColor; } }
+.breadcrumb-nav-list-item a { color: rgba($white, .6); text-decoration: none;
+  &:hover { color: $ss2k-red-text; } }
+
+// Eyebrow labels (the site's small red "Overview Video" style); .text-delta is the theme's TOC heading
+.text-delta { font-family: $body-font-family !important; font-size: .7rem !important; font-weight: 700 !important; text-transform: uppercase; letter-spacing: .3em !important; color: $ss2k-red-text !important; }
+
+// Sidebar nav: white at reduced opacity, red when active, uppercase top level
+.site-nav .nav-list .nav-list-item .nav-list-link { color: rgba($white, .65);
+  &:hover { color: $white; }
+  &.active { color: $ss2k-red-text; } }
+.site-nav .nav-list .nav-list-item .nav-list-expander { color: rgba($white, .45);
+  &:hover { color: $white; } }
+.site-nav > .nav-list > .nav-list-item > .nav-list-link { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; }
+.site-nav .nav-list .nav-list-item.active > .nav-list-link,
+.site-nav .nav-list .nav-list-item.active > .nav-list-expander { color: $ss2k-red-text; }
+.site-nav .nav-category { font-size: .7rem; font-weight: 700; letter-spacing: .25em; color: rgba($white, .4); }
+
+// Header links (aux_links)
+.aux-nav .site-button { font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .2em; color: rgba($white, .6);
+  &:hover, &:focus { color: $ss2k-red-text; background-image: none; } }
+.search-input { &::placeholder { color: rgba($white, .4); } }
+
+// Buttons: uppercase, bold, rounded-xl, solid brand red
+.btn { padding: .65em 1.5em; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; border-radius: .75rem; box-shadow: none; }
+.btn-primary, .btn-blue { color: $white !important; background-color: $ss2k-red; background-image: none; box-shadow: none;
+  &:hover, &:focus, &.selected { background-color: #b91c1c; background-image: none; box-shadow: none; } }
+.btn-outline { color: $ss2k-red-text; box-shadow: inset 0 0 0 2px $ss2k-red;
+  &:hover, &:active { color: $white; background-color: $ss2k-red; box-shadow: inset 0 0 0 2px $ss2k-red; } }
+
+// Labels: outlined chips instead of filled pills
+.label:not(g), .label-blue:not(g) { padding: .2em .65em; font-weight: 700; letter-spacing: .15em; color: rgba($white, .85); background-color: rgba($white, .05); border: 1px solid rgba($white, .2); border-radius: 4px; }
+.label-green:not(g), .label-red:not(g) { color: $ss2k-red-text; background-color: rgba($ss2k-red, .1); border-color: rgba($ss2k-red, .55); }
+.label-yellow:not(g) { color: $yellow-100; background-color: rgba($yellow-200, .08); border-color: rgba($yellow-200, .5); }
+.label-purple:not(g) { color: $purple-000; background-color: rgba($purple-000, .1); border-color: rgba($purple-000, .5); }
+
+// Tables and code
+th { font-size: .7rem !important; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: $white; }
+:not(pre, figure) > code { border-color: $border-color; }
+
+// Card surfaces (the site's black panels with hairline borders); accent variants below override the background
+.gs-step, .gs-bike, .gs-card, .gs-part, .st, .pt-stat, .pt-flow__box { background: $ss2k-card-bg; }
+
+// Tab navigation bar
+ul.tab {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0 0 0;
+  padding: 0 !important;
+  list-style: none;
+  border-bottom: 1px solid $border-color;
+  gap: 0;
+}
+
+ul.tab > li {
+  flex: none;
+  margin: 0;
+}
+
+ul.tab > li::before,
+ul.tab-content > li::before {
+  content: "" !important;
+  position: static;
+  margin: 0;
+}
+
+ul.tab > li > a {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  color: $body-text-color;
+  border-bottom: 2px solid transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+  &:hover {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+
+ul.tab > li.active > a {
+  color: $link-color;
+  border-bottom-color: $link-color;
+}
+
+// Tab content panels
+ul.tab-content {
+  padding: 1rem 0 0 0 !important;
+  margin: 0;
+  list-style: none;
+}
+
+ul.tab-content > li {
+  display: none;
+}
+
+ul.tab-content > li.active {
+  display: block;
+}
+
+// Getting Started: step cards (mirror the app's InstructionStepCard) and phone screenshots
+.gs-step { border: 1px solid $border-color; border-radius: $ss2k-card-radius; padding: 1rem; margin: 1rem 0 1.25rem; max-width: 600px; }
+.gs-step__head { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; }
+.gs-step__badge { flex: none; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: $ss2k-red; color: #fff; font-weight: 700; font-size: .875rem; display: inline-flex; align-items: center; justify-content: center; }
+.gs-step__title { font-family: $ss2k-heading-font; font-weight: 600; font-size: 1.15rem; line-height: 1.2; text-transform: uppercase; letter-spacing: .01em; color: $body-heading-color; }
+.gs-step__img { background: #fff; border-radius: 8px; padding: .5rem; max-width: 560px; margin: 0 auto .75rem;
+  img { display: block; width: 100%; height: auto; margin: 0; } }
+.gs-step__img--photo { background: transparent; padding: 0; }
+.gs-step__body { text-align: center; p { margin: 0; } }
+.gs-steps { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 1rem; margin: 1rem 0 1.25rem;
+  .gs-step { margin: 0; max-width: none; } }
+.gs-shots { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start; margin: 1rem 0;
+  > div { display: contents; } }
+.gs-shot { margin: 0 0 .5rem; max-width: 180px;
+  img { width: 180px; height: auto; border-radius: 12px; border: 1px solid $border-color; }
+  a:hover img, a:focus img { border-color: $link-color; }
+  figcaption { font-size: .8rem; opacity: .75; margin-top: .25rem; text-align: center; } }
+
+// Getting Started landing: Guided Setup hero card and bike chooser cards
+.gs-hero { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem; margin: 1.5rem 0;
+  padding: 1.25rem; border: 1px solid rgba($ss2k-red, .45); border-radius: $ss2k-card-radius; background: $ss2k-red-wash;
+  .gs-shot { flex: none; margin: 0 auto; img { width: 165px; } }
+  @media (max-width: 600px) { padding: 1.25rem 1rem; .gs-shot img { width: 160px; } } }
+.gs-hero__body { flex: 1 1 320px; min-width: 0;
+  p { margin: 0 0 1rem; } }
+.gs-hero__eyebrow { margin-bottom: .25rem !important; .label { margin-left: 0; } }
+.gs-hero__title { margin: 0 0 .75rem !important; }
+.gs-hero__note { font-size: .875rem; opacity: .8; margin-bottom: .5rem !important; &:last-child { margin-bottom: 0 !important; } }
+// Official badges, App Store first (Apple guideline). Google's PNG has clear space baked in, so it is sized up and pulled in to match.
+.gs-store { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin: 0 0 1rem; }
+.gs-store__badge { display: block; line-height: 0; img { display: block; max-width: none; } }
+.gs-store__badge--apple img { height: 48px; width: auto; }
+.gs-store__badge--google img { height: 71px; width: auto; margin: -11.5px -11px; }
+// Desktop download: no official GitHub badge exists, so this one mirrors the Apple badge's shape, border, and two-line lockup.
+.gs-store__badge--github { display: inline-flex; align-items: center; gap: .55rem; height: 48px; padding: 0 .85rem 0 .7rem; box-sizing: border-box;
+  border-radius: 8px; background: #000; border: 1px solid #a6a6a6; color: #fff !important; text-decoration: none !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  &:hover, &:focus { border-color: #fff; } }
+.gs-store__text { display: flex; flex-direction: column; line-height: 1.1; }
+.gs-store__small { font-size: .64rem; letter-spacing: .01em; }
+.gs-store__big { font-size: 1.3rem; font-weight: 600; letter-spacing: -.01em; }
+.gs-bikes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
+.gs-bike { display: flex; flex-direction: column; gap: .35rem; padding: 1rem 1.25rem; border: 1px solid $border-color; border-radius: $ss2k-card-radius;
+  color: $body-text-color !important; text-decoration: none !important; transition: border-color .15s ease-in-out;
+  &:hover, &:focus { border-color: rgba($ss2k-red, .6); .gs-bike__cta { text-decoration: underline; } } }
+.gs-bike__name { font-family: $ss2k-heading-font; font-size: 1.3rem; font-weight: 700; font-style: italic; line-height: 1.15; text-transform: uppercase; letter-spacing: -.01em; color: $body-heading-color; }
+.gs-bike__models { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .2em; color: rgba($white, .45); }
+.gs-bike__desc { font-size: .9rem; flex: 1; }
+.gs-bike__cta { color: $link-color; font-weight: 700; font-size: .75rem; text-transform: uppercase; letter-spacing: .15em; margin-top: .5rem; }
+
+// Set Up Your Bike: bike picker, collapsible parts (setup-guide.js)
+.gs-picker { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr)); gap: .5rem; margin: 1rem 0 1.5rem; padding: 0; border: 0; }
+.gs-picker__legend { font-weight: 700; margin-bottom: .5rem; }
+.gs-pick { position: relative; display: flex; flex-direction: column; gap: .15rem; padding: .75rem 1rem; border: 1px solid $border-color; background: $ss2k-card-bg; border-radius: $ss2k-card-radius; cursor: pointer;
+  transition: border-color .15s ease-in-out, background-color .15s ease-in-out;
+  input { position: absolute; opacity: 0; pointer-events: none; }
+  &:hover { border-color: $link-color; }
+  &:has(input:checked) { border-color: $link-color; background: rgba($link-color, .15); box-shadow: inset 0 0 0 1px $link-color; }
+  &:has(input:focus-visible) { outline: 2px solid $link-color; outline-offset: 2px; } }
+.gs-pick__name { font-weight: 700; color: $body-heading-color; line-height: 1.25; }
+.gs-pick__models { font-size: .8rem; opacity: .75; }
+.gs-pick-prompt { padding: 1rem 1.25rem; border: 1px dashed $border-color; border-radius: $ss2k-card-radius; text-align: center; opacity: .85; }
+html:not(.gs-js) .gs-pick input { position: static; opacity: 1; }
+// Without the script every bike's wording shows; keep side-by-side variants from running together.
+html:not(.gs-js) span[data-bikes] + span[data-bikes]::before { content: " / "; }
+
+.gs-parts-bar { display: flex; justify-content: flex-end; margin: 0 0 .5rem; }
+.gs-part { border: 1px solid $border-color; border-radius: $ss2k-card-radius; margin: 0 0 .75rem; padding: 0 1.25rem;
+  &.is-open { border-color: $grey-dk-000; } }
+.gs-part > h2 { display: flex; align-items: center; margin: 0 !important; padding: 0; font-size: 1.25rem !important; }
+.gs-part__toggle { flex: 1; display: flex; align-items: center; gap: .75rem; padding: .9rem 0; background: none; border: 0; color: inherit; font: inherit; text-transform: inherit; letter-spacing: inherit; text-align: left; cursor: pointer;
+  &::after { content: ""; margin-left: auto; width: .55rem; height: .55rem; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform .15s ease-in-out; opacity: .7; }
+  &[aria-expanded="true"]::after { transform: rotate(-135deg); }
+  &:hover { color: $link-color; } }
+.gs-part__body { padding: 0 0 1.25rem;
+  &[hidden] { padding: 0; } } // hidden="until-found" keeps the box in Chromium (content-visibility), so drop the padding too
+.gs-part__next { margin-top: 1rem; }
+.gs-parts-bar[hidden], .gs-part[hidden], [data-bikes][hidden] { display: none !important; }
+
+// Calibration: side-by-side comparison cards and a stage timeline (stage.html)
+.gs-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
+.gs-card { padding: 1rem 1.25rem; border: 1px solid $border-color; border-radius: $ss2k-card-radius;
+  ul { margin-bottom: 0; } p:last-child { margin-bottom: 0; } }
+.gs-card--accent { border-color: rgba($ss2k-red, .45); background: $ss2k-red-wash; }
+.gs-card__title { font-family: $ss2k-heading-font; font-weight: 700; font-style: italic; font-size: 1.25rem; line-height: 1.2; text-transform: uppercase; letter-spacing: -.01em; color: $body-heading-color; margin-bottom: .5rem; }
+.gs-stages { margin: 1rem 0 1.5rem; }
+.gs-stage { display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.25rem 0; border-top: 1px solid $border-color;
+  &:first-child { border-top: 0; padding-top: .25rem; }
+  .gs-shot { flex: none; margin: 0; img { width: 160px; } }
+  @media (max-width: 600px) { flex-direction: column; .gs-shot { margin: 0 auto; } } }
+.gs-stage__body { flex: 1; min-width: 0;
+  p { margin: 0 0 .6rem; } ul { margin-top: 0; } }
+.gs-stage .gs-shot--wide { max-width: 100%; margin: 0 0 .75rem;
+  img { width: 100%; max-width: 640px; border-radius: 8px; } }
+.gs-stage__title { display: flex; align-items: center; gap: .6rem; font-family: $ss2k-heading-font; font-weight: 600; font-size: 1.2rem; line-height: 1.25; text-transform: uppercase; letter-spacing: .01em; color: $body-heading-color; margin-bottom: .6rem; }
+
+// Power from the Power Table: lookup flow, sample table, stat tiles
+.pt-flow { display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: .5rem; margin: 1rem 0 1.5rem; }
+.pt-flow__box { flex: 1 1 130px; max-width: 200px; padding: .75rem 1rem; border: 1px solid $border-color; border-radius: $ss2k-card-radius; text-align: center;
+  strong { display: block; color: $body-heading-color; } span { font-size: .8rem; opacity: .75; } }
+.pt-flow__box--table { border-color: rgba($ss2k-red, .45); background: $ss2k-red-wash; }
+.pt-flow__box--out { border-color: $link-color; }
+.pt-flow__op { align-self: center; font-size: 1.4rem; font-weight: 700; opacity: .6; }
+@media (max-width: 600px) { .pt-flow { flex-direction: column; align-items: center; } .pt-flow__box { flex: none; max-width: none; width: 100%; } .pt-flow__op { transform: rotate(90deg); } }
+.pt-grid { overflow-x: auto; margin: 1rem 0 .5rem;
+  table { min-width: 0; } td, th { text-align: center; }
+  .pt-grid__empty { opacity: .35; }
+  .pt-grid__hit { background: rgba($link-color, .25); box-shadow: inset 0 0 0 2px $link-color; font-weight: 700; } }
+.pt-grid__caption { font-size: .85rem; opacity: .75; margin-bottom: 1.5rem; }
+.pt-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
+.pt-stat { padding: 1rem 1.25rem; border: 1px solid $border-color; border-radius: $ss2k-card-radius;
+  &--good { border-color: $green-200; } &--warn { border-color: $yellow-200; } }
+.pt-stat__value { font-family: $ss2k-heading-font; font-size: 2rem; font-weight: 700; line-height: 1.1; color: $body-heading-color; }
+.pt-stat__label { font-size: .85rem; opacity: .8; margin-top: .35rem; }
+.gs-card--bad { border-color: $red-200; }
+.gs-card--warn { border-color: $yellow-200; }
+
+// Settings: one card per setting (setting.html)
+.st-list { display: grid; gap: .75rem; margin: 1rem 0 1.5rem; }
+.st { padding: 1rem 1.25rem; border: 1px solid $border-color; border-radius: $ss2k-card-radius; scroll-margin-top: 4rem;
+  &:target { border-color: $link-color; box-shadow: inset 0 0 0 1px $link-color; } }
+.st__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .25rem .75rem; margin-bottom: .4rem; }
+.st__name { font-weight: 700; font-size: 1.05rem; color: $body-heading-color; }
+.st__meta { display: flex; flex-wrap: wrap; gap: .4rem; font-size: .75rem;
+  span { padding: .1rem .5rem; border: 1px solid $border-color; border-radius: 999px; opacity: .85; white-space: nowrap; } }
+.st__body { p { margin: 0 0 .5rem; } p:last-child, ul:last-child, table:last-child { margin-bottom: 0; } }
+.st__tip { margin-top: .6rem; padding: .5rem .75rem; border-left: 3px solid $ss2k-red; background: $ss2k-red-wash; font-size: .9rem;
+  p { margin: 0; } }
+.st-group { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.25rem; margin: 1rem 0;
+  > .gs-shot { flex: none; margin: 0 auto; img { width: 170px; } }
+  @media (min-width: 700px) { > .gs-shot { position: sticky; top: 1rem; } }
+  > .st-list { flex: 1 1 320px; min-width: 0; margin-top: 0; } }
+
+// Responsive video embeds (_includes/youtube.html), About feature card icons
+.ab-video { position: relative; aspect-ratio: 16 / 9; max-width: 720px; margin: 1.25rem 0 1.5rem; border: 1px solid $border-color; border-radius: $ss2k-card-radius; overflow: hidden; background: #000;
+  iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .ab-video__link { position: absolute; inset: 0; z-index: 1; display: grid; place-items: center; padding: 1rem; text-align: center; } } // no-JS fallback
+.ab-videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 1rem; margin: 1rem 0 1.5rem;
+  .ab-video { margin: 0; max-width: none; } }
+.ab-features .gs-card__title { display: flex; align-items: center; gap: .6rem;
+  i { width: 1.25rem; text-align: center; color: $link-color; } }
+
+// Image viewer (assets/js/lightbox.js): full-size image in a modal <dialog>
+.main-content img.lb-zoom { cursor: zoom-in; }
+html:has(dialog.lb[open]) { overflow: hidden; }
+.lb { width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 3.25rem 1rem 2.5rem; border: 0; background: rgba($ss2k-bg, .98); color: $white; cursor: zoom-out;
+  &[open] { display: flex; align-items: center; justify-content: center; }
+  &::backdrop { background: transparent; } }
+.lb__fig { margin: 0; display: flex; flex-direction: column; align-items: center; gap: .6rem; max-width: 100%; max-height: 100%; }
+.lb__img { display: block; max-width: 100%; max-height: calc(100vh - 6rem); width: auto; height: auto; object-fit: contain; }
+.lb--panel .lb__img { background: #fff; border-radius: 8px; padding: .5rem; }
+.lb--svg .lb__img { width: min(100vw - 2rem, 1100px); }
+.lb__cap { font-size: .875rem; opacity: .8; text-align: center; }
+.lb__btn { position: absolute; z-index: 1; width: 2.5rem; height: 2.5rem; padding: 0; border: 1px solid $border-color; border-radius: 50%; background: rgba($ss2k-card-bg, .85); color: $white; font-size: 1.5rem; line-height: 1; cursor: pointer;
+  &:hover, &:focus-visible { border-color: $ss2k-red; color: $ss2k-red-text; }
+  &[aria-disabled="true"] { opacity: .25; cursor: default; border-color: $border-color; color: $white; } }
+.lb__close { top: .75rem; right: .75rem; }
+.lb__nav { top: 50%; transform: translateY(-50%); font-size: 2rem; padding-bottom: .2rem; }
+.lb__prev { left: .5rem; }
+.lb__next { right: .5rem; }
+.lb--single { .lb__nav, .lb__count { display: none; } }
+.lb__count { position: absolute; bottom: .75rem; left: 50%; transform: translateX(-50%); font-size: .75rem; font-weight: 700; letter-spacing: .15em; opacity: .6; }
+@media (min-width: 700px) { .lb { padding-left: 4rem; padding-right: 4rem; } .lb__prev { left: 1rem; } .lb__next { right: 1rem; } }

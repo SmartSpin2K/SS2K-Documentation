@@ -14,34 +14,66 @@ Table of contents
 {:toc}
 ---
 
-## How Do I Connect My Sensors to the SmartSpin2k?
-OK, your SmartSpin2k is connected, and the blue LED is slowly flashing, ready for you to provide some Bluetooth connections, and you’re ready to ride! SmartSpin2k will act as a Bluetooth multiplexer and serve all of your connections.  This means it operates as a single point for your sensors to connect to.  You can then pair your device to the SmartSpin2k as a single sensor.  This is helpful for devices like the Apple TV, which are limited to just two connections at a time.
+## How SmartSpin2k handles Bluetooth
 
-## Pairing Bluetooth Sensors Automatically
-* Ensure all third-party apps that may be connected to your bike or power meter are turned off.
-* Turn on your bike or power meter.
-* Turn on the SmartSpin2k.  It will automatically connect to your bike or power meter.
-* Launch your training app and pair it to SmartSpin2k ([Zwift example here](../getting-started/first-ride#pair-smartspin2k-to-your-training-app)).
-* Start riding!
+SmartSpin2k connects to your bike or power meter and your heart rate monitor, then passes everything on to your training app as one device. Your training app pairs with SmartSpin2k only. This helps on devices like Apple TV, which allow only a few Bluetooth connections.
 
-## Pairing Bluetooth Sensors Manually
-If you own a power meter, and use it on a Bluetooth-enabled bike like the Schwinn IC4, you'll want to manually select it. This is also useful if you have multiple power meters or bikes nearby.
+You set up these connections once in the SmartSpin2k Companion App. SmartSpin2k reconnects to them on every ride.
 
-* From http://smartspin2k.local, click Bluetooth Scanner.
-<br/>
-![Bluetooth Settings](../images/bluetooth_settings.png)
-<br/>
-* Make sure you're wearing your HR sensor and that it's not paired via Bluetooth to any other devices like a Garmin watch or iPad/iPhone.
-* Have your Bluetooth power pedals charged or with batteries and ready to pair. Also, make sure they are not connected to any other devices as mentioned in the previous step.
-* Click Scan/Connect.
-* Select the HR monitor in the Select New Heart Monitor drop-down box.
-* Select the power meter in the Select New Power Meter drop-down box.  Users with a dedicated power meter and a bike that reports power data must select the appropriate power meter here.  Leaving this setting at "any" may cause SmartSpin2k to receive power data from both sources and cause unintended fluctuations in reported data.
-* Click Save Dropdowns.
-* Leave Select New Remote as "none".
+Before you pair anything:
 
-## Reconnect Bluetooth During Your Ride
-In case you experience a Bluetooth drop, you can force SmartSpin2k to rescan Bluetooth with the shifter at any time during your ride.
+- Connect the Companion App to your SmartSpin2k. See [Connect the app]({% link getting-started/setup.md %}#part-3).
+- Close any other app or device connected to your bike, power meter, or heart rate monitor. Most sensors accept one connection at a time. A Garmin watch or a phone app can hold the connection without you noticing.
 
-* Press and hold both buttons on the shifter for 3 seconds.
-* Release.
-* SmartSpin2k should rescan and reconnect your bike/sensors.
+## Pair your bike or power meter
+
+SmartSpin2k ships with **Saved Power Meter** set to `none`. Pick your bike or power meter once.
+
+1. Wake your bike or power meter. Pedal a few turns.
+{% include gs/pair-power-meter.md device="your bike or power meter" note="A Schwinn IC4 or Bowflex C6 appears as **IC Bike**. Power meter pedals appear under their brand name." %}
+
+<div class="gs-shots">
+
+{% include shot.html img="settings.png" alt="Settings screen with the Basic, Bluetooth, Network, and Advanced tiles" caption="Settings" %}
+
+{% include shot.html img="settings-bluetooth.png" alt="Bluetooth settings screen listing Saved Power Meter and Saved HRM" caption="Bluetooth settings" %}
+
+{% include shot.html img="saved-power-meter-ic4.png" alt="Saved Power Meter screen with IC Bike selected in the scan list, above the SCAN and SAVE buttons" caption="A Bluetooth bike selected" %}
+
+{% include shot.html img="saved-power-meter-pedals.png" alt="Saved Power Meter screen with a pair of power meter pedals selected in the scan list, above the SCAN and SAVE buttons" caption="Power meter pedals selected" %}
+
+</div>
+
+{: .highlight }
+**Power meter pedals on a Bluetooth bike?** If you ride power meter pedals on a bike that also reports power, such as a Schwinn IC4, pick the pedals. SmartSpin2k reads power from one source only, so the numbers stay steady.
+
+### Peloton bikes
+
+- **Peloton Bike:** nothing to pair. The sensor cable feeds power and cadence to SmartSpin2k. Leave **Saved Power Meter** set to `none`. See [Set Up Your Bike]({% link getting-started/setup.md %}#part-4).
+- **Peloton Bike+:** pick **Grupetto FTMS** or your power meter pedals as the **Saved Power Meter**. See [Choose your power source]({% link getting-started/setup.md %}#part-4).
+
+## Pair a heart rate monitor
+
+SmartSpin2k can relay your heart rate to your training app. This step is optional.
+
+1. Put on your heart rate monitor so it starts broadcasting.
+2. On the **Device** screen, tap **Settings**, **Bluetooth**, then **Saved HRM**.
+3. Tap **SCAN**, tap your monitor in the list, then tap **SAVE**.
+
+<div class="gs-shots">
+
+{% include shot.html img="saved-hrm.png" alt="Saved HRM screen with a heart rate monitor in the scan list and the SAVE button" %}
+
+</div>
+
+## Pair SmartSpin2k to your training app
+
+Pick SmartSpin2k in your training app for Power, Smart Trainer or Controllable, Cadence, and Heart rate if you paired a monitor through it. See [Pair SmartSpin2k to your training app]({% link getting-started/first-ride.md %}#pair-smartspin2k-to-your-training-app).
+
+SmartSpin2k accepts three app connections at a time, including the Companion App.
+
+## Change or remove a saved device
+
+To switch to a different bike, power meter, or heart rate monitor, repeat the steps above and pick the new device. The new pick replaces the old one.
+
+To stop using a saved device, open **Saved Power Meter** or **Saved HRM**, pick `none`, and tap **SAVE**.

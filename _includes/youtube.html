@@ -1,0 +1,5 @@
+{%- comment -%}Responsive YouTube embed. Params: id (video id, required), title (required, read by screen readers), start (seconds, optional). assets/js/video.js sets src once the player is on screen, so videos inside other bikes' content, collapsed parts, or inactive tabs aren't fetched. Without JS a link to YouTube shows instead.{%- endcomment -%}
+<div class="ab-video">
+  <iframe data-src="https://www.youtube-nocookie.com/embed/{{ include.id }}?rel=0{% if include.start %}&amp;start={{ include.start }}{% endif %}" title="{{ include.title }}" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+  <noscript><a class="ab-video__link" href="https://www.youtube.com/watch?v={{ include.id }}{% if include.start %}&amp;t={{ include.start }}s{% endif %}">Watch on YouTube: {{ include.title }}</a></noscript>
+</div>

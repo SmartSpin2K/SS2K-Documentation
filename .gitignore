@@ -19,3 +19,5 @@ vendor/
 .smart-env
 smart-chats
 .github/copilot-instructions.md
+.claude
+_planning

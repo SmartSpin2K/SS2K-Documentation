@@ -1,0 +1,6 @@
+{%- comment -%}Step card mirroring the app's InstructionStepCard. Params: n (badge number, optional), title (required), img (path under /images/, optional), alt (required with img), body (markdown), photo (true = no white panel, for .webp photos). Call at column 0 with blank lines before and after.{%- endcomment -%}
+<div class="gs-step">
+<div class="gs-step__head">{% if include.n %}<span class="gs-step__badge">{{ include.n }}</span>{% endif %}<div class="gs-step__title">{{ include.title }}</div></div>
+{% if include.img %}<div class="gs-step__img{% if include.photo %} gs-step__img--photo{% endif %}"><img src="{{ include.img | prepend: '/images/' | relative_url }}" alt="{{ include.alt }}" loading="lazy"></div>{% endif %}
+<div class="gs-step__body">{{ include.body | markdownify }}</div>
+</div>
