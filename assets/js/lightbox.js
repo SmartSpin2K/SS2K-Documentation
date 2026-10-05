@@ -78,7 +78,10 @@
 
   main.addEventListener('click', function (e) {
     if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
-    var img = e.target.closest && e.target.closest('img.lb-zoom');
+    if (!e.target.closest) return;
+    // Enter on a focused screenshot link clicks the <a>, not the <img> inside it.
+    var a = e.target.closest('a');
+    var img = e.target.closest('img.lb-zoom') || (a && a.querySelector('img.lb-zoom'));
     if (!img) return;
     e.preventDefault();
     open(img);

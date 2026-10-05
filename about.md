@@ -13,9 +13,7 @@ SmartSpin2k is a small open-source device that mounts on your spin bike and turn
 
 It fits almost any spin bike with a resistance knob, for a fraction of the cost of a new smart bike.
 
-<div class="ab-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/xnqS0p7O3q4?rel=0" title="Transform Your Spin Bike! SmartSpin2k overview" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-</div>
+{% include youtube.html id="xnqS0p7O3q4" title="Transform Your Spin Bike! SmartSpin2k overview" %}
 
 ## What it does
 
@@ -69,12 +67,8 @@ It fits almost any spin bike with a resistance knob, for a fraction of the cost 
 ### See it in action
 
 <div class="ab-videos">
-  <div class="ab-video">
-    <iframe src="https://www.youtube-nocookie.com/embed/O8ZMRmwN-dY?rel=0" title="SmartSpin2k ride along with Zwift" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-  </div>
-  <div class="ab-video">
-    <iframe src="https://www.youtube-nocookie.com/embed/K6ZDopluKcg?rel=0" title="SmartSpin2k Zwift ERG mode" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-  </div>
+  {% include youtube.html id="O8ZMRmwN-dY" title="SmartSpin2k ride along with Zwift" %}
+  {% include youtube.html id="K6ZDopluKcg" title="SmartSpin2k Zwift ERG mode" %}
 </div>
 
 <div class="gs-hero">

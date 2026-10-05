@@ -61,7 +61,7 @@ Pick your bike. The steps below change to match it. **Guided Setup** in the Smar
 
 <div data-bikes="peloton" markdown="1">
 
-![](https://www.youtube.com/watch?v=e-WL4oaMo9g)
+{% include youtube.html id="e-WL4oaMo9g" title="SmartSpin2k Peloton Bike setup" %}
 
 {% include step.html title="Connect the cables" img="wizard/wiring_harness_pelotonOriginal.webp" photo=true alt="Breakout cable diagram. Power runs to the wall adapter, Shifter to the shifter, and the Peloton Tablet and Peloton Sensor connectors branch off the cable into the SmartSpin2k." body="Plug the **Power** connector into the power adapter and the **Shifter** connector into the shifter. The next steps connect the bike's sensor cable." %}
 
@@ -129,12 +129,10 @@ The bike sends power data to one device at a time, either the Peloton tablet or 
 
 SmartSpin2k starts with **Saved Power Meter** set to none. Pick your <span data-bikes="spin">bike</span><span data-bikes="pm">power meter</span> once. SmartSpin2k reconnects to it on every ride.
 
+{% capture pm_device %}your <span data-bikes="spin">bike</span><span data-bikes="pm">power meter</span>{% endcapture %}
+{% capture pm_note %}<span data-bikes="spin">A Schwinn IC4 or Bowflex C6 appears as **IC Bike**.</span><span data-bikes="pm">Pedals appear under their brand name.</span>{% endcapture %}
 1. Wake your <span data-bikes="spin">bike</span><span data-bikes="pm">power meter</span>. Pedal a few turns. Close any other app connected to it.
-2. On the **Device** screen, tap **Settings**, then **Bluetooth**.
-3. Tap **Saved Power Meter**.
-4. Tap **SCAN**. Scanning takes up to 20 seconds.
-5. <span data-bikes="spin">Tap your bike in the list. A Schwinn IC4 or Bowflex C6 appears as **IC Bike**.</span><span data-bikes="pm">Tap your power meter in the list. Pedals appear under their brand name.</span>
-6. Tap **SAVE**.
+{% include gs/pair-power-meter.md device=pm_device note=pm_note %}
 
 <div class="gs-shots">
 
@@ -173,13 +171,12 @@ Grupetto is a free app for the Bike+ tablet that sends power and cadence over Bl
 {: .caution }
 **Installing Grupetto changes the software on the Bike+ tablet.** Watch the full video before you start. It begins at the Grupetto step.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Y2TonDgQtys?start=318" title="Install Grupetto with OpenPelo" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="Y2TonDgQtys" start=318 title="Install Grupetto with OpenPelo" %}
 
 1. Install Grupetto on the Bike+ tablet with [OpenPelo](https://github.com/doudar/Openpelo), following the video.
 2. Open Grupetto and turn on **BLE TX** in its settings.
 3. Pedal a few turns. Grupetto shows live cadence and power.
-4. In the Companion App, on the **Device** screen, tap **Settings**, **Bluetooth**, then **Saved Power Meter**.
-5. Tap **SCAN**, tap **Grupetto FTMS** in the list, then tap **SAVE**.
+{% include gs/pair-power-meter.md device="**Grupetto FTMS**" %}
 
 <div class="gs-shots">
 
@@ -196,8 +193,7 @@ Power meter pedals, such as Favero Assioma or Garmin Rally, appear in the Compan
 
 1. Fit the pedals following the maker's instructions.
 2. Pedal a few turns to wake them.
-3. In the Companion App, on the **Device** screen, tap **Settings**, **Bluetooth**, then **Saved Power Meter**.
-4. Tap **SCAN**, tap your pedals in the list, then tap **SAVE**.
+{% include gs/pair-power-meter.md device="your pedals" %}
 
 <div class="gs-shots">
 

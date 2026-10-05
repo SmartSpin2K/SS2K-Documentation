@@ -85,18 +85,36 @@
     if (btn) btn.textContent = parts.every(function (p) { return p.open; }) ? 'Collapse all' : 'Expand all';
   }
 
-  function openFor(el) {
-    var part = parts.filter(function (p) { return p.section.contains(el); })[0];
-    if (part) setOpen(part, true);
+  function hashTarget() {
+    var id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch (e) { return null; }
+    return id ? document.getElementById(id) : null;
+  }
+
+  function partOf(el) {
+    return el ? parts.filter(function (p) { return p.section.contains(el); })[0] : null;
+  }
+
+  // Open only the part a link points to, or only "Before you start".
+  function openOnly(part) {
+    parts.forEach(function (p, i) { setOpen(p, part ? p === part : i === 0); });
+  }
+
+  // Before a bike is picked, name the part a link points to so the reader knows where they're headed.
+  function updatePrompt() {
+    if (!prompt) return;
+    var part = partOf(hashTarget());
+    prompt.textContent = 'Pick your bike above to see ' +
+      (part && part !== parts[0] ? part.btn.textContent.trim() : 'your setup steps') + '.';
   }
 
   function showHash() {
-    var id = decodeURIComponent(location.hash.slice(1));
-    var el = id && document.getElementById(id);
-    if (!el) return false;
-    openFor(el);
+    var el = hashTarget();
+    updatePrompt();
+    if (!el) return;
+    var part = partOf(el);
+    if (part) setOpen(part, true);
     el.scrollIntoView();
-    return true;
   }
 
   // ---- Bike filter ----
@@ -124,8 +142,11 @@
   picker.addEventListener('change', function (e) {
     if (e.target.name !== 'bike') return;
     setBike(e.target.value, true);
-    // A new bike starts with only "Before you start" open.
-    parts.forEach(function (p, i) { setOpen(p, i === 0); });
+    // Keep the part a link pointed to (e.g. #part-4 from the Bluetooth page); otherwise start at "Before you start".
+    var target = hashTarget();
+    var part = partOf(target);
+    openOnly(part);
+    if (part) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
   var bike = new URLSearchParams(location.search).get('bike');
@@ -135,10 +156,9 @@
   if (BIKES.indexOf(bike) < 0) bike = null;
   if (bike) picker.querySelector('input[value="' + bike + '"]').checked = true;
   applyBike(bike);
-  // Start with only "Before you start" open, or only the part a link points to.
-  var target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
-  var targetPart = target && parts.filter(function (p) { return p.section.contains(target); })[0];
-  parts.forEach(function (p, i) { setOpen(p, targetPart ? p === targetPart : i === 0); });
+  updatePrompt();
+  var target = hashTarget();
+  openOnly(partOf(target));
   if (target) {
     target.scrollIntoView();
     // Images above the target load lazily and push it down; scroll again once they have.

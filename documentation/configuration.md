@@ -71,7 +71,7 @@ Gearing and everyday ride feel.
 {% capture body %}How far the knob turns for each click of the shifter. Higher values turn it further.
 
 With a [Simulated Groupset](#simulated-groupset) picked, this is the size of a typical gear change. Bigger jumps between gears move further.{% endcapture %}
-{% include setting.html id="shift-step" name="Shift Step" range="10 – 6000" body=body tip="**Aim for about 30 W per click** at your usual cadence. Every bike is different, so adjust from there." %}
+{% include setting.html id="shift-step" name="Shift Step" range="10 – 6000" default="1200" body=body tip="**Aim for about 30 W per click** at your usual cadence. Every bike is different, so adjust from there." %}
 
 {% include setting.html id="swap-shifter-direction" name="Swap Shifter Direction" range="On / Off" body="Swaps which shifter button adds resistance and which takes it away. Flip it if pressing up makes pedaling easier." %}
 
@@ -92,7 +92,7 @@ A custom groupset loaded from a settings file shows as **Current custom groupset
 {% include setting.html id="simulated-groupset" name="Simulated Groupset" range="Unlimited or a groupset" body=body tip="You can also change it mid-ride: tap **Settings** on the **Virtual Shifter** screen." %}
 
 {% capture body %}How much SIM mode hills change the resistance. Higher values make climbs steeper. Lower values flatten them.{% endcapture %}
-{% include setting.html id="incline-multiplier" name="Incline Multiplier" range="0 – 10" body=body tip="**Riding Zwift?** Its Trainer Difficulty setting starts at 50%, which halves the hills SmartSpin2k receives. Raise Trainer Difficulty or this setting to make up for it. [More on Trainer Difficulty](https://zwiftinsider.com/using-the-trainer-difficulty-setting-in-zwift/)." %}
+{% include setting.html id="incline-multiplier" name="Incline Multiplier" range="0 – 10" default="7" body=body tip="**Riding Zwift?** Its Trainer Difficulty setting starts at 50%, which halves the hills SmartSpin2k receives. Raise Trainer Difficulty or this setting to make up for it. [More on Trainer Difficulty](https://zwiftinsider.com/using-the-trainer-difficulty-setting-in-zwift/)." %}
 
 {% capture body %}How hard ERG mode chases the target power.
 
@@ -100,7 +100,7 @@ A custom groupset loaded from a settings file shows as **Current custom groupset
 - **Too high:** overshoots, then swings above and below before it settles.
 
 A small overshoot that settles quickly is fine.{% endcapture %}
-{% include setting.html id="erg-sensitivity" name="ERG Sensitivity" range="0 – 20" body=body tip="Change it by about 1 at a time, and ride a couple of interval changes before you judge it." %}
+{% include setting.html id="erg-sensitivity" name="ERG Sensitivity" range="0.1 – 20" default="3" body=body tip="Change it by about 1 at a time, and ride a couple of interval changes before you judge it." %}
 
 </div>
 
@@ -121,9 +121,9 @@ Motor tuning and device behavior. The defaults suit most bikes.
 {% include setting.html id="stealth-chop" name="Stealth Chop" range="On / Off" default="On" body="Keeps the motor quiet. Leave it on unless it causes problems. Turning it off gives a little more torque on felt-resistance bikes, but the motor is louder." %}
 
 {% capture body %}Scales the power your bike reports. Use it when your bike's power is well off from a real power meter. To work it out, divide the power meter reading by the bike's reading at the same effort. If the bike shows 250 W while a power meter shows 200 W, use 0.8.{% endcapture %}
-{% include setting.html id="power-correction-factor" name="Power Correction Factor" range="0.4 – 2.5" default="1.0" body=body tip="Schwinn IC4 and Bowflex C6 riders often land around **0.7 to 0.8**." %}
+{% include setting.html id="power-correction-factor" name="Power Correction Factor" range="0.5 – 2.5" default="1.0" body=body tip="Schwinn IC4 and Bowflex C6 riders often land around **0.7 to 0.8**." %}
 
-{% include setting.html id="stepper-motor-speed" name="Stepper Motor Speed" range="100 – 3500" body="How fast the motor turns the knob. The default suits almost every bike." %}
+{% include setting.html id="stepper-motor-speed" name="Stepper Motor Speed" range="100 – 3500" default="3500" body="How fast the motor turns the knob. The default suits almost every bike." %}
 
 {% capture body %}The lowest power your bike makes with the knob near its lightest. Before SmartSpin2k has found the knob's limits, ERG mode won't aim below this. ERG also drops to this target when you stop pedaling.
 
@@ -133,7 +133,7 @@ To measure it, pedal at 90 rpm with the knob a turn or two above its lightest an
 {% capture body %}The most power your bike can absorb. The shifter won't raise an ERG target above it.
 
 To measure it, pedal at 90 rpm with the knob as high as you can comfortably hold and note the watts. Set this at or a little above that number.{% endcapture %}
-{% include setting.html id="max-brake-watts" name="Max Brake Watts" range="0 – 2500 W" default="1000" body=body %}
+{% include setting.html id="max-brake-watts" name="Max Brake Watts" range="0 – 2000 W" default="1000" body=body %}
 
 {% capture body %}How hard the motor pushes before calibration counts a knob stop as reached. Lower it if the motor grinds at a stop. Raise it if it stops before the real end. See [Adjust Homing Force]({% link getting-started/calibration.md %}#adjust-homing-force).{% endcapture %}
 {% include setting.html id="homing-force" name="Homing Force" range="10 – 100" default="50" body=body tip="The **Calibrate Trainer** screen has this setting too." %}

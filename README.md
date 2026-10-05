@@ -24,8 +24,17 @@ docker run --rm -p 4000:4000 -v "$PWD:/site" -w /site -e BUNDLE_PATH=/site/vendo
 On Git Bash for Windows, prefix the `docker run` line with `MSYS_NO_PATHCONV=1` and write the volume as `-v "D:/path/to/SS2K-Documentation:/site"`.
 
 ## Getting Started pages
-The Getting Started section mirrors the Companion App's Guided Setup: one landing page with a bike picker, then one linear page per bike. Shared steps live in `_includes/gs/*.md` so they are written once.
+The Getting Started section mirrors the Companion App's Guided Setup: a landing page with four bike cards, then one setup page (`getting-started/setup.md`) that filters itself to the reader's bike. Shared steps live in `_includes/gs/*.md` so they are written once.
 
+How the setup page works (`assets/js/setup-guide.js`):
+- **Bike filter.** Wrap bike-specific content in an element with `data-bikes` listing the bikes it applies to: `spin`, `pm`, `peloton`, `bikeplus` (e.g. `<div data-bikes="spin pm" markdown="1">` for blocks, `<span data-bikes="peloton">` for a few words). The picker sets the bike; `?bike=` in the URL preselects it and the last choice is remembered.
+- **Parts.** Each `## Part N · Title {#part-N}` heading, plus `## Before you start`, becomes a collapsible card running up to the next H2. Don't put an H2 anywhere else on the page, including inside `_includes/gs/*.md` (use H3), or it will split a Part.
+- **Deep links.** Link with `{% link getting-started/setup.md %}#part-N` for generic steps and add `?bike=` when the link is bike-specific. A reader who arrives without a bike sees which Part they were sent to, and picking a bike opens it.
+- Without JavaScript every bike's content shows, with inline variants separated by " / ".
+
+Includes:
+- `_includes/gs/pair-power-meter.md` emits the Saved Power Meter steps as list items that continue the surrounding list (parameters: `device`, `note`).
+- `_includes/youtube.html` embeds a no-cookie YouTube player (parameters: `id`, `title`, `start` in seconds) that `assets/js/video.js` loads only once it is on screen. Use it instead of `![](youtube link)` or a raw iframe: `loading="lazy"` alone still loads videos hidden in other bikes' content.
 - `_includes/step.html` renders a numbered step card (parameters: `n`, `title`, `img` under `/images/`, `alt`, `body` in markdown, `photo=true` for photos). Call it at column 0 with a blank line before and after.
 - `_includes/shot.html` renders a phone screenshot from `images/app/` at a fixed width; group several inside `<div class="gs-shots">`.
 - `images/wizard/` holds the Guided Setup drawings copied from the app. Refresh them with `sh scripts/sync-wizard-images.sh` (set `SS2K_APP_DIR` if the app checkout is not at `/c/git/ss2kconfigapp`).

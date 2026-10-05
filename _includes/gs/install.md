@@ -1,4 +1,4 @@
-![](https://www.youtube.com/watch?v=yVXgECHQq3w)
+{% include youtube.html id="yVXgECHQq3w" title="Install the SmartSpin2k" %}
 
 <div class="gs-steps">
 

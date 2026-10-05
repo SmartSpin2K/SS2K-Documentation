@@ -30,11 +30,7 @@ Before you pair anything:
 SmartSpin2k ships with **Saved Power Meter** set to `none`. Pick your bike or power meter once.
 
 1. Wake your bike or power meter. Pedal a few turns.
-2. On the **Device** screen, tap **Settings**, then **Bluetooth**.
-3. Tap **Saved Power Meter**.
-4. Tap **SCAN**. Scanning takes up to 20 seconds.
-5. Tap your bike or power meter in the list. A Schwinn IC4 or Bowflex C6 appears as **IC Bike**. Power meter pedals appear under their brand name.
-6. Tap **SAVE**.
+{% include gs/pair-power-meter.md device="your bike or power meter" note="A Schwinn IC4 or Bowflex C6 appears as **IC Bike**. Power meter pedals appear under their brand name." %}
 
 <div class="gs-shots">
 

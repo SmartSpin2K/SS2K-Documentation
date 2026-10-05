@@ -17,7 +17,7 @@ Table of contents
 ---
 
 ## Video
-![](https://www.youtube.com/watch?v=7StwDXqBytw)
+{% include youtube.html id="7StwDXqBytw" title="SmartSpin2k Quick Start: app pairing and homing" %}
 
 ## Every ride
 1. Close other apps that control the SmartSpin2k. Only one app can control it at a time.
