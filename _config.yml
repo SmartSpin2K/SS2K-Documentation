@@ -35,6 +35,7 @@ heading_anchors: true
 plugins:
   - jekyll-spaceship
   - jekyll-tabs
+  - jekyll-redirect-from
 
 
 # Where things are

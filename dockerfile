@@ -1,12 +1,5 @@
-# Create a Jekyl container from s zRuby Alpine Image
-
-FROM ruby:3.0-alpine3.16
-
-#add jekyll dependencies to Alpine
-
-RUN apk update
-RUN apk add --no-cache build-base gcc cmake git
-
-#update the Ruby Bundler
-
+# Jekyll build and serve container. Matches CI (Ruby 3.3). See README for usage.
+FROM ruby:3.3
 RUN gem update bundler && gem install bundler jekyll
+WORKDIR /site
+EXPOSE 4000

@@ -1,0 +1,2 @@
+{%- comment -%}Phone screenshot at a fixed 300px display width. Params: img (file name under /images/app/), alt (required), caption (optional). Wrap several in <div class="gs-shots"> at column 0.{%- endcomment -%}
+<figure class="gs-shot"><img src="{{ include.img | prepend: '/images/app/' | relative_url }}" alt="{{ include.alt }}" width="300" loading="lazy">{% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}</figure>

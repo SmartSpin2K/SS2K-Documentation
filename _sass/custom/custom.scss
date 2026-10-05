@@ -57,3 +57,17 @@ ul.tab-content > li {
 ul.tab-content > li.active {
   display: block;
 }
+
+// Getting Started: step cards (mirror the app's InstructionStepCard) and phone screenshots
+.gs-step { border: 1px solid $border-color; border-radius: 12px; padding: 1rem; margin: 1rem 0 1.25rem; max-width: 600px; }
+.gs-step__head { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; }
+.gs-step__badge { flex: none; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: $link-color; color: #fff; font-weight: 700; font-size: .875rem; display: inline-flex; align-items: center; justify-content: center; }
+.gs-step__title { font-weight: 700; font-size: 1.05rem; line-height: 1.2; }
+.gs-step__img { background: #fff; border-radius: 8px; padding: .5rem; max-width: 560px; margin: 0 auto .75rem;
+  img { display: block; width: 100%; height: auto; margin: 0; } }
+.gs-step__img--photo { background: transparent; padding: 0; }
+.gs-step__body { text-align: center; p { margin: 0; } }
+.gs-shots { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start; margin: 1rem 0; }
+.gs-shot { margin: 0 0 1rem; max-width: 300px;
+  img { width: 300px; height: auto; border-radius: 12px; border: 1px solid $border-color; }
+  figcaption { font-size: .8rem; opacity: .75; margin-top: .25rem; text-align: center; } }
