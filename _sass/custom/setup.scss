@@ -1,0 +1,10 @@
+// Brand tokens from smartspin2k.com (src/index.css). Fonts load in _includes/head_custom.html.
+$ss2k-red: #de2b2b; // fills, borders, badges (white text on it passes AA)
+$ss2k-red-text: #f04545; // links and red text on the dark background (#de2b2b is just under AA there)
+$ss2k-bg: #050505;
+$ss2k-heading-font: "Oswald", "Arial Narrow", sans-serif;
+$ss2k-card-radius: 0; // the site's cards are square; buttons keep rounded corners
+$ss2k-card-bg: #0a0a0a;
+$ss2k-red-wash: linear-gradient(135deg, rgba($ss2k-red, .16), rgba($ss2k-red, .03) 60%); // accent panels (use with `background:`)
+
+$body-font-family: "Figtree", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, "Segoe UI Emoji";

@@ -1,0 +1,18 @@
+// SmartSpin2k: matches smartspin2k.com (near-black, brand red, white at reduced opacity)
+@import "./color_schemes/dark";
+
+$color-scheme: dark;
+$body-background-color: $ss2k-bg;
+$body-heading-color: $white;
+$body-text-color: #cfcfcf; // ~white/80 on the background
+$link-color: $ss2k-red-text;
+$nav-child-link-color: #9a9a9a;
+$sidebar-color: #0a0a0a;
+$base-button-color: #161616;
+$btn-primary-color: $ss2k-red;
+$code-background-color: #17181c;
+$feedback-color: #111;
+$table-background-color: #0c0c0c;
+$search-background-color: #111;
+$search-result-preview-color: #9a9a9a;
+$border-color: #232323; // ~white/10 on the background

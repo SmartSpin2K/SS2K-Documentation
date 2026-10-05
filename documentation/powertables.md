@@ -185,7 +185,7 @@ Inside the area the table covers, it can be close. On a 55 minute ERG workout, a
 <div class="pt-stat pt-stat--warn"><div class="pt-stat__value">15–20% low</div><div class="pt-stat__label">at 100 rpm and above, outside the table</div></div>
 </div>
 
-![Graph comparing SmartSpin2k's table-estimated power with Assioma pedal power over a 55 minute ERG workout, with a zoomed view of one 154 W effort and the knob position below](../images/ptab4power-ride-comparison.png)
+![Graph comparing SmartSpin2k's table-estimated power with Assioma pedal power over a 55 minute ERG workout, with a zoomed view of one 154 W effort and the knob position below]({{ '/images/ptab4power-ride-comparison.png' | relative_url }})
 
 The red line is SmartSpin2k's estimate. The blue line is the pedals. Over the whole ride the two track closely. The estimate is much smoother, and the gaps open up where the rider went outside the area the table covered.
 
