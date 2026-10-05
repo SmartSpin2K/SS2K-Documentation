@@ -169,3 +169,19 @@ html:not(.gs-js) .gs-pick input { position: static; opacity: 1; }
 .pt-stat__label { font-size: .85rem; opacity: .8; margin-top: .35rem; }
 .gs-card--bad { border-color: $red-200; }
 .gs-card--warn { border-color: $yellow-200; }
+
+// Settings: one card per setting (setting.html)
+.st-list { display: grid; gap: .75rem; margin: 1rem 0 1.5rem; }
+.st { padding: 1rem 1.25rem; border: 1px solid $border-color; border-radius: 12px; scroll-margin-top: 4rem;
+  &:target { border-color: $link-color; box-shadow: inset 0 0 0 1px $link-color; } }
+.st__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .25rem .75rem; margin-bottom: .4rem; }
+.st__name { font-weight: 700; font-size: 1.05rem; color: $body-heading-color; }
+.st__meta { display: flex; flex-wrap: wrap; gap: .4rem; font-size: .75rem;
+  span { padding: .1rem .5rem; border: 1px solid $border-color; border-radius: 999px; opacity: .85; white-space: nowrap; } }
+.st__body { p { margin: 0 0 .5rem; } p:last-child, ul:last-child, table:last-child { margin-bottom: 0; } }
+.st__tip { margin-top: .6rem; padding: .5rem .75rem; border-left: 3px solid $green-200; background: $sidebar-color; border-radius: 0 8px 8px 0; font-size: .9rem;
+  p { margin: 0; } }
+.st-group { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.25rem; margin: 1rem 0;
+  > .gs-shot { flex: none; margin: 0 auto; img { width: 170px; } }
+  @media (min-width: 700px) { > .gs-shot { position: sticky; top: 1rem; } }
+  > .st-list { flex: 1 1 320px; min-width: 0; margin-top: 0; } }

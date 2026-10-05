@@ -24,7 +24,8 @@ Work through these checks in order when your SmartSpin2k does not appear on the 
 2. Turn your phone's Bluetooth off and on, then tap **SCAN** again.
 3. Restart the SmartSpin2k. Unplug the power adapter, wait five seconds, and plug it back in.
 4. Close other apps connected to the SmartSpin2k. Each SmartSpin2k allows three app connections, including the Companion App.
-5. Ask in the [SmartSpin2k Facebook group](https://www.facebook.com/groups/716297469953492) if your SmartSpin2k still does not appear.
+5. Reset SmartSpin2k with the shifter buttons. See [Reset with the shifter](#reset-with-the-shifter).
+6. Ask in the [SmartSpin2k Facebook group](https://www.facebook.com/groups/716297469953492) if your SmartSpin2k still does not appear.
 
 ## No power or cadence numbers {#no-power-or-cadence-numbers}
 
@@ -96,3 +97,60 @@ If **Calibrate Trainer** fails on a bike with end stops, adjust **Homing Force**
 2. Lower it by about 10 if the motor kept pushing at the end.
 3. Raise it by about 10 if the knob stopped before the end.
 4. Tap **SAVE**, then tap **Try Again**.
+
+## Factory reset {#factory-reset}
+
+A factory reset puts every setting back to how SmartSpin2k shipped. Use it when settings are tangled and you want a clean start, or before you pass the SmartSpin2k to someone else.
+
+The reset erases:
+
+- The saved power meter and heart rate monitor.
+- The WiFi network and password.
+- Calibration and the power table.
+- The device name and every setting under **Basic** and **Advanced**.
+
+The firmware stays installed. Copies saved in the Companion App stay on your phone.
+
+Save a copy first if you want your settings back later. Tap **Settings** on the **Device** screen, then **Save & restore settings**, then **Save a copy**.
+
+### Reset from the Companion App {#reset-from-the-app}
+
+1. Connect to your SmartSpin2k.
+2. Tap **Settings** on the **Device** screen.
+3. Tap **Save & restore settings**.
+4. Tap **Factory reset SmartSpin2k**.
+5. Tap **Reset SmartSpin2k**.
+
+<div class="gs-shots">
+
+{% include shot.html img="settings.png" alt="Settings screen with Save & restore settings above the Basic, Bluetooth, Network, and Advanced tiles" caption="Settings" %}
+
+{% include shot.html img="settings-save-restore.png" alt="Save & restore settings menu with Factory reset SmartSpin2k under Start over" caption="Save & restore settings" %}
+
+{% include shot.html img="factory-reset-confirm.png" alt="Factory reset SmartSpin2k? confirmation with the Cancel and Reset SmartSpin2k buttons" caption="Confirm the reset" %}
+
+</div>
+
+SmartSpin2k restarts by itself. The app reconnects and shows **SmartSpin2k reset to factory settings.**
+
+### Reset with the shifter {#reset-with-the-shifter}
+
+Use this when the Companion App cannot find or connect to your SmartSpin2k.
+
+1. Unplug the SmartSpin2k power adapter.
+2. Check that the shifter is plugged into the wire labeled **Shifter**.
+3. Press and hold both shifter buttons.
+4. Keep holding both buttons and plug the power adapter back in.
+5. Keep holding until the blue LED lights up, about five seconds after power on.
+6. Release both buttons.
+7. Wait about 30 seconds without unplugging. The LED goes dark while SmartSpin2k erases its settings, then SmartSpin2k restarts by itself.
+
+The reset is done when the blue LED blinks slowly. If the LED never lit while you held the buttons, SmartSpin2k started normally. Unplug it and try again, and hold both buttons from before power on until the LED lights.
+
+### After a reset {#after-a-reset}
+
+1. Tap **SCAN** in the Companion App, then **CONNECT** on your SmartSpin2k.
+2. Run **Guided Setup**, or follow [Getting Started]({% link getting-started.md %}) to pick your power meter again.
+3. To bring back your old settings, tap **Settings**, then **Save & restore settings**, then **Load saved settings**.
+
+The web page at `smartspin2k.local` returns once SmartSpin2k is back on a WiFi network with internet access.

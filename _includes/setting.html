@@ -1,0 +1,6 @@
+{%- comment -%}One setting from the Companion App's Settings screens. Params: name (required, the app's label), id (anchor, optional), range (e.g. "10 – 6000" or "On / Off", optional), default (optional), body (markdown; build longer bodies with capture), tip (markdown, optional). Wrap a run of settings in <div class="st-list"> at column 0.{%- endcomment -%}
+<div class="st"{% if include.id %} id="{{ include.id }}"{% endif %}>
+<div class="st__head"><span class="st__name">{{ include.name }}</span>{% if include.range or include.default %}<span class="st__meta">{% if include.range %}<span>{{ include.range }}</span>{% endif %}{% if include.default %}<span>Default {{ include.default }}</span>{% endif %}</span>{% endif %}</div>
+<div class="st__body">{{ include.body | markdownify }}</div>
+{% if include.tip %}<div class="st__tip">{{ include.tip | markdownify }}</div>{% endif %}
+</div>

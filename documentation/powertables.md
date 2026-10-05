@@ -107,7 +107,8 @@ You'll need three things first:
 
 <div class="gs-steps">
 
-{% include step.html n=1 title="Switch it on" body="Open <http://SmartSpin2k.local/> and go to **Settings**. Turn on **PowerTable For Power**, the last toggle. It saves right away." %}
+{% capture switch_on %}In the Companion App, on **Device**, tap **Settings**, **Advanced**, then **Power Table for Power**. Turn it on and tap **SAVE**. On the [web page]({% link documentation/configuration.md %}#on-a-computer) it is the **PowerTable For Power** toggle.{% endcapture %}
+{% include step.html n=1 title="Switch it on" body=switch_on %}
 
 {% include step.html n=2 title="Pedal to home" body="SmartSpin2k homes the knob the next time you pedal. Pedal for a couple of seconds and let it finish. Power reads 0 W until it does." %}
 
@@ -119,7 +120,7 @@ If a power meter is still paired, SmartSpin2k ignores its power and uses the tab
 
 **Check it once if you can.** On your first ride, record a power meter on a separate device, such as a bike computer, and compare the two afterwards. See [How close is it?](#how-close-is-it) for what to expect.
 
-**To turn it off,** switch **PowerTable For Power** off on the same page. SmartSpin2k goes back to measured power, and the table starts learning again.
+**To turn it off,** switch **Power Table for Power** off in the same place. SmartSpin2k goes back to measured power, and the table starts learning again.
 
 ## Get a Power Table
 
