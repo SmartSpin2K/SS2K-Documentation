@@ -46,6 +46,16 @@ No. SmartSpin2k rides fine without calibration. Here is what changes when you ru
 </div>
 </div>
 
+### What a saved Power Table changes
+
+ERG mode steers by the [Power Table]({% link documentation/powertables.md %}), a map of how much power each knob position takes at each cadence. Until the table has enough readings near your target, SmartSpin2k finds the right resistance by trial and correction. Once it trusts the table, it moves the knob straight to the right spot when the target changes.
+
+The chart shows two real rides on the same bike. On the first, a saved table loaded at power-on, and ERG trusted it 36 seconds into the workout. On the second, the table started empty. It took 11 minutes to reach that point, and by the end of the ride the table had 181 readings, compared with 315 on the first ride.
+
+![Line chart of Power Table readings over a one-hour ERG workout. The saved-table ride starts at 264 readings, is trusted after 36 seconds, and ends at 315. The empty-table ride starts at 2, is trusted after 11 minutes, and ends at 181.]({{ '/images/calibration-saved-table.svg' | relative_url }})
+
+Without calibration, every ride starts like the second one.
+
 {: .red }
 **Peloton Bike+ with power meter pedals only: skip calibration.** The Bike+ knob has no stops, so SmartSpin2k needs the resistance that Grupetto sends to calibrate. With Grupetto set up, calibration works. See the **Peloton Bike+ with Grupetto** tab under [What SmartSpin2k is doing](#what-smartspin2k-is-doing).
 

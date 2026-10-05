@@ -2,7 +2,7 @@
 title: Troubleshooting
 parent: Documentation
 layout: page
-nav_order: 8
+nav_order: 6
 ---
 # Troubleshooting
 {: .no_toc }

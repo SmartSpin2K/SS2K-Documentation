@@ -148,3 +148,24 @@ html:not(.gs-js) .gs-pick input { position: static; opacity: 1; }
 .gs-stage__body { flex: 1; min-width: 0;
   p { margin: 0 0 .6rem; } ul { margin-top: 0; } }
 .gs-stage__title { display: flex; align-items: center; gap: .6rem; font-weight: 700; font-size: 1.05rem; line-height: 1.25; color: $body-heading-color; margin-bottom: .6rem; }
+
+// Power from the Power Table: lookup flow, sample table, stat tiles
+.pt-flow { display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: .5rem; margin: 1rem 0 1.5rem; }
+.pt-flow__box { flex: 1 1 130px; max-width: 200px; padding: .75rem 1rem; border: 1px solid $border-color; border-radius: 12px; text-align: center;
+  strong { display: block; color: $body-heading-color; } span { font-size: .8rem; opacity: .75; } }
+.pt-flow__box--table { border-color: $green-200; background: $sidebar-color; }
+.pt-flow__box--out { border-color: $link-color; }
+.pt-flow__op { align-self: center; font-size: 1.4rem; font-weight: 700; opacity: .6; }
+@media (max-width: 600px) { .pt-flow { flex-direction: column; align-items: center; } .pt-flow__box { max-width: none; width: 100%; } .pt-flow__op { transform: rotate(90deg); } }
+.pt-grid { overflow-x: auto; margin: 1rem 0 .5rem;
+  table { min-width: 0; } td, th { text-align: center; }
+  .pt-grid__empty { opacity: .35; }
+  .pt-grid__hit { background: rgba($link-color, .25); box-shadow: inset 0 0 0 2px $link-color; font-weight: 700; } }
+.pt-grid__caption { font-size: .85rem; opacity: .75; margin-bottom: 1.5rem; }
+.pt-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
+.pt-stat { padding: 1rem 1.25rem; border: 1px solid $border-color; border-radius: 12px;
+  &--good { border-color: $green-200; } &--warn { border-color: $yellow-200; } }
+.pt-stat__value { font-size: 1.75rem; font-weight: 700; line-height: 1.1; color: $body-heading-color; }
+.pt-stat__label { font-size: .85rem; opacity: .8; margin-top: .35rem; }
+.gs-card--bad { border-color: $red-200; }
+.gs-card--warn { border-color: $yellow-200; }
