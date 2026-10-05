@@ -73,21 +73,28 @@ ul.tab-content > li.active {
   figcaption { font-size: .8rem; opacity: .75; margin-top: .25rem; text-align: center; } }
 
 // Getting Started landing: Guided Setup hero card and bike chooser cards
-.gs-hero { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2rem; margin: 1.5rem 0;
-  padding: 1.5rem; border: 1px solid $green-200; border-radius: 12px; background: $sidebar-color;
-  .gs-shot { flex: none; margin: 0 auto; img { width: 220px; } }
+.gs-hero { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem; margin: 1.5rem 0;
+  padding: 1.25rem; border: 1px solid $green-200; border-radius: 12px; background: $sidebar-color;
+  .gs-shot { flex: none; margin: 0 auto; img { width: 165px; } }
   @media (max-width: 600px) { padding: 1.25rem 1rem; .gs-shot img { width: 160px; } } }
 .gs-hero__body { flex: 1 1 320px; min-width: 0;
   p { margin: 0 0 1rem; } }
 .gs-hero__eyebrow { margin-bottom: .25rem !important; .label { margin-left: 0; } }
 .gs-hero__title { margin: 0 0 .75rem !important; }
-.gs-hero__note { font-size: .875rem; opacity: .8; margin-bottom: 0 !important; }
-.gs-store { display: flex; flex-wrap: wrap; gap: .75rem; margin: 0 0 1rem; }
-.gs-store__btn { display: inline-flex; flex-direction: column; justify-content: center; min-width: 9.5rem; padding: .45rem 1rem;
-  border-radius: 8px; background: #000; border: 1px solid #a6a6a6; color: #fff !important; line-height: 1.15; text-decoration: none !important;
+.gs-hero__note { font-size: .875rem; opacity: .8; margin-bottom: .5rem !important; &:last-child { margin-bottom: 0 !important; } }
+// Official badges, App Store first (Apple guideline). Google's PNG has clear space baked in, so it is sized up and pulled in to match.
+.gs-store { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin: 0 0 1rem; }
+.gs-store__badge { display: block; line-height: 0; img { display: block; max-width: none; } }
+.gs-store__badge--apple img { height: 48px; width: auto; }
+.gs-store__badge--google img { height: 71px; width: auto; margin: -11.5px -11px; }
+// Desktop download: no official GitHub badge exists, so this one mirrors the Apple badge's shape, border, and two-line lockup.
+.gs-store__badge--github { display: inline-flex; align-items: center; gap: .55rem; height: 48px; padding: 0 .85rem 0 .7rem; box-sizing: border-box;
+  border-radius: 8px; background: #000; border: 1px solid #a6a6a6; color: #fff !important; text-decoration: none !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   &:hover, &:focus { border-color: #fff; } }
-.gs-store__small { font-size: .7rem; }
-.gs-store__big { font-size: 1.15rem; font-weight: 600; }
+.gs-store__text { display: flex; flex-direction: column; line-height: 1.1; }
+.gs-store__small { font-size: .64rem; letter-spacing: .01em; }
+.gs-store__big { font-size: 1.3rem; font-weight: 600; letter-spacing: -.01em; }
 .gs-bikes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
 .gs-bike { display: flex; flex-direction: column; gap: .35rem; padding: 1rem 1.25rem; border: 1px solid $border-color; border-radius: 12px;
   color: $body-text-color !important; text-decoration: none !important; transition: border-color .15s ease-in-out;
