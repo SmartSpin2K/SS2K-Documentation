@@ -2,7 +2,7 @@
 title: Power from the Power Table
 parent: Documentation
 layout: page
-nav_order: 5
+nav_order: 4
 ---
 # Power from the Power Table
 {: .no_toc }

@@ -81,13 +81,3 @@ SmartSpin2k accepts three app connections at a time, including the Companion App
 To switch to a different bike, power meter, or heart rate monitor, repeat the steps above and pick the new device. The new pick replaces the old one.
 
 To stop using a saved device, open **Saved Power Meter** or **Saved HRM**, pick `none`, and tap **SAVE**.
-
-## Reconnect Bluetooth during your ride
-
-If a sensor drops during a ride, you can make SmartSpin2k rescan with the shifter.
-
-1. Press and hold both buttons on the shifter for 3 seconds.
-2. Release.
-3. SmartSpin2k rescans and reconnects your bike and sensors.
-
-If power or cadence stays at zero, see [No power or cadence numbers]({% link documentation/troubleshooting.md %}#no-power-or-cadence-numbers).

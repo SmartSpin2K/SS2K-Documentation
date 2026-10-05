@@ -2,7 +2,7 @@
 title: Assembly Guide
 parent: Documentation
 layout: page
-nav_order: 4
+nav_order: 5
 ---
 # Assembly Guide
 {: .no_toc }

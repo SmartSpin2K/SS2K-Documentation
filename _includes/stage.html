@@ -1,8 +1,9 @@
-{%- comment -%}One stage of a process: a phone screenshot beside what is happening. Params: n (badge number, optional), title (required), img (file name under /images/app/, optional), alt (required with img), body (markdown; build longer bodies with capture). Wrap a run of stages in <div class="gs-stages"> at column 0.{%- endcomment -%}
-<div class="gs-stage">
-{% if include.img %}{% include shot.html img=include.img alt=include.alt %}{% endif %}
+{%- comment -%}One stage of a process: a screenshot with what is happening. Params: n (badge number, optional), title (required), img (optional), alt (required with img), body (markdown; build longer bodies with capture), wide (true = landscape desktop screenshot, img is a path under /images/ and sits under the title at full width; otherwise img is a phone shot under /images/app/ beside the text). Wrap a run of stages in <div class="gs-stages"> at column 0.{%- endcomment -%}
+<div class="gs-stage{% if include.wide %} gs-stage--wide{% endif %}">
+{% if include.img and include.wide == nil %}{% include shot.html img=include.img alt=include.alt %}{% endif %}
 <div class="gs-stage__body">
 <div class="gs-stage__title">{% if include.n %}<span class="gs-step__badge">{{ include.n }}</span>{% endif %}<span>{{ include.title }}</span></div>
+{% if include.img and include.wide %}{%- assign src = include.img | prepend: '/images/' | relative_url -%}<figure class="gs-shot gs-shot--wide"><a href="{{ src }}" target="_blank" rel="noopener"><img src="{{ src }}" alt="{{ include.alt }}" loading="lazy"></a></figure>{% endif %}
 {{ include.body | markdownify }}
 </div>
 </div>
