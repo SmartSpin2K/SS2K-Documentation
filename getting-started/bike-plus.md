@@ -53,13 +53,11 @@ The Bike+ does not send power and cadence on its own, so pick one source.
 Grupetto is a free app for the Bike+ tablet that sends power and cadence over Bluetooth.
 
 {: .caution }
-**Installing Grupetto changes the software on the Bike+ tablet.** Watch the full video before you start.
-
-1. Install Grupetto on the Bike+ tablet with [OpenPelo](https://github.com/doudar/Openpelo). The video starts at the Grupetto step.
+**Installing Grupetto changes the software on the Bike+ tablet.** Watch the full video before you start. It begins at the Grupetto step.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2TonDgQtys?start=318" title="Install Grupetto with OpenPelo" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
 
-{:start="2"}
+1. Install Grupetto on the Bike+ tablet with [OpenPelo](https://github.com/doudar/Openpelo), following the video.
 2. Open Grupetto and turn on **BLE TX** in its settings.
 3. Pedal a few turns. Grupetto shows live cadence and power.
 4. In the Companion App, on the **Device** screen, tap **Settings**, **Bluetooth**, then **Saved Power Meter**.
