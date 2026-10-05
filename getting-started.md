@@ -27,7 +27,7 @@ To open it later, tap **Guided Setup** on the **Find Your SmartSpin2k** screen. 
 
 ### The written guide
 
-Prefer reading on a bigger screen, or exited Guided Setup? Pick your bike below. Each page covers the same steps in the same order.
+Use these pages if you'd rather read on a bigger screen, or if you left Guided Setup. Pick your bike below. Each page covers the same steps in the same order.
 
 ---
 

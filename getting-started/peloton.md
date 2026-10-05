@@ -49,9 +49,9 @@ Table of contents
 
 The bike sends power data to one device at a time, either the Peloton tablet or the SmartSpin2k. The **side switch** on the SmartSpin2k body picks which one.
 
-**Tablet Mode (switch UP).** Pick this if you still take Peloton classes or want the Grupetto overlay. The tablet requests the data and SmartSpin2k listens.
+**Tablet Mode (switch UP):** Pick this if you still take Peloton classes or want the Grupetto overlay. The tablet requests the data and SmartSpin2k listens.
 
-**Headless Mode (switch DOWN).** Pick this if you do not plan to take Peloton classes. SmartSpin2k talks to the bike directly. The tablet can still run other apps.
+**Headless Mode (switch DOWN):** Pick this if you do not plan to take Peloton classes. SmartSpin2k talks to the bike directly. The tablet can still run other apps.
 
 {% tabs side-switch %}
 {% tab side-switch Tablet Mode %}

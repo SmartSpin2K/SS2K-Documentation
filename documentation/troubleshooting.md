@@ -86,7 +86,7 @@ See [Peloton Bike+]({% link getting-started/bike-plus.md %}#part-4) for the full
 
 ## Calibration {#calibration}
 
-Calibration is not required for your first ride. SmartSpin2k's software end stops work out of the box. Skip Calibrate and Spin Down on a Bike+, since the Bike+ knob has no end stops.
+Calibration is not required for your first ride. SmartSpin2k's software end stops work without it. Skip Calibrate and Spin Down on a Bike+, since the Bike+ knob has no end stops.
 
 When you want to calibrate, see [Homing]({% link documentation/homing.md %}).
 
