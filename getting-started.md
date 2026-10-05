@@ -9,63 +9,56 @@ has_toc: false
 
 This guide takes you from unboxing your SmartSpin2k to your first ride.
 
-## Two ways to set up
-
-### Guided Setup in the Companion App
-
-Guided Setup is the recommended way to set up a new SmartSpin2k. Install the SmartSpin2k Companion App from the [App Store](https://apps.apple.com/us/app/smartspin2k-companion-app/id6477836948) or [Google Play](https://play.google.com/store/apps/details?id=com.smartspin2k.app).
-
-Guided Setup opens the first time you launch the Companion App. It walks you through the same steps as this guide, with pictures, on your phone.
-
-To open it later, tap **Guided Setup** on the **Find Your SmartSpin2k** screen. To leave it, tap **Exit Setup** at the top right.
-
-<div class="gs-shots">
-
-{% include shot.html img="wizard-welcome-exit.png" alt="Guided Setup welcome screen with the Exit Setup button at the top right" caption="Guided Setup in the Companion App" %}
-
+<div class="gs-hero">
+  <div class="gs-hero__body">
+    <p class="gs-hero__eyebrow"><span class="label label-green">Recommended</span></p>
+    <h2 class="gs-hero__title" id="guided-setup">Set up with the Companion App</h2>
+    <p>Guided Setup opens the first time you launch the SmartSpin2k Companion App. It walks you through every step on your phone, with pictures.</p>
+    <div class="gs-store">
+      <a class="gs-store__btn" href="https://apps.apple.com/us/app/smartspin2k-companion-app/id6477836948"><span class="gs-store__small">Download on the</span><span class="gs-store__big">App Store</span></a>
+      <a class="gs-store__btn" href="https://play.google.com/store/apps/details?id=com.smartspin2k.app"><span class="gs-store__small">Get it on</span><span class="gs-store__big">Google Play</span></a>
+    </div>
+    <p class="gs-hero__note">Already installed? Tap <strong>Guided Setup</strong> on the <strong>Find Your SmartSpin2k</strong> screen. To leave it, tap <strong>Exit Setup</strong> at the top right.</p>
+  </div>
+  {% include shot.html img="wizard-welcome-exit.png" alt="Guided Setup welcome screen in the Companion App" %}
 </div>
 
-### The written guide
+{: .highlight }
+**Keep the default settings for your first ride.** The defaults are tuned for the Schwinn IC4, Bowflex C6, and Peloton, and work for most magnetic-resistance spin bikes.
 
-Use these pages if you'd rather read on a bigger screen, or if you left Guided Setup. Pick your bike below. Each page covers the same steps in the same order.
-
----
+{: .caution }
+**Do not run Calibrate or Spin Down in your training app yet.** SmartSpin2k works without it. See [Homing]({% link documentation/homing.md %}) when you want it.
 
 ## Choose your bike
 
-### Most Spin Bikes With Bluetooth Support
+Prefer to read along on a bigger screen, or left Guided Setup partway through? Pick your bike. Each page covers the same steps as Guided Setup, in the same order.
 
-*Bowflex C6, Schwinn IC4, Yesoul S3, etc.*
-
-SmartSpin2k reads power and cadence from your bike over Bluetooth.
-
-[Set up a Bluetooth bike]({% link getting-started/bluetooth-bikes.md %}){: .btn .btn-blue }
-
-### Power Meter
-
-*Bikes equipped with power meter pedals or a crank power meter*
-
-SmartSpin2k reads power and cadence from your power meter over Bluetooth, with the same steps as a Bluetooth bike.
-
-[Set up with a power meter]({% link getting-started/bluetooth-bikes.md %}){: .btn .btn-blue }
-
-### Peloton Bike (Original)
-
-*The original Peloton Bike*
-
-SmartSpin2k plugs into the bike's sensor cable and reads power and cadence through it.
-
-[Set up a Peloton Bike]({% link getting-started/peloton.md %}){: .btn .btn-blue }
-
-### Peloton Bike+
-
-*The Peloton Bike+ (not the original Peloton Bike)*
-
-The Bike+ has no wired connection for SmartSpin2k, so power and cadence come over Bluetooth from Grupetto on the bike's tablet or from a power meter.
-
-[Set up a Peloton Bike+]({% link getting-started/bike-plus.md %}){: .btn .btn-blue }
-
----
+<div class="gs-bikes">
+  <a class="gs-bike" href="{% link getting-started/bluetooth-bikes.md %}">
+    <span class="gs-bike__name">Spin bike with Bluetooth</span>
+    <span class="gs-bike__models">Bowflex C6, Schwinn IC4, Yesoul S3, etc.</span>
+    <span class="gs-bike__desc">SmartSpin2k reads power and cadence from your bike over Bluetooth.</span>
+    <span class="gs-bike__cta">Set up a Bluetooth bike &rarr;</span>
+  </a>
+  <a class="gs-bike" href="{% link getting-started/bluetooth-bikes.md %}">
+    <span class="gs-bike__name">Power meter</span>
+    <span class="gs-bike__models">Power meter pedals or a crank power meter</span>
+    <span class="gs-bike__desc">SmartSpin2k reads power and cadence from your power meter over Bluetooth, with the same steps as a Bluetooth bike.</span>
+    <span class="gs-bike__cta">Set up with a power meter &rarr;</span>
+  </a>
+  <a class="gs-bike" href="{% link getting-started/peloton.md %}">
+    <span class="gs-bike__name">Peloton Bike (original)</span>
+    <span class="gs-bike__models">The original Peloton Bike</span>
+    <span class="gs-bike__desc">SmartSpin2k plugs into the bike's sensor cable and reads power and cadence through it.</span>
+    <span class="gs-bike__cta">Set up a Peloton Bike &rarr;</span>
+  </a>
+  <a class="gs-bike" href="{% link getting-started/bike-plus.md %}">
+    <span class="gs-bike__name">Peloton Bike+</span>
+    <span class="gs-bike__models">Not the original Peloton Bike</span>
+    <span class="gs-bike__desc">The Bike+ has no wired connection for SmartSpin2k, so power and cadence come over Bluetooth from Grupetto on the bike's tablet or from a power meter.</span>
+    <span class="gs-bike__cta">Set up a Peloton Bike+ &rarr;</span>
+  </a>
+</div>
 
 ## What to expect
 
@@ -79,9 +72,3 @@ Every bike page follows the same eight parts.
 6. **Test the shifter.** Shift up and down and watch the resistance knob turn.
 7. **Optional: heart rate and WiFi.** Relay a heart rate monitor and connect to WiFi for firmware updates.
 8. **Your first ride.** Pair SmartSpin2k in your training app, such as Zwift, Rouvy, or TrainerRoad.
-
-{: .highlight }
-**Keep the default settings for your first ride.** The defaults are tuned for the Schwinn IC4, Bowflex C6, and Peloton, and work for most magnetic-resistance spin bikes.
-
-{: .caution }
-**Do not run Calibrate or Spin Down in your training app yet.** SmartSpin2k works without it. See [Homing]({% link documentation/homing.md %}) when you want it.

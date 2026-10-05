@@ -71,3 +71,28 @@ ul.tab-content > li.active {
 .gs-shot { margin: 0 0 1rem; max-width: 300px;
   img { width: 300px; height: auto; border-radius: 12px; border: 1px solid $border-color; }
   figcaption { font-size: .8rem; opacity: .75; margin-top: .25rem; text-align: center; } }
+
+// Getting Started landing: Guided Setup hero card and bike chooser cards
+.gs-hero { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2rem; margin: 1.5rem 0;
+  padding: 1.5rem; border: 1px solid $green-200; border-radius: 12px; background: $sidebar-color;
+  .gs-shot { flex: none; margin: 0 auto; img { width: 220px; } }
+  @media (max-width: 600px) { padding: 1.25rem 1rem; .gs-shot img { width: 160px; } } }
+.gs-hero__body { flex: 1 1 320px; min-width: 0;
+  p { margin: 0 0 1rem; } }
+.gs-hero__eyebrow { margin-bottom: .25rem !important; .label { margin-left: 0; } }
+.gs-hero__title { margin: 0 0 .75rem !important; }
+.gs-hero__note { font-size: .875rem; opacity: .8; margin-bottom: 0 !important; }
+.gs-store { display: flex; flex-wrap: wrap; gap: .75rem; margin: 0 0 1rem; }
+.gs-store__btn { display: inline-flex; flex-direction: column; justify-content: center; min-width: 9.5rem; padding: .45rem 1rem;
+  border-radius: 8px; background: #000; border: 1px solid #a6a6a6; color: #fff !important; line-height: 1.15; text-decoration: none !important;
+  &:hover, &:focus { border-color: #fff; } }
+.gs-store__small { font-size: .7rem; }
+.gs-store__big { font-size: 1.15rem; font-weight: 600; }
+.gs-bikes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
+.gs-bike { display: flex; flex-direction: column; gap: .35rem; padding: 1rem 1.25rem; border: 1px solid $border-color; border-radius: 12px;
+  color: $body-text-color !important; text-decoration: none !important; transition: border-color .15s ease-in-out;
+  &:hover, &:focus { border-color: $link-color; .gs-bike__cta { text-decoration: underline; } } }
+.gs-bike__name { font-size: 1.1rem; font-weight: 700; color: $body-heading-color; }
+.gs-bike__models { font-size: .85rem; font-style: italic; opacity: .75; }
+.gs-bike__desc { font-size: .9rem; flex: 1; }
+.gs-bike__cta { color: $link-color; font-weight: 600; font-size: .9rem; margin-top: .25rem; }
