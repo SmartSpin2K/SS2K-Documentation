@@ -39,7 +39,7 @@ Table of contents
 
 While you ride with a power meter, SmartSpin2k records where the knob was at each cadence and power. That record is the Power Table. Rows are cadence, from 60 to 105 rpm in 5 rpm steps. Columns are power, in 30 W steps. Each cell holds a knob position.
 
-Normally ERG mode uses the table to jump straight to the right resistance for a target. PowerTable For Power reads it the other way round: from the knob position and your cadence, it finds the power.
+Normally, on a calibrated bike, ERG mode uses the table to jump straight to the right resistance for a target. PowerTable For Power reads it the other way round: from the knob position and your cadence, it finds the power.
 
 <div class="pt-grid" markdown="0">
 <table>
