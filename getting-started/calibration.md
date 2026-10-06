@@ -27,33 +27,31 @@ Table of contents
 
 ## Do you need it?
 
-No. ERG mode rides well without calibration. Calibration makes it quicker to settle when the target changes a lot, and it lets SmartSpin2k avoid the knob's stops from the start of every ride.
+No. ERG mode rides well without it. Calibrate if you want ERG to settle faster when the target jumps.
 
 <div class="gs-cards">
 <div class="gs-card" markdown="1">
 <div class="gs-card__title">Without calibration</div>
 
-- ERG mode holds power by feedback: it reads your power, nudges the knob, and reads again. It holds steady intervals well and takes longer to settle after big target changes.
-- SmartSpin2k doesn't know where the knob stops. It estimates the limits partway through each ride from **Min Brake Watts** and **Max Brake Watts**.
-- Nothing extra happens when you power on.
+- Holds steady intervals well.
+- Big target changes take about 15–20 seconds to settle.
+- The knob's limits are only estimated partway through each ride. Until then, a target the bike can't reach can push the knob into its stop.
 </div>
 <div class="gs-card gs-card--accent" markdown="1">
 <div class="gs-card__title">With calibration</div>
 
-- SmartSpin2k knows your knob's real low and high limits from the start of every ride.
-- ERG mode maps your bike's resistance curve as you ride and uses the map to move the knob straight to a new target and to adjust when your cadence changes. The map is saved and reused on later rides.
-- Each time it powers on, SmartSpin2k finds its starting point on its own. See [Every ride after calibration](#every-ride-after-calibration).
+- Holds steady intervals a little tighter.
+- Big target changes settle in about 5–8 seconds.
+- The knob stays inside its real limits from the start. SmartSpin2k finds its place on its own each time it powers on.
 </div>
 </div>
 
-### What calibration changes in ERG mode
+<details markdown="block">
+<summary>Why it's faster, and how we measured it</summary>
 
-As you ride in ERG mode, SmartSpin2k records how much power each knob position takes at each cadence, using the power your bike or power meter reports. The result is a map of your bike's resistance curve, called the Power Table. On a calibrated bike, ERG uses the map to seek straight to each new target. Without calibration, SmartSpin2k doesn't know where zero is, so ERG doesn't use the map. It still gets to every target. It just has to feel its way there.
+**Why.** As you ride in ERG mode, SmartSpin2k records how much power each knob position takes at each cadence, using the power your bike or power meter reports. The result is a map of your bike's resistance curve, called the Power Table. On a calibrated bike, ERG uses the map to move the knob straight to each new target and to adjust when your cadence changes. The map is saved between rides. Without calibration, SmartSpin2k doesn't know where zero is, so ERG doesn't use the map. It reads your power, nudges the knob, and reads again until it gets there.
 
-{: .highlight }
-The Power Table has a second, separate use. With **PowerTable For Power** turned on, SmartSpin2k ignores the power your bike reports and works out your power from the table and your cadence. That's an advanced feature, and nothing on this page needs it. See [Power from the Power Table]({% link documentation/powertables.md %}).
-
-We compared ERG with and without calibration in the SmartSpin2k ERG simulator. It runs the real firmware against simulated bikes whose resistance curves were recorded with a power meter on a Bowflex C6, a Peloton, and a Yesoul GM1. Each bike rode the same 75-minute interval workout three times calibrated and three times not. Both started with an empty table, as on the first ride after setup.
+**How we measured it.** We rode the same 75-minute interval workout in the SmartSpin2k ERG simulator, which runs the real firmware. The simulated bikes use resistance curves recorded with a power meter on a Bowflex C6, a Peloton, and a Yesoul GM1. Each bike rode three times calibrated and three times not, all starting with an empty table, as on the first ride after setup.
 
 Once an interval had settled, both held power well: about 7 W off target on average when calibrated, and about 10 W when not. The difference was in how long each took to settle after the target changed:
 
@@ -70,9 +68,11 @@ The chart shows two big changes from one of the Bowflex rides. On the way up, th
 
 ![Two line charts of power against target on a simulated Bowflex C6. Target up from 198 to 412 W: calibrated power reaches about 385 W in 5 seconds and settles near the target; uncalibrated power overshoots to 500 W and returns to the target after about 20 seconds. Target down from 412 to 232 W: calibrated power settles near the target within a few seconds; uncalibrated power dips to about 195 W before recovering.]({{ '/images/calibration-erg-sim.svg' | relative_url }})
 
-These were first rides for both. A calibrated bike keeps its table, so later rides start with it. Without calibration, every ride is like the first.
+These were first rides for both. A calibrated bike keeps its map, so later rides start with it. Without calibration, every ride is like the first.
 
-Calibration matters most when a workout asks for power your bike can't make, such as very low watts at a high cadence. A calibrated knob stops at the end of its range and waits. An uncalibrated one has no limits until it has estimated them, which took up to 16 minutes in the simulator. In a workout built to test this, the uncalibrated knob ran into its stop and kept pushing in 5 of 9 runs, after which SmartSpin2k no longer knew where the knob was. In 3 of 9, the first estimate was too tight and held back a hard effort.
+**Knob limits.** Without calibration, SmartSpin2k estimates the knob's limits from **Min Brake Watts** and **Max Brake Watts** once it has enough readings, which took up to 16 minutes in the simulator. In a workout that asked for power the bike couldn't make, such as very low watts at a high cadence, the uncalibrated knob ran into its stop and kept pushing in 5 of 9 runs. After that, SmartSpin2k no longer knew where the knob was. In 3 of 9, the first estimate was too tight and held back a hard effort. A calibrated knob stopped at the end of its range and waited every time.
+
+</details>
 
 {: .red }
 **Peloton Bike+ with power meter pedals only: skip calibration.** The Bike+ knob has no stops, so SmartSpin2k needs the resistance that Grupetto sends to calibrate. With Grupetto set up, calibration works. See the **Peloton Bike+ with Grupetto** tab under [What SmartSpin2k is doing](#what-smartspin2k-is-doing).
