@@ -9,7 +9,7 @@ has_toc: false
 
 This guide takes you from unboxing your SmartSpin2k to your first ride.
 
-[Regulatory information for SmartSpin2k Rev 4]({% link documentation/regulatory.md %}) includes the FCC and Canadian notices, regulatory contact, and signed EU Declaration of Conformity.
+[Regulatory information for SmartSpin2k Rev 4]({% link documentation/regulatory.md %}) includes the FCC and Canadian notices, supplier declaration, and regulatory contact.
 
 <div class="gs-hero">
   <div class="gs-hero__body">

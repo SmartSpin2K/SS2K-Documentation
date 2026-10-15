@@ -15,12 +15,6 @@ Table of contents
 1. TOC
 {:toc}
 
-## EU Declaration of Conformity
-
-The original declaration is signed by Anthony Doud, CEO, on September 2, 2026.
-
-[View the signed EU Declaration of Conformity (PNG, 1.1 MB)](https://smartspin2k.com/regulatory/smartspin2k-rev4-eu-declaration-of-conformity.png).
-
 ## FCC Compliance Statement
 
 Contains FCC ID: 2AC7Z-ESPS3WROOM1
