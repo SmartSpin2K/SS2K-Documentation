@@ -15,6 +15,12 @@ Table of contents
 1. TOC
 {:toc}
 
+## EU declaration transcription
+
+Transcription of the signed declaration; handwritten signature omitted from this public copy.
+
+[Read the public transcription (English, HTML)](https://smartspin2k.com/regulatory/smartspin2k-rev4-eu-declaration-transcription.html).
+
 ## FCC Compliance Statement
 
 Contains FCC ID: 2AC7Z-ESPS3WROOM1
