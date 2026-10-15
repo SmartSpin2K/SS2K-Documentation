@@ -9,6 +9,8 @@ nav_order: 1
 
 Pick your bike. The steps below change to match it. **Guided Setup** in the SmartSpin2k Companion App covers these same steps on your phone.
 
+[Regulatory information for SmartSpin2k Rev 4]({% link documentation/regulatory.md %}) includes the FCC and Canadian notices, regulatory contact, and signed EU Declaration of Conformity.
+
 {% include gs/bike-picker.html %}
 
 <div class="gs-pick-prompt" hidden>Pick your bike above to see your setup steps.</div>
